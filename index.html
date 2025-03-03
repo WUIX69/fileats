@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cooking</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet" >
+	<link href="css/global.css" rel="stylesheet">
+	<link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Donegal+One&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+</head>
+<body>
+
+<section id="header">
+        <nav class="navbar navbar-expand-lg navbar-light w-100 pb-2 border-bottom">
+      <div class="container-xl">
+         <a class="d-flex" href="index.html">
+			 <b class="fs-2 d-block logo text-center">  <span class="family_1">Tasty Food</span> <span class="d-block text-uppercase font_13">Cooking Recipes</span> 
+			 <span class="d-block font_12 col_green mt-1">
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			 </span>
+			 </b>
+	     </a>
+         <button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
+            <img src="image/icons-svg/list.svg" width="40" height="40" alt="Open TemplateOnweb website menu"/>
+         </button>
+         <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+            <div class="offcanvas-header shadow">
+			    <a class="d-flex" href="index.html">
+			 <b class="fs-2 d-block logo text-center">  <span class="family_1">Tasty Food</span> <span class="d-block text-uppercase font_13">Cooking Recipes</span> 
+			 <span class="d-block font_12 col_green mt-1">
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			 </span>
+			 </b>
+	     </a>
+               <img src="image/icons-svg/x.svg" width="40" height="40" class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu"/>
+			   
+            </div>
+            <div class="offcanvas-body pt-0 align-items-center">
+               <ul class="navbar-nav align-items-lg-center ms-auto mt-2">
+			      <li class="nav-item"> 
+				      <a class="nav-link dropdown-toggle active fs-4 mt-1" href="index.html" title="Visit home page">
+					  <i class="bi bi-house"></i>
+					  </a>
+				  </li>
+				  
+				  <li class="nav-item"> 
+				      <a class="nav-link dropdown-toggle" href="about.html" title="Visit home page">
+					  About Us
+					  </a>
+				  </li>
+				  <li class="nav-item dropdown drop_border">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Recipes<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+          </a>
+          <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="recipe.html"> Recipes</a></li>
+			<li><a class="dropdown-item border-0" href="recipe_detail.html"> Recipe Detail</a></li>
+          </ul>
+        </li>
+				  
+		
+		          <li class="nav-item dropdown drop_border">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Blog<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+          </a>
+          <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="blog.html"> Blog</a></li>
+			<li><a class="dropdown-item border-0" href="blog_detail.html"> Blog Detail</a></li>
+          </ul>
+        </li>
+		  
+		          <li class="nav-item"> 
+				      <a class="nav-link dropdown-toggle" href="team.html" title="Visit home page">
+					 Team
+					  </a>
+				  </li>
+	
+				  <li class="nav-item dropdown drop_border">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Pages<img src="image/icons-svg/chevron-down.svg" width="15" height="15" alt="Submenu open/close icon">
+          </a>
+          <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+ 			<li><a class="dropdown-item" href="login.html"> Login</a></li>
+			<li><a class="dropdown-item border-0" href="register.html">Register</a></li>
+          </ul>
+        </li>
+				  
+				  <li class="nav-item"> 
+				      <a class="nav-link dropdown-toggle" href="contact.html" title="Visit home page">
+					  Contact Us
+					  </a>
+				  </li>
+               </ul>
+			   <ul class="navbar-nav align-items-lg-center ms-auto mt-2">
+			         <li class="nav-item"> 
+				      <a class="nav-link dropdown-toggle button" href="login.html" title="Visit home page">
+					  Submit Recipe
+					  </a>
+				  </li>
+                 </ul>
+            </div>
+         </div>    
+         </div>
+      </div>
+   </nav>
+</section>
+
+<section id="center" class="center_home">
+ <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-label="Slide 1" aria-current="true"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2" class=""></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3" class=""></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="image/1.jpg" class="d-block img-fluid" alt="...">
+      <div class="carousel-caption d-md-block bg-white carousel-caption1 border_light">
+	    <div class="carousel-caption_inner border_light p-3 shadow">
+		   <b class="d-block fs-3 text-uppercase text-black">Dealing with a diet plan</b>
+		<hr class="line mx-auto">
+		<span class="d-block fs-4 col_green">
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star"></i>
+			 </span>
+		<span class="d-block text-black mt-3">(4/5)</span>
+		<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+		<span class="d-block mt-4 text-center"><a class="button" href="#">Learn More</a></span>
+		</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/2.jpg" class="d-block img-fluid" alt="...">
+      <div class="carousel-caption carousel-caption1 d-md-block bg-white border_light">
+	     <div class="carousel-caption_inner border_light p-3 shadow">
+		   <b class="d-block fs-3 text-uppercase text-black">Lorem Amet a porta sit</b>
+		<hr class="line mx-auto">
+		<span class="d-block fs-4 col_green">
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			 </span>
+		<span class="d-block text-black mt-3">(5/5)</span>
+		<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+		<span class="d-block mt-4 text-center"><a class="button" href="#">Learn More</a></span>
+		</div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="image/3.jpg" class="d-block img-fluid" alt="...">
+      <div class="carousel-caption carousel-caption2 d-md-block bg-white border_light">
+	       <div class="carousel-caption_inner border_light p-3 shadow">
+		   <b class="d-block fs-3 text-uppercase text-black">Dolor sed  augue quis</b>
+		<hr class="line mx-auto">
+		<span class="d-block fs-4 col_green">
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-half"></i>
+			 </span>
+		<span class="d-block text-black mt-3">(4.5/5)</span>
+		<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+		<span class="d-block mt-4 text-center"><a class="button" href="#">Learn More</a></span>
+		</div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</section>
+
+<section id="recipe" class="pt-5 pb-5 bg_light">
+  <div class="container-xl">
+   <div class="recipe_1 row text-center mb-4">
+    <div class="col-md-12">
+	  <b class="d-block fs-3 text-uppercase">HOTTEST RECIPES AT FOOD & TASTE</b>
+	  <span class="icon_cup col_green fs-4 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+	</div>
+   </div>
+   <div class="recipe_2 row row-cols-1 row-cols-md-4 row-cols-sm-2">
+    <div class="col p-0">
+	   <div class="recipe_2_left">
+	     <a href="#"><img src="image/4.jpg" class="img-fluid" alt="abc"></a>
+	   </div>
+	</div>
+	<div class="col p-0">
+	   <div class="recipe_2_right text-center bg-white  py-4 px-3">
+	     <b class="d-block"><a href="#">PASTO PIZZA WITH EXTRA TOPPINGS</a></b>
+			<hr class="line mx-auto">
+			<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<b class="d-block font_14"><a href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a></b>
+	   </div>
+	</div>
+	<div class="col p-0">
+	   <div class="recipe_2_left">
+	     <a href="#"><img src="image/5.jpg" class="img-fluid" alt="abc"></a>
+	   </div>
+	</div>
+	<div class="col p-0">
+	   <div class="recipe_2_right text-center bg-white  py-4 px-3">
+	    <b class="d-block"><a href="#">HEALTHY FOOD AND BANANAS</a></b>
+			<hr class="line mx-auto">
+			<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<b class="d-block font_14"><a href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a></b>
+	   </div>
+	</div>
+   </div>
+   <div class="recipe_2 row row-cols-1 row-cols-md-4 row-cols-sm-2">
+    <div class="col p-0">
+	   <div class="recipe_2_right text-center bg-white  py-4 px-3">
+	    <b class="d-block"><a href="#">BEST FOOD WITH EXTRA TOPPINGS</a></b>
+			<hr class="line mx-auto">
+			<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<b class="d-block font_14"><a href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a></b>
+	   </div>
+	</div>
+    <div class="col p-0">
+	   <div class="recipe_2_left">
+	     <a href="#"><img src="image/6.jpg" class="img-fluid" alt="abc"></a>
+	   </div>
+	</div>
+	<div class="col p-0">
+	   <div class="recipe_2_right text-center bg-white  py-4 px-3">
+	    <b class="d-block"><a href="#">EXTRA CHEESY FRENCH HOT DOG</a></b>
+			<hr class="line mx-auto">
+			<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<b class="d-block font_14"><a href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a></b>
+	   </div>
+	</div>
+	<div class="col p-0">
+	   <div class="recipe_2_left">
+	     <a href="#"><img src="image/7.jpg" class="img-fluid" alt="abc"></a>
+	   </div>
+	</div>
+   </div>
+  </div>
+</section>
+
+<section id="spec" class="pt-5 pb-5">
+ <div class="container-xl">
+   <div class="recipe_1 row text-center mb-4">
+    <div class="col-md-12">
+	  <b class="d-block fs-3 text-uppercase">CATERING FOR EVERY TASTE</b>
+	  <span class="icon_cup col_green fs-4 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+	</div>
+   </div>
+   <div class="row spec_2">
+     <div class="col-md-3 col-sm-6">
+	    <div class="spec_2i p-4 text-center bg_light">
+		  <span class="font_60 col_green"><i class="bi bi-cup-straw"></i></span>
+		  <h5 class="mt-3 fs-6">BANQUET SERVICE</h5>
+		  <p class="mt-3 mb-0">Organization and hosting of banquets lorem</p>
+		</div>
+	 </div>
+	 <div class="col-md-3 col-sm-6">
+	    <div class="spec_2i p-4 text-center bg_light">
+		  <span class="font_60 col_green"><i class="bi bi-cup-hot"></i></span>
+		  <h5 class="mt-3 fs-6">OFF-SITE CATERING</h5>
+		  <p class="mt-3 mb-0">Catering services for events at various locations</p>
+		</div>
+	 </div>
+	 <div class="col-md-3 col-sm-6">
+	    <div class="spec_2i p-4 text-center bg_light">
+		  <span class="font_60 col_green"><i class="bi bi-buildings"></i></span>
+		  <h5 class="mt-3 fs-6">OFFICE CATERING</h5>
+		  <p class="mt-3 mb-0">Providing meals for company employees</p>
+		</div>
+	 </div>
+	 <div class="col-md-3 col-sm-6">
+	    <div class="spec_2i p-4 text-center bg_light">
+		  <span class="font_60 col_green"><i class="bi bi-heart"></i></span>
+		  <h5 class="mt-3 fs-6">WEDDING CATERING</h5>
+		  <p class="mt-3 mb-0">Organization and catering for weddings</p>
+		</div>
+	 </div>
+   </div>
+ </div>
+</section>
+
+<section id="join" class="pt-5 pb-5">
+  <div class="container-xl">
+    <div class="row join_1">
+	  <div class="col-md-12">
+	    <div class="join_1_inner bg-white p-3">
+		  <div class="join_1_inner1 border_light p-5 px-4 text-center">
+		    <b class="d-block fs-3 text-uppercase text-black">WE LOVE OUR CHEFS JOIN US NOW</b>
+		<hr class="line mx-auto">
+		<span class="col_green fs-2 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+		<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit Ultricies interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+		<span class="d-block mt-4 text-center"><a class="button" href="#">Our Chefs</a></span>
+		  </div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</section>
+
+<section id="choose" class="pt-5 pb-5 bg_light">
+ <div class="container-xl">
+  <div class="row choose_1">
+   <div class="col-md-6">
+    <div class="choose_1l">
+	  <div class="grid clearfix">
+				  <figure class="effect-jazz mb-0">
+					<a href="#"><img src="image/15.jpg" class="img-fluid" alt="abc"></a>
+				  </figure>
+			  </div>
+	</div>
+   </div>
+   <div class="col-md-6">
+    <div class="choose_1r">
+	 <h6 class="col_green">WHY CHOOSE US</h6>
+	 <h1 class="mt-3 mb-3">New London Coffee Founded  For Extraordinary Test</h1>
+	 <p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque laudantium, totam rem aperiam eaque ipsa quae abillo inventore veritatis</p>
+	 <div class="choose_1ri row mt-4">
+	  <div class="col-md-2 col-sm-2">
+	   <div class="choose_1ril">
+	    <span class="font_60 col_green lh-1"><i class="bi bi-apple"></i></span>
+	   </div>
+	  </div>
+	  <div class="col-md-10 col-sm-10">
+	   <div class="choose_1rir">
+	     <h4>Natural Coffee Beans</h4>
+		 <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+	   </div>
+	  </div>
+	 </div>
+	 <div class="choose_1ri row mt-4">
+	  <div class="col-md-2 col-sm-2">
+	   <div class="choose_1ril">
+	    <span class="font_60 col_green lh-1"><i class="bi bi-patch-check-fill"></i></span>
+	   </div>
+	  </div>
+	  <div class="col-md-10 col-sm-10">
+	   <div class="choose_1rir">
+	     <h4>100% ISO Certification</h4>
+		 <p class="mb-0">Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque</p>
+	   </div>
+	  </div>
+	 </div>
+	 <h6 class="mb-0 mt-4"><a class="button" href="#"> Explore More <i class="bi bi-arrow-right ms-1 align-middle"></i></a></h6>
+	</div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="news" class="pt-5 pb-5">
+  <div class="container-xl">
+   <div class="recipe_1 row text-center mb-4">
+    <div class="col-md-12">
+	  <b class="d-block fs-3 text-uppercase">LATEST NEWS</b>
+	  <span class="icon_cup col_green fs-4 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+	</div>
+   </div>
+    <div class="news_1 row row-cols-1 row-cols-md-4 row-cols-sm-2">
+	 <div class="col">
+	   <div class="news_1_left">
+	     <a href="#"><img src="image/9.jpg" class="img-fluid" alt="abc"></a>
+		 <b class="mt-3 font_14 d-block"><a href="#">SLIM LINE BETWEEN HEALTH AND UNHEALTHY</a></b>
+		 <hr class="line">
+		 <span class="font_14"> <i class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>  Lorem  <i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i> 20/02/2024</span>
+		 <p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+		 <span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+	   </div>
+	 </div>
+	 <div class="col">
+	   <div class="news_1_left">
+	     <a href="#"><img src="image/10.jpg" class="img-fluid" alt="abc"></a>
+		 <b class="mt-3 font_14 d-block"><a href="#">PRESENTATION IS AS IMPORTANT AS TASTE</a></b>
+		 <hr class="line">
+		 <span class="font_14"> <i class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>  Ipsum  <i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i> 22/02/2024</span>
+		 <p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+		 <span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+	   </div>
+	 </div>
+	 <div class="col">
+	   <div class="news_1_left">
+	     <a href="#"><img src="image/11.jpg" class="img-fluid" alt="abc"></a>
+		 <b class="mt-3 font_14 d-block"><a href="#">SANDWICHES & THEIR BEST ORIGINS</a></b>
+		 <hr class="line">
+		 <span class="font_14"> <i class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>  Dolor  <i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i> 24/02/2024</span>
+		 <p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+		 <span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+	   </div>
+	 </div>
+	 <div class="col">
+	   <div class="news_1_left">
+	     <a href="#"><img src="image/12.jpg" class="img-fluid" alt="abc"></a>
+		 <b class="mt-3 font_14 d-block"><a href="#">HEALTHY FOOD IS ACCESSIBLE AND EASY TO MAKE</a></b>
+		 <hr class="line">
+		 <span class="font_14"> <i class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>  Augue  <i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i> 27/02/2024</span>
+		 <p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+		 <span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+	   </div>
+	 </div>
+	</div>
+  </div>
+</section>
+
+<section id="trend" class="pt-5 pb-5 bg_light">
+  <div class="container-xl">
+    <div class="row trend_1">
+	  <div class="col-md-8">
+	    <div class="trend_1_left position-relative">
+		  <div class="trend_1_left1">
+		     <a href="#"><img src="image/13.jpg" class="img-fluid" alt="abc"></a>
+		 </div>
+		<div class="trend_1_left2 position-absolute top-0 py-3 px-4">
+		   <div class="trend_1_left2_inner text-center bg-white p-2">
+	     <div class="recipe_2_right_inner border_light py-4 px-3">
+		    <span class="d-inline-block bg_green text-white py-1 px-3 font_14">Recipe of the day</span>
+			<b class="d-block mt-3"><a href="#">PASTO PIZZA WITH EXTRA TOPPINGS</a></b>
+			<hr class="line mx-auto">
+			<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+			<b class="d-block font_14"><a href="#">Read More <i class="bi bi-arrow-right ms-1"></i></a></b>
+		 </div>
+	   </div>
+		</div>
+		</div>
+	  </div>
+	  <div class="col-md-4">
+	    <div class="trend_1_right bg-white p-3">
+		  <ul class="nav nav-tabs mb-0  flex-wrap font_13 tab_click border-0 mb-4">
+<li class="nav-item">
+<a href="#profile1" data-bs-toggle="tab" aria-expanded="true" class="nav-link active">
+<span class="d-md-block">RECENT</span>
+</a>
+</li>
+
+<li class="nav-item">
+<a href="#profile2" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block">POPULAR</span>
+</a>
+</li>
+<li class="nav-item">
+<a href="#profile3" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+<span class="d-md-block">RANDOM</span>
+</a>
+</li>
+
+</ul>
+          <div class="tab-content">
+
+<div class="tab-pane active" id="profile1">
+     <ul class="mb-0">
+		     <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/9.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Nulla Quis Sem Nibh  Imperdiet</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 16, 2016</span>
+			   </span>
+			 </li>
+			 <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/10.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Ligula in libero Sed  lacinia nunc</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 18, 2016</span>
+			   </span>
+			 </li>
+			 <li class="d-flex">
+			   <span><a href="#"><img width="100" alt="abc" src="image/11.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Consectetur Elit Integer Nec Libero</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 19, 2016</span>
+			   </span>
+			 </li>
+		
+		   </ul>
+</div>
+<div class="tab-pane" id="profile2">
+    <ul class="mb-0">
+	         <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/10.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Ligula in libero Sed  lacinia nunc</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 18, 2016</span>
+			   </span>
+			 </li>
+		     <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/9.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Nulla Quis Sem Nibh  Imperdiet</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 16, 2016</span>
+			   </span>
+			 </li>
+			 
+			 <li class="d-flex">
+			   <span><a href="#"><img width="100" alt="abc" src="image/11.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Consectetur Elit Integer Nec Libero</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 19, 2016</span>
+			   </span>
+			 </li>
+		
+		   </ul>
+	  
+</div>
+<div class="tab-pane" id="profile3">
+    
+	  <ul class="mb-0">
+	        <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/11.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Consectetur Elit Integer Nec Libero</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 19, 2016</span>
+			   </span>
+			 </li>
+		     <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/9.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Nulla Quis Sem Nibh  Imperdiet</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 16, 2016</span>
+			   </span>
+			 </li>
+			 <li class="d-flex">
+			   <span><a href="#"><img width="100" alt="abc" src="image/10.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a  href="#">Ligula in libero Sed  lacinia nunc</a></b>
+				 <span class="mt-1 font_14 d-block">Jan 18, 2016</span>
+			   </span>
+			 </li>
+			 
+		
+		   </ul>
+</div>
+
+</div>
+		</div>
+	  </div>
+	</div>
+  </div>
+</section>
+
+<section id="footer">
+  <div class="footer_m pt-5 pb-5 bg_back_dark">
+    <div class="container-xl">
+      <div class="row footer_1">
+	    <div class="col-md-3">
+		 <div class="footer_1_left">
+		   <b class="fs-2 d-block logo text-center text-white">  <span class="family_1">Tasty Food</span> <span class="d-block text-uppercase font_13">Cooking Recipes</span> 
+			 <span class="d-block font_12 col_green mt-1">
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			  <i class="bi bi-star-fill"></i>
+			 </span>
+			 </b>
+		 </div>
+		</div>
+		<div class="col-md-9">
+		 <div class="footer_1_right">
+		   <p class="mb-0 mt-3 text-white-50">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, with an extra ordinary design and quality development features in low</p>
+		 </div>
+		</div>
+	  </div>
+	  <div class="row row-cols-1 row-cols-md-3 footer_2 mt-4 pt-4">
+	     <div class="col">
+		  <div class="footer_2_left">
+		   <b class="text-white d-block fs-5">Recent Recipes</b>
+		   <hr class="line">
+		   <ul class="mb-0">
+		     <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/9.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis Sem Nibh  Imperdiet</a></b>
+				 <span class="mt-1 font_13 d-block text-white-50">Jan 16, 2016</span>
+			   </span>
+			 </li>
+			 <li class="d-flex border-bottom  pb-3 mb-3">
+			   <span><a href="#"><img width="100" alt="abc" src="image/10.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a class="text-white-50" href="#">Ligula in libero Sed  lacinia nunc</a></b>
+				 <span class="mt-1 font_13 d-block text-white-50">Jan 18, 2016</span>
+			   </span>
+			 </li>
+			 <li class="d-flex">
+			   <span><a href="#"><img width="100" alt="abc" src="image/11.jpg"></a></span>
+			   <span class="flex-column ms-3">
+			      <b class="d-block font_14"><a class="text-white-50" href="#">Consectetur Elit Integer Nec Libero</a></b>
+				 <span class="mt-1 font_13 d-block text-white-50">Jan 19, 2016</span>
+			   </span>
+			 </li>
+		
+		   </ul>
+		  </div>
+		 </div>
+		 <div class="col">
+		     <div class="footer_1_left">
+			 <b class="text-white d-block fs-5">Contact Us</b>
+		   <hr class="line">
+			<span class="fw-bold text-white-50 d-block mb-2">Address:</span>
+			<span class="text-white-50  d-block font_14 ps-2">Something Street lorem porta quis sem eget New York 2003 SU</span>
+			<span class="fw-bold text-white-50 mt-3 d-block mb-2">Open hours:</span>
+			<span class="text-white-50 d-block font_14 ps-2">Mon – Fri: 11AM – 8PM</span>
+			<span class="fw-bold text-white-50 mt-3 d-block mb-2">Cell Phone:</span>
+			<span class="text-white-50 mb-0 d-block font_14 ps-2">+(000) 345 67 89</span>
+			 </div>
+		   </div>
+		   <div class="col">
+		     <div class="footer_1_left">
+			 <b class="text-white d-block fs-5">Subscribe Us</b>
+		   <hr class="line">
+			 <input class="form-control bg-dark border-0 text-white" type="text">
+			<span class="d-block mt-3"><a class="button py-2" href="#">Subscribe</a></span>
+			<b class="text-white d-block fs-5 mt-4">Follow Us</b>
+		   <hr class="line">
+		   <ul class="mb-0 d-flex social_brands">
+			    <li><a class="bg_green d-inline-block text-white text-center" href="#"><i class="bi bi-facebook"></i></a></li>
+				<li class="ms-2"><a class="bg-success d-inline-block text-white text-center" href="#"><i class="bi bi-instagram"></i></a></li>
+				<li class="ms-2"><a class="bg-warning d-inline-block text-white text-center" href="#"><i class="bi bi-linkedin"></i></a></li>
+				<li class="ms-2"><a class="bg-info d-inline-block text-white text-center" href="#"><i class="bi bi-pinterest"></i></a></li>
+				<li class="ms-2"><a class="bg-danger d-inline-block text-white text-center" href="#"><i class="bi bi-youtube"></i></a></li>
+			  </ul>
+			 </div>
+		   </div>
+	  </div>
+	  <div class="footer_bottom1 row mt-4 pt-4">
+	<div class="col-md-4">
+	  <div class="footer_bottom1_right">
+       <ul class="font_13 mb-0">
+		    <li class="d-inline-block"><a class="text-white-50 link" href="#"> Home</a></li>
+			<li class="d-inline-block mx-2 text-muted">|</li>
+			 <li class="d-inline-block"><a class="text-white-50 link" href="#"> About Us</a></li>
+			 <li class="d-inline-block mx-2 text-muted">|</li>
+			 <li class="d-inline-block"><a class="text-white-50 link" href="#"> News</a></li>
+			 <li class="d-inline-block mx-2 text-muted">|</li>
+			 <li class="d-inline-block"><a class="text-white-50 link" href="#"> Contact Us</a></li>
+		  </ul>
+	  </div>
+	 </div>
+	 <div class="col-md-8">
+	  <div class="footer_bottom1_left text-end">
+        <p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design by <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a></p>
+	  </div>
+	 </div>
+   </div>
+   </div>
+  </div>
+</section>
+
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/theme.min.js"></script>
+
+</body>
+</html>
