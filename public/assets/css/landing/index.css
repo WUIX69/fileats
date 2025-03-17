@@ -1,3 +1,9 @@
+/*####################### CUSTOMIZED (GLOBAL) #######################*/
+ul.recipies-ul-fmt li span img {
+    height: 67px;
+    width: 100px;
+}
+
 /*********************center****************/
 .carousel-caption {
     bottom: 210px;
@@ -40,16 +46,16 @@
 }
 /*********************recipe_end****************/
 
-/*********************join****************/
-#join {
-    background-image: url(../../img/8.jpg);
-    background-position: center center;
+/*####################### SECTION (JOIN) #######################*/
+section#join {
+    background-image: url(../../img/contents/others/chefs.jpg);
+    background-position: center;
     background-size: cover;
 }
-.join_1_inner {
+section#join .join_1_inner {
     width: 40%;
 }
-/*********************join_end****************/
+/*####################### SECTION (JOIN) #######################*/
 
 /*********************trend****************/
 .trend_1_left2_inner {
@@ -84,6 +90,11 @@ section#news .news_1 .col {
 
 section#news .news_1 .col .news_1_left {
     padding-bottom: 4rem;
+}
+
+section#news .news_1 .col .news_1_left img {
+    height: 203px;
+    width: 306px;
 }
 
 section#news .news_1 .col .news_1_left span:has(a.button) {
