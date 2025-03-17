@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Donegal+One&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Donegal+One&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
 
 :root {
@@ -12,8 +13,25 @@
     --green: #6ebe3b;
 }
 
+* {
+    box-sizing: border-box !important;
+    text-decoration: none !important;
+    list-style: none !important;
+
+    outline: 0;
+    border: 0;
+}
+
+*:not(.icon) {
+    font-family: "Poppins", sans-serif;
+}
+
 body {
-    font-family: "Donegal One", serif;
+    /* font-family: "Donegal One", serif; */
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 ul {
@@ -40,6 +58,9 @@ a:hover {
 a:focus {
     text-decoration: none;
     color: var(--green);
+}
+a.button {
+    border-radius: 0.3rem;
 }
 
 .link:hover {
@@ -211,7 +232,7 @@ header.site-header .nav_hide:after {
 
 header.site-header .navbar-expand-lg .navbar-nav .nav-link {
     color: var(--bs-black) !important;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 header.site-header .navbar-expand-lg .navbar-nav .button {
@@ -414,7 +435,7 @@ header.site-header .navbar .navbar-nav .nav-item .nav-link:focus-visible {
 
 header.site-header .navbar .navbar-nav .nav-item .nav-link.active {
     color: var(--green) !important;
-    font-weight: 800;
+    font-weight: 400;
 }
 
 header.site-header .navbar .navbar-nav .nav-item:hover .nav-link {
@@ -485,10 +506,66 @@ header.site-header .drop_1 a:focus {
 header.site-header .navbar-expand-lg .navbar-nav .button:focus {
     color: var(--green) !important;
 }
+
+header.site-header .navbar-expand-lg .navbar-nav .submit-recipe-btn.nav-link {
+    font-size: 0.95rem !important;
+    padding: 10px 35px !important;
+}
 /*####################### SITE HEADER END #######################*/
 
-/*********************common****************/
+/*####################### SITE FOOTER #######################*/
+footer.site-footer {
+    background-image: linear-gradient(
+            315deg,
+            rgba(45, 52, 54, 0.7) 0%,
+            rgba(0, 0, 0, 0.8) 74%
+        ),
+        url(../img/contents/footer.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 
+    position: relative;
+}
+
+footer.site-footer p,
+footer.site-footer li span b a,
+footer.site-footer span:has(:not(i)),
+footer.site-footer span.fw-bold {
+    color: #ffffff !important;
+}
+
+footer.site-footer li span b,
+footer.site-footer span.fw-bold {
+    font-weight: 500 !important;
+}
+
+footer.site-footer span.font_14,
+footer.site-footer span.mt-1.font_13 {
+    color: #cccccc !important;
+}
+
+footer.site-footer .footer_2 {
+    border-top: 1px solid var(--border_dark);
+}
+
+footer.site-footer .footer_2 .border-bottom {
+    border-bottom: 1px solid var(--border_dark) !important;
+}
+
+footer.site-footer .social_brands a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+
+footer.site-footer .footer_bottom1 {
+    border-top: 1px solid var(--border_dark);
+}
+/*####################### SITE FOOTER END #######################*/
+
+/*********************common****************/
 .form-control:focus {
     box-shadow: none;
     border-color: var(--border_light);
@@ -547,35 +624,7 @@ header.site-header .navbar-expand-lg .navbar-nav .button:focus {
     color: var(--bs-white);
     border-color: var(--green) !important;
 }
-
 /*********************common_end****************/
-
-/*####################### SITE FOOTER #######################*/
-footer.site-footer {
-    background-image: url(../img/14.jpg);
-    background-position: center center;
-    background-size: cover;
-}
-
-footer.site-footer .footer_2 {
-    border-top: 1px solid var(--border_dark);
-}
-
-footer.site-footer .footer_2 .border-bottom {
-    border-bottom: 1px solid var(--border_dark) !important;
-}
-
-footer.site-footer .social_brands a {
-    width: 35px;
-    height: 35px;
-    line-height: 35px;
-    font-size: 14px;
-}
-
-footer.site-footer .footer_bottom1 {
-    border-top: 1px solid var(--border_dark);
-}
-/*####################### SITE FOOTER END #######################*/
 
 /*####################### RESPONSIVE ########################*/
 @media screen and (max-width: 767px) {

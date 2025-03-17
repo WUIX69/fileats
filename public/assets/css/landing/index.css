@@ -1,11 +1,3 @@
-/*
-Template Name: Cooking
-File: Layout CSS
-Author: TemplatesOnWeb
-Author URI: https://www.templateonweb.com/
-Licence: <a href="https://www.templateonweb.com/license">Website Template Licence</a>
-*/
-
 /*********************center****************/
 .carousel-caption {
     bottom: 210px;
@@ -84,6 +76,21 @@ Licence: <a href="https://www.templateonweb.com/license">Website Template Licenc
     color: var(--bs-white);
 }
 /*********************trend_end****************/
+
+/*####################### SECTION (NEWS) #######################*/
+section#news .news_1 .col {
+    position: relative;
+}
+
+section#news .news_1 .col .news_1_left {
+    padding-bottom: 4rem;
+}
+
+section#news .news_1 .col .news_1_left span:has(a.button) {
+    position: absolute;
+    bottom: 0.8rem;
+}
+/*####################### SECTION (NEWS) END  #######################*/
 
 @media screen and (max-width: 767px) {
     .carousel-caption {
