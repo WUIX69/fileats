@@ -1,11 +1,5 @@
-/*####################### CUSTOMIZED (GLOBAL) #######################*/
-ul.recipies-ul-fmt li span img {
-    height: 67px;
-    width: 100px;
-}
-
-/*********************center****************/
-.carousel-caption {
+/*####################### SECTION (CENTER Carousel) #######################*/
+section#center .carousel-caption {
     bottom: 210px;
     left: 0;
     width: 30%;
@@ -13,38 +7,38 @@ ul.recipies-ul-fmt li span img {
     left: 30%;
     padding: 15px;
 }
-.carousel-caption1 {
+section#center .carousel-caption1 {
     left: 61%;
 }
-.carousel-caption2 {
+section#center .carousel-caption2 {
     left: 9%;
 }
-.center_home .carousel-indicators {
+section#center .carousel-indicators {
     bottom: 20px;
 }
-/*********************center_end****************/
+/*####################### SECTION (CENTER Carousel) END #######################*/
 
-/*********************recipe****************/
-.recipe_2_right:hover {
+/*####################### SECTION (RECIPE) #######################*/
+section#recipe .recipe_2_right:hover {
     background: var(--green) !important;
     color: var(--bs-white) !important;
     transition: 0.3s;
 }
-.recipe_2_right a:hover {
+section#recipe .recipe_2_right a:hover {
     color: var(--bs-dark) !important;
     transition: 0.3s;
 }
-.recipe_2_right:hover .line {
+section#recipe .recipe_2_right:hover .line {
     background: var(--bs-white) !important;
     transition: 0.3s;
 }
-.recipe_2_right {
-    min-height: 285px;
+section#recipe .recipe_2_right {
+    min-height: 330px;
 }
-.recipe_2_left img {
-    min-height: 285px;
+section#recipe .recipe_2_left img {
+    min-height: 330px;
 }
-/*********************recipe_end****************/
+/*####################### SECTION (RECIPE) END #######################*/
 
 /*####################### SECTION (JOIN) #######################*/
 section#join {
@@ -57,31 +51,11 @@ section#join .join_1_inner {
 }
 /*####################### SECTION (JOIN) #######################*/
 
-/*********************trend****************/
-.trend_1_left2_inner {
+/*####################### SECTION (TREND) #######################*/
+section#trend .trend_1_left2_inner {
     width: 40%;
 }
-
-.nav-tabs .nav-link {
-    border-radius: 0;
-    border: none;
-    border-bottom: 3px solid transparent;
-    padding: 10px 20px;
-    background: var(--bs-dark);
-    color: var(--bs-white);
-}
-.nav-tabs .nav-link:hover {
-    transition: 0.3s;
-    border-bottom: 3px solid var(--bs-dark);
-    background: var(--green);
-    color: var(--bs-white);
-}
-.nav-tabs .nav-link.active {
-    border-bottom: 3px solid var(--bs-dark);
-    background: var(--green);
-    color: var(--bs-white);
-}
-/*********************trend_end****************/
+/*####################### SECTION (TREND) END #######################*/
 
 /*####################### SECTION (NEWS) #######################*/
 section#news .news_1 .col {
@@ -103,11 +77,12 @@ section#news .news_1 .col .news_1_left span:has(a.button) {
 }
 /*####################### SECTION (NEWS) END  #######################*/
 
+/*####################### MEDIA (RESPONSIVE) #######################*/
 @media screen and (max-width: 767px) {
     .carousel-caption {
         position: static !important;
-        width: 100%;
-        margin-bottom: 20px;
+        width: 100% !important;
+        /* margin-bottom: 20px !important; */
     }
     .center_home .carousel-indicators {
         bottom: -30px;
@@ -119,14 +94,14 @@ section#news .news_1 .col .news_1_left span:has(a.button) {
         min-height: auto;
     }
     .recipe_2_right {
-        min-height: auto;
+        min-height: auto !important;
     }
     .spec_2i {
         margin-top: 8px;
         margin-bottom: 8px;
     }
     .join_1_inner {
-        width: 100%;
+        width: 100% !important;
     }
     .choose_1r {
         margin-top: 15px;
@@ -142,7 +117,7 @@ section#news .news_1 .col .news_1_left span:has(a.button) {
         position: static !important;
     }
     .trend_1_left2_inner {
-        width: 100%;
+        width: 100% !important;
     }
     .nav-tabs .nav-link {
         margin-top: 3px;
