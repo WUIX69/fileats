@@ -82,7 +82,7 @@ section#recipe #profile2 .recipe_1_left2_inner_left1 img {
 }
 
 section#recipe .recipe_1_left2_inner_right {
-    min-height: 277px;
+    min-height: 320px;
 }
 
 section#recipe .recipe_dt4_left img {
@@ -90,7 +90,7 @@ section#recipe .recipe_dt4_left img {
 }
 
 section#recipe .recipe_dt4_right {
-    min-height: 275px;
+    min-height: 320px;
 }
 
 /*####################### SECTION (RECIPE) END #######################*/
@@ -136,7 +136,7 @@ section#recipe .recipe_dt4_right {
         display: block !important;
     }
     .recipe_dt1 .form-select {
-        width: 100%;
+        width: 100% !important;
     }
     .recipe_dt12 .border-end {
         border-right: none !important;

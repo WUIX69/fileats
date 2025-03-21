@@ -272,6 +272,33 @@ footer.site-footer img {
     border-radius: 0.25rem;
 }
 
+/*####################### Styles DRY #######################*/
+section#center,
+section#join {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+section#center::after,
+section#join::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+section#center .container-xl,
+section#join .container-xl {
+    position: relative;
+    z-index: 1;
+}
+/*####################### Styles DRY END #######################*/
+
 /*####################### SITE HEADER #######################*/
 header.site-header {
     margin: 0;
@@ -575,6 +602,31 @@ header.site-header .navbar-expand-lg .navbar-nav .submit-recipe-btn.nav-link {
 }
 /*####################### SITE HEADER END #######################*/
 
+/*####################### SECTION (Center) #######################*/
+section#center {
+    background-image: url(../img/contents/heroes/blog.jpg);
+    height: 73vh;
+}
+
+section#center li {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+section#center a {
+    color: var(--bs-white);
+}
+/*####################### SECTION (Center) END #######################*/
+
+/*####################### SECTION (JOIN) #######################*/
+section#join {
+    background-image: url(../img/contents/reserves/1.jpg);
+    background-attachment: fixed;
+}
+
+section#join .join_1_inner {
+    width: 40%;
+}
+/*####################### SECTION (JOIN) #######################*/
+
 /*####################### SITE FOOTER #######################*/
 footer.site-footer {
     background-image: linear-gradient(
@@ -771,6 +823,10 @@ footer.site-footer .footer_bottom1 {
 
     .center_sm {
         text-align: center !important;
+    }
+
+    section#join .join_1_inner {
+        width: 100% !important;
     }
 
     /*####################### SITE FOOTER #######################*/

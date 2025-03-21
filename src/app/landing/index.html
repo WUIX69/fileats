@@ -9,6 +9,16 @@
 	<link href="../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../../public/assets/css/global.css" rel="stylesheet">
 	<link href="../../../public/assets/css/landing/index.css" rel="stylesheet">
+	<style>
+		section#center {
+			background-image: none;
+			height: 100%;
+		}
+
+		section#center::after {
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
@@ -127,7 +137,7 @@
 		</header>
 
 		<main class="site-main">
-			<section id="center" class="center_home img-nr">
+			<section id="center" class="center_home img-nr carousel-int">
 				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 					<div class="carousel-indicators">
 						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"

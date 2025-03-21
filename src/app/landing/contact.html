@@ -9,6 +9,15 @@
 	<link href="../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../../public/assets/css/global.css" rel="stylesheet">
 	<link href="../../../public/assets/css/landing/team.css" rel="stylesheet">
+	<style>
+		section#center {
+			background-image: url(../../../public/assets/img/contents/heroes/contact.jpg);
+		}
+
+		section#join {
+			background-image: url(../../../public/assets/img/contents/reserves/2.jpg);
+		}
+	</style>
 </head>
 
 <body>
@@ -18,7 +27,7 @@
 			<nav class="navbar navbar-expand-lg navbar-light w-100 pb-2 border-bottom">
 				<div class="container-xl">
 					<a class="d-flex" href="index.html">
-						<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span> <span
+						<b class="fs-2 d-block logo text-center"> <span class="family_1">Fil Eats</span> <span
 								class="d-block text-uppercase font_13">Cooking Recipes</span>
 							<span class="d-block font_12 col_green mt-1">
 								<i class="bi bi-star-fill"></i>
@@ -34,8 +43,8 @@
 					<div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
 						<div class="offcanvas-header shadow">
 							<a class="d-flex" href="index.html">
-								<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span> <span
-										class="d-block text-uppercase font_13">Cooking Recipes</span>
+								<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span>
+									<span class="d-block text-uppercase font_13">Cooking Recipes</span>
 									<span class="d-block font_12 col_green mt-1">
 										<i class="bi bi-star-fill"></i>
 										<i class="bi bi-star-fill"></i>
@@ -45,19 +54,17 @@
 							</a>
 							<img src="../../../public/assets/img/icons-svg/x.svg" width="40" height="40" class="ms-auto"
 								data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
-
 						</div>
 						<div class="offcanvas-body pt-0 align-items-center">
 							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
 								<li class="nav-item">
-									<a class="nav-link dropdown-toggle  fs-4 mt-1" href="index.html"
-										title="Visit home page">
+									<a class="nav-link fs-4 mt-1" href="index.html" title="Visit home page">
 										<i class="bi bi-house"></i>
 									</a>
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link dropdown-toggle" href="about.html" title="Visit home page">
+									<a class="nav-link" href="about.html" title="Visit home page">
 										About Us
 									</a>
 								</li>
@@ -91,7 +98,7 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link dropdown-toggle" href="team.html" title="Visit home page">
+									<a class="nav-link" href="team.html" title="Visit home page">
 										Team
 									</a>
 								</li>
@@ -109,16 +116,15 @@
 								</li>
 
 								<li class="nav-item">
-									<a class="nav-link dropdown-toggle active" href="contact.html"
-										title="Visit home page">
+									<a class="nav-link active" href="contact.html" title="Visit home page">
 										Contact Us
 									</a>
 								</li>
 							</ul>
 							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
 								<li class="nav-item">
-									<a class="nav-link dropdown-toggle button" href="login.html"
-										title="Visit home page">
+									<a class="nav-link submit-recipe-btn button" href="../auth/index.html"
+										title="Submit Recipe">
 										Submit Recipe
 									</a>
 								</li>
@@ -144,6 +150,7 @@
 					</div>
 				</div>
 			</section>
+
 			<section id="contact" class="pt-5 pb-5">
 				<div class="container-xl">
 					<div class="p-4 shadow">
@@ -297,16 +304,38 @@
 					</div>
 				</div>
 			</section>
+
+			<section id="join" class="pt-5 pb-5">
+				<div class="container-xl">
+					<div class="row join_1">
+						<div class="col-md-12 d-flex justify-content-end align-items-end">
+							<div class="join_1_inner bg-white p-3 box">
+								<div class="join_1_inner1 border_light p-5 px-4 text-center box">
+									<b class="d-block fs-3 text-uppercase text-black">WE LOVE OUR CHEFS JOIN US NOW</b>
+									<hr class="line mx-auto">
+									<span class="col_green fs-2 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+									<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit
+										Ultricies
+										interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+									<span class="d-block mt-4 text-center"><a class="button" href="#">Our
+											Chefs</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer class="site-footer">
-			<div class="footer_m pt-5 pb-5 bg_back_dark">
+			<div class="footer_m pt-5 pb-5">
 				<div class="container-xl">
 					<div class="row footer_1">
 						<div class="col-md-3">
 							<div class="footer_1_left">
-								<b class="fs-2 d-block logo text-center text-white"> <span class="family_1">Tasty
-										Food</span> <span class="d-block text-uppercase font_13">Cooking Recipes</span>
+								<b class="fs-2 d-block logo text-center text-white"> <span class="family_1">FIL
+										EATS</span> <span class="d-block text-uppercase font_13">Cooking
+										Recipes</span>
 									<span class="d-block font_12 col_green mt-1">
 										<i class="bi bi-star-fill"></i>
 										<i class="bi bi-star-fill"></i>
@@ -319,7 +348,8 @@
 							<div class="footer_1_right">
 								<p class="mb-0 mt-3 text-white-50">Lorem ipsum dolor sit amet, consetetur sadipscing
 									elitr,
-									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, with
+									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+									with
 									an
 									extra ordinary design and quality development features in low</p>
 							</div>
@@ -330,12 +360,13 @@
 							<div class="footer_2_left">
 								<b class="text-white d-block fs-5">Recent Recipes</b>
 								<hr class="line">
-								<ul class="mb-0">
+								<ul class="mb-0 recipes-downward-fmt">
 									<li class="d-flex border-bottom  pb-3 mb-3">
 										<span><a href="#"><img width="100" alt="abc"
-													src="../../../public/assets/img/9.jpg"></a></span>
+													src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
 										<span class="flex-column ms-3">
-											<b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis Sem
+											<b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis
+													Sem
 													Nibh
 													Imperdiet</a></b>
 											<span class="mt-1 font_13 d-block text-white-50">Jan 16, 2016</span>
@@ -343,7 +374,7 @@
 									</li>
 									<li class="d-flex border-bottom  pb-3 mb-3">
 										<span><a href="#"><img width="100" alt="abc"
-													src="../../../public/assets/img/10.jpg"></a></span>
+													src="../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"></a></span>
 										<span class="flex-column ms-3">
 											<b class="d-block font_14"><a class="text-white-50" href="#">Ligula in
 													libero
@@ -353,7 +384,7 @@
 									</li>
 									<li class="d-flex">
 										<span><a href="#"><img width="100" alt="abc"
-													src="../../../public/assets/img/11.jpg"></a></span>
+													src="../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
 										<span class="flex-column ms-3">
 											<b class="d-block font_14"><a class="text-white-50" href="#">Consectetur
 													Elit
@@ -370,7 +401,8 @@
 								<b class="text-white d-block fs-5">Contact Us</b>
 								<hr class="line">
 								<span class="fw-bold text-white-50 d-block mb-2">Address:</span>
-								<span class="text-white-50  d-block font_14 ps-2">Something Street lorem porta quis sem
+								<span class="text-white-50  d-block font_14 ps-2">Something Street lorem porta quis
+									sem
 									eget
 									New York 2003 SU</span>
 								<span class="fw-bold text-white-50 mt-3 d-block mb-2">Open hours:</span>
@@ -408,18 +440,21 @@
 								<ul class="font_13 mb-0">
 									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Home</a></li>
 									<li class="d-inline-block mx-2 text-muted">|</li>
-									<li class="d-inline-block"><a class="text-white-50 link" href="#"> About Us</a></li>
+									<li class="d-inline-block"><a class="text-white-50 link" href="#"> About Us</a>
+									</li>
 									<li class="d-inline-block mx-2 text-muted">|</li>
 									<li class="d-inline-block"><a class="text-white-50 link" href="#"> News</a></li>
 									<li class="d-inline-block mx-2 text-muted">|</li>
-									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Contact Us</a>
+									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Contact
+											Us</a>
 									</li>
 								</ul>
 							</div>
 						</div>
 						<div class="col-md-8">
 							<div class="footer_bottom1_left text-end">
-								<p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design by
+								<p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design
+									by
 									<a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a>
 								</p>
 							</div>

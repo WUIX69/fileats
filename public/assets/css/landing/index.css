@@ -40,17 +40,6 @@ section#recipe .recipe_2_left img {
 }
 /*####################### SECTION (RECIPE) END #######################*/
 
-/*####################### SECTION (JOIN) #######################*/
-section#join {
-    background-image: url(../../img/contents/others/chefs.jpg);
-    background-position: center;
-    background-size: cover;
-}
-section#join .join_1_inner {
-    width: 40%;
-}
-/*####################### SECTION (JOIN) #######################*/
-
 /*####################### SECTION (TREND) #######################*/
 section#trend .trend_1_left2_inner {
     width: 40%;
@@ -79,129 +68,123 @@ section#news .news_1 .col .news_1_left span:has(a.button) {
 
 /*####################### MEDIA (RESPONSIVE) #######################*/
 @media screen and (max-width: 767px) {
-    .carousel-caption {
+    section#center .carousel-caption {
         position: static !important;
         width: 100% !important;
         /* margin-bottom: 20px !important; */
     }
-    .center_home .carousel-indicators {
+    section#center .center_home .carousel-indicators {
         bottom: -30px;
     }
-    .center_home {
+    section#center.center_home {
         padding-bottom: 40px;
     }
-    .recipe_2_left img {
+
+    section#recipe .recipe_2_left img {
         min-height: auto;
     }
-    .recipe_2_right {
+    section#recipe .recipe_2_right {
         min-height: auto !important;
     }
-    .spec_2i {
+
+    section#spec .spec_2i {
         margin-top: 8px;
         margin-bottom: 8px;
     }
-    .join_1_inner {
-        width: 100% !important;
-    }
-    .choose_1r {
+
+    section#choose .choose_1r {
         margin-top: 15px;
     }
-    .choose_1rir {
+    section#choose .choose_1rir {
         margin-top: 15px;
     }
-    .news_1_left {
+
+    section#news .news_1_left {
         margin-top: 8px;
         margin-bottom: 8px;
     }
-    .trend_1_left2 {
+
+    section#trend .trend_1_left2 {
         position: static !important;
     }
-    .trend_1_left2_inner {
+    section#trend .trend_1_left2_inner {
         width: 100% !important;
-    }
-    .nav-tabs .nav-link {
-        margin-top: 3px;
-        margin-bottom: 3px;
     }
 }
 
 @media (min-width: 576px) and (max-width: 767px) {
-    .recipe_2 {
+    section#recipe .recipe_2 {
         background: white;
         padding: 10px;
     }
-    .recipe_2_right {
+    section#recipe .recipe_2_right {
         margin-top: 8px;
         margin-bottom: 8px;
     }
-    .recipe_2_left {
+    section#recipe .recipe_2_left {
         margin-top: 8px;
         margin-bottom: 8px;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-    .center_home img {
+    section#center .center_home img {
         min-height: 600px;
     }
-    .carousel-caption {
+    section#center .carousel-caption {
         bottom: 100px;
         width: 35%;
     }
-    .carousel-caption .fs-3 {
+    section#center .carousel-caption .fs-3 {
         font-size: 20px !important;
     }
-    .carousel-caption1 {
+    section#center .carousel-caption1 {
         left: 56%;
     }
-    .recipe_2_right b {
+
+    section#recipe .recipe_2_right b {
         font-size: 14px;
     }
-    .recipe_2_right p {
+    section#recipe .recipe_2_right p {
         font-size: 13px;
     }
-    .choose_1ril .font_60 {
+
+    section#choose .choose_1ril .font_60 {
         font-size: 40px;
     }
-    .choose_1r h1 {
+    section#choose .choose_1r h1 {
         font-size: 30px;
     }
-    .trend_1_left2 {
+
+    section#trend .trend_1_left2 {
         position: static !important;
     }
-    .trend_1_left2_inner {
+    section#trend .trend_1_left2_inner {
         width: 100%;
-    }
-    .nav-tabs .nav-link {
-        margin-top: 3px;
-        margin-bottom: 3px;
     }
 }
 
 @media (min-width: 992px) and (max-width: 1200px) {
-    .carousel-caption {
+    section#center .carousel-caption {
         bottom: 70px;
     }
-    .trend_1_left2_inner {
+    section#trend .trend_1_left2_inner {
         width: 70%;
-    }
-    .nav-tabs .nav-link {
-        margin-top: 3px;
-        margin-bottom: 3px;
     }
 }
 
 @media (min-width: 1201px) and (max-width: 1300px) {
 }
+
 @media screen and (min-width: 1400px) {
-    .recipe_2_right {
-        min-height: 330px;
-    }
-    .recipe_2_left img {
-        min-height: 330px;
+    section#center .carousel-caption {
+        bottom: 260px;
     }
 
-    .carousel-caption {
-        bottom: 260px;
+    section#recipe .recipe_2_right {
+        min-height: 330px;
+    }
+    section#recipe .recipe_2_left img {
+        min-height: 330px;
     }
 }
