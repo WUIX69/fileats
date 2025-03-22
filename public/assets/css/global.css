@@ -600,6 +600,14 @@ header.site-header .navbar-expand-lg .navbar-nav .submit-recipe-btn.nav-link {
     font-size: 0.95rem !important;
     padding: 10px 35px !important;
 }
+
+header.site-header .user-greeting {
+    font-size: 0.8rem;
+}
+
+header.site-header .user-greeting .name {
+    font-weight: 600;
+}
 /*####################### SITE HEADER END #######################*/
 
 /*####################### SECTION (Center) #######################*/
@@ -815,6 +823,17 @@ footer.site-footer .footer_bottom1 {
         padding-top: 0 !important;
         padding-bottom: 0 !important;
     }
+
+    header.site-header
+        .navbar
+        .navbar-nav.right-end
+        .dropdown
+        .dropdown-toggle
+        img {
+        float: right !important;
+        position: relative;
+        top: -2.3rem;
+    }
     /*####################### SITE HEADER END #######################*/
 
     .img-fluid {
@@ -1006,6 +1025,12 @@ footer.site-footer .footer_bottom1 {
         margin-top: 28px;
         border: 1px solid var(--border_light);
     }
+
+    header.site-header .navbar .navbar-nav.right-end .dropdown {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     /*####################### SITE HEADER END #######################*/
 }
 
@@ -1037,8 +1062,20 @@ footer.site-footer .footer_bottom1 {
         left: 51%;
     }
 
-    header.site-header .navbar .navbar-nav .dropdown > .dropdown-menu {
+    header.site-header
+        .navbar
+        .navbar-nav:not(.right-end)
+        .dropdown
+        > .dropdown-menu {
         left: 90%;
+    }
+
+    header.site-header
+        .navbar
+        .navbar-nav.right-end
+        .dropdown
+        > .dropdown-menu {
+        left: 70%;
     }
     /*####################### SITE HEADER END #######################*/
 }

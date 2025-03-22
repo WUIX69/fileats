@@ -2,729 +2,826 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="../../../public/vendor/bootstrap/dist/css/bootstrap-grid.min.css" />
-    <link rel="stylesheet" href="../../../public/vendor/bootstrap/dist/css/bootstrap-utilities.min.css" />
-    <link rel="stylesheet" href="../../../public/vendor/bootstrap/dist/css/bootstrap-reboot.min.css" />
-    <link rel="stylesheet" href="../../../public/vendor/fomantic-ui/dist/semantic.min.css" />
-    <link rel="stylesheet" href="../../../public/assets/css/global.css" />
-    <link rel="stylesheet" href="../../../public/assets/css/spinner.css" />
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Cooking</title>
+	<link href="../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="../../../public/assets/css/global.css" rel="stylesheet">
+	<link href="../../../public/assets/css/landing/index.css" rel="stylesheet">
+	<style>
+		section#center {
+			background-image: none;
+			height: 100%;
+		}
+
+		section#center::after {
+			display: none;
+		}
+	</style>
 </head>
 
 <body>
 
-    <div class="window-spinner-overlay"></div>
-    <div class="la-square-jelly-box window-spinner la-2x">
-        <div></div>
-        <div></div>
-    </div>
+	<div class="site-cont">
+		<header class="site-header">
+			<nav class="navbar navbar-expand-lg navbar-light w-100 pb-2 border-bottom">
+				<div class="container-xl">
+					<a class="d-flex" href="index.html">
+						<b class="fs-2 d-block logo text-center"> <span class="family_1">Fil Eats</span> <span
+								class="d-block text-uppercase font_13">Cooking Recipes</span>
+							<span class="d-block font_12 col_green mt-1">
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+								<i class="bi bi-star-fill"></i>
+							</span>
+						</b>
+					</a>
+					<button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
+						<img src="../../../public/assets/img/icons-svg/list.svg" width="40" height="40"
+							alt="Open TemplateOnweb website menu" />
+					</button>
+					<div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+						<div class="offcanvas-header shadow">
+							<a class="d-flex" href="index.html">
+								<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span>
+									<span class="d-block text-uppercase font_13">Cooking Recipes</span>
+									<span class="d-block font_12 col_green mt-1">
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+									</span>
+								</b>
+							</a>
+							<img src="../../../public/assets/img/icons-svg/x.svg" width="40" height="40" class="ms-auto"
+								data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
+						</div>
+						<div class="offcanvas-body pt-0 align-items-center">
+							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
+								<li class="nav-item">
+									<a class="nav-link active" href="index.html" title="Visit home page">
+										Dashboard
+									</a>
+								</li>
+								<li class="nav-item dropdown drop_border">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Find Recipes<img src="../../../public/assets/img/icons-svg/chevron-down.svg"
+											width="15" height="15" alt="Submenu open/close icon">
+									</a>
+									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="recipe/index.html">Discover Recipes</a></li>
+										<li><a class="dropdown-item border-0" href="recipe/single-view.html"> Discover
+												Chefs</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="bookmarks.html" title="Visit Bookmarked recipes">
+										Bookmarks
+									</a>
+								</li>
+								<li class="nav-item dropdown drop_border">
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false">
+										Manage Recipes<img src="../../../public/assets/img/icons-svg/chevron-down.svg"
+											width="15" height="15" alt="Submenu open/close icon">
+									</a>
+									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="blog/index.html"> Submit a Recipe</a></li>
+										<li><a class="dropdown-item border-0" href="blog/single-view.html"> My
+												Recipes</a>
+										</li>
+									</ul>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" href="settings.html" title="Visit Settings">
+										Settings
+									</a>
+								</li>
+							</ul>
+							<ul class="navbar-nav align-items-lg-center ms-auto mt-2 gap-2 right-end">
+								<li class="nav-item">
+									<a class="nav-link fs-4" href="#" title="Notifications">
+										<i class="bi bi-bell"></i>
+									</a>
+								</li>
+								<li class="nav-item dropdown drop_border">
+									<div class="user-greeting d-flex align-items-center">
+										<div class="profile">
+											<img src="../../../public/assets/img/members/jack.jpg"
+												class="rounded-circle me-2" width="37" height="37"
+												alt="User profile picture">
+										</div>
+										<div class="greeting d-flex align-items-start flex-column">
+											<span class="name">Hello, Jack</span>
+											<span class="role">User</span>
+										</div>
+									</div>
+									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+										data-bs-toggle="dropdown" aria-expanded="false"><img
+											src="../../../public/assets/img/icons-svg/chevron-down.svg" width="15"
+											height="15" alt="Submenu open/close icon">
+									</a>
+									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+										<li><a class="dropdown-item" href="blog/index.html"> Dashboard</a></li>
+										<li><a class="dropdown-item" href="blog/single-view.html">
+												Settings</a>
+										</li>
+										<li><a class="dropdown-item border-0" href="blog/single-view.html">
+												Logout</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
 
-    <!-- Archive Old Messages Flyout -->
-    <div class="ui flyout" id="archiveFlyout">
-        <i class="close icon"></i>
-        <div class="ui header">
-            <i class="question icon"></i>
-            <div class="content">Archive Old Messages</div>
-        </div>
-        <div class="scrolling content">
-            <p>
-                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical
-                Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at
-                Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a
-                Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the
-                undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et
-                Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the
-                theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor
-                sit amet..", comes from a line in section 1.10.32.
+		<main class="site-main">
+			<section id="center" class="center_home img-nr carousel-int">
+				<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+					<div class="carousel-indicators">
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+							class="active" aria-label="Slide 1" aria-current="true"></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+							aria-label="Slide 2" class=""></button>
+						<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+							aria-label="Slide 3" class=""></button>
+					</div>
+					<div class="carousel-inner">
+						<div class="carousel-item active">
+							<img src="../../../public/assets/img/contents/menus/breakfast/kalderatang-itlog.jpg"
+								class="d-block img-fluid" alt="...">
+							<div class="carousel-caption d-md-block bg-white carousel-caption1 border_light box">
+								<div class="carousel-caption_inner border_light p-3 shadow box">
+									<b class="d-block fs-3 text-uppercase text-black">Dealing with a diet plan</b>
+									<hr class="line mx-auto">
+									<span class="d-block fs-4 col_green">
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star"></i>
+									</span>
+									<span class="d-block text-black mt-3">(4/5)</span>
+									<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit
+										Ultricies
+										interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+									<span class="d-block mt-4 text-center"><a class="button" href="#">Learn
+											More</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../../../public/assets/img/contents/menus/dinner/salmong-nakatayo.jpg"
+								class="d-block img-fluid" alt="...">
+							<div class="carousel-caption carousel-caption1 d-md-block bg-white border_light box">
+								<div class="carousel-caption_inner border_light p-3 shadow box">
+									<b class="d-block fs-3 text-uppercase text-black">Lorem Amet a porta sit</b>
+									<hr class="line mx-auto">
+									<span class="d-block fs-4 col_green">
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+									</span>
+									<span class="d-block text-black mt-3">(5/5)</span>
+									<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit
+										Ultricies
+										interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+									<span class="d-block mt-4 text-center"><a class="button" href="#">Learn
+											More</a></span>
+								</div>
+							</div>
+						</div>
+						<div class="carousel-item">
+							<img src="../../../public/assets/img/contents/menus/launch/pulutan.jpg"
+								class="d-block img-fluid" alt="...">
+							<div class="carousel-caption carousel-caption2 d-md-block bg-white border_light box">
+								<div class="carousel-caption_inner border_light p-3 shadow box">
+									<b class="d-block fs-3 text-uppercase text-black">Dolor sed augue quis</b>
+									<hr class="line mx-auto">
+									<span class="d-block fs-4 col_green">
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-half"></i>
+									</span>
+									<span class="d-block text-black mt-3">(4.5/5)</span>
+									<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit
+										Ultricies
+										interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+									<span class="d-block mt-4 text-center"><a class="button" href="#">Learn
+											More</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+						data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Next</span>
+					</button>
+				</div>
+			</section>
 
-                The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their
-                exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-            </p>
-        </div>
-        <div class="actions">
-            <div class="ui red cancel button">
-                <i class="remove icon"></i>
-                No
-            </div>
-            <div class="ui green ok button">
-                <i class="checkmark icon"></i>
-                Yes
-            </div>
-        </div>
-    </div>
+			<section id="recipe" class="pt-5 pb-5 bg_light img-nr">
+				<div class="container-xl">
+					<div class="recipe_1 row text-center mb-4">
+						<div class="col-md-12">
+							<b class="d-block fs-3 text-uppercase">HOTTEST RECIPES AT FOOD & TASTE</b>
+							<span class="icon_cup col_green fs-4 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+						</div>
+					</div>
+					<div class="recipe_2 row row-cols-1 row-cols-md-4 row-cols-sm-2">
+						<div class="col p-0">
+							<div class="recipe_2_left">
+								<a href="#"><img src="../../../public/assets/img/contents/menus/dinner/seafood.jpg"
+										class="img-fluid" alt="abc"></a>
+							</div>
+						</div>
+						<div class="col p-0">
+							<div class="recipe_2_right text-center bg-white  py-4 px-3">
+								<b class="d-block"><a href="#">PASTO PIZZA WITH EXTRA TOPPINGS</a></b>
+								<hr class="line mx-auto">
+								<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									ex ea
+									commodo consequat.</p>
+								<b class="d-block font_14"><a href="#">Read More <i
+											class="bi bi-arrow-right ms-1"></i></a></b>
+							</div>
+						</div>
+						<div class="col p-0">
+							<div class="recipe_2_left">
+								<a href="#"><img src="../../../public/assets/img/contents/menus/dinner/inasal.jpg"
+										class="img-fluid" alt="abc"></a>
+							</div>
+						</div>
+						<div class="col p-0">
+							<div class="recipe_2_right text-center bg-white  py-4 px-3">
+								<b class="d-block"><a href="#">HEALTHY FOOD AND BANANAS</a></b>
+								<hr class="line mx-auto">
+								<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									ex ea
+									commodo consequat.</p>
+								<b class="d-block font_14"><a href="#">Read More <i
+											class="bi bi-arrow-right ms-1"></i></a></b>
+							</div>
+						</div>
+					</div>
+					<div class="recipe_2 row row-cols-1 row-cols-md-4 row-cols-sm-2">
+						<div class="col p-0">
+							<div class="recipe_2_right text-center bg-white  py-4 px-3">
+								<b class="d-block"><a href="#">BEST FOOD WITH EXTRA TOPPINGS</a></b>
+								<hr class="line mx-auto">
+								<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									ex ea
+									commodo consequat.</p>
+								<b class="d-block font_14"><a href="#">Read More <i
+											class="bi bi-arrow-right ms-1"></i></a></b>
+							</div>
+						</div>
+						<div class="col p-0">
+							<div class="recipe_2_left">
+								<a href="#"><img
+										src="../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"
+										class="img-fluid" alt="abc"></a>
+							</div>
+						</div>
+						<div class="col p-0">
+							<div class="recipe_2_right text-center bg-white  py-4 px-3">
+								<b class="d-block"><a href="#">EXTRA CHEESY FRENCH HOT DOG</a></b>
+								<hr class="line mx-auto">
+								<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+									ex ea
+									commodo consequat.</p>
+								<b class="d-block font_14"><a href="#">Read More <i
+											class="bi bi-arrow-right ms-1"></i></a></b>
+							</div>
+						</div>
+						<div class="col p-0">
+							<div class="recipe_2_left">
+								<a href="#"><img
+										src="../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"
+										class="img-fluid" alt="abc"></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <!-- Reminder Modal -->
-    <div class="ui tiny modal" id="reminderModal">
-        <div class="header">Add Time Entry</div>
-        <div class="content">
-            <form class="ui form" id="reminderForm">
-                <div class="field">
-                    <label for="employee">Employee</label>
-                    <div class="ui fluid floating dropdown">
-                        <input type="hidden" name="employee" />
-                        <div class="default text">Select employee</div>
-                        <i class="dropdown icon"></i>
-                        <div class="menu">
-                            <div class="ui icon search input">
-                                <i class="search icon"></i>
-                                <input type="text" name="employee_search" placeholder="Search employee...">
-                            </div>
-                            <div class="divider"></div>
-                            <div class="header">
-                                <i class="tags icon"></i>
-                                Tag Label
-                            </div>
-                            <div class="scrolling menu">
-                                <div class="item" data-value="1">
-                                    <img class="ui avatar image rounded-circle"
-                                        src="../../../public/assets/img/avatars/jenny.jpg" />
-                                    John Smith
-                                </div>
-                                <div class="item" data-value="2">
-                                    <img class="ui avatar image rounded-circle"
-                                        src="../../../public/assets/img/avatars/elliot.jpg" />
-                                    Sarah Johnson
-                                </div>
-                                <div class="item" data-value="3">
-                                    <img class="ui avatar image rounded-circle"
-                                        src="../../../public/assets/img/avatars/stevie.jpg" />
-                                    Michael Williams
-                                </div>
-                                <div class="item" data-value="4">
-                                    <img class="ui avatar image rounded-circle"
-                                        src="../../../public/assets/img/avatars/veronika.jpg" />
-                                    Emily Brown
-                                </div>
-                                <div class="item" data-value="1">
-                                    <img class="ui avatar image rounded-circle"
-                                        src="../../../public/assets/img/avatars/jenny.jpg" />
-                                    John Smith
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="fields">
-                    <div class="eight wide field">
-                        <label for="date">Date</label>
-                        <input type="date" name="date" placeholder="Select Date" />
-                    </div>
-                    <div class="four wide field">
-                        <label for="timeIn">Time In</label>
-                        <input type="time" name="time_in" id="timeIn" />
-                    </div>
-                    <div class="four wide field">
-                        <label for="timeOut">Time Out</label>
-                        <input type="time" name="time_out" id="timeOut" />
-                    </div>
-                </div>
-                <div class="field">
-                    <label for="memo">Memo</label>
-                    <textarea rows="4" name="memo" placeholder="What this time entry is for..."></textarea>
-                </div>
-                <div class="actions">
-                    <button class="ui cancel button" type="button">Cancel</button>
-                    <button class="ui positive button" type="submit">Save Entry</button>
-                </div>
-            </form>
-        </div>
-    </div>
+			<section id="spec" class="pt-5 pb-5">
+				<div class="container-xl">
+					<div class="recipe_1 row text-center mb-4">
+						<div class="col-md-12">
+							<b class="d-block fs-3 text-uppercase">CATERING FOR EVERY TASTE</b>
+							<span class="icon_cup col_green fs-4 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+						</div>
+					</div>
+					<div class="row spec_2">
+						<div class="col-md-3 col-sm-6">
+							<div class="spec_2i p-4 text-center bg_light box">
+								<span class="font_60 col_green"><i class="bi bi-cup-straw"></i></span>
+								<h5 class="mt-3 fs-6">BANQUET SERVICE</h5>
+								<p class="mt-3 mb-0">Organization and hosting of banquets lorem</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="spec_2i p-4 text-center bg_light box">
+								<span class="font_60 col_green"><i class="bi bi-cup-hot"></i></span>
+								<h5 class="mt-3 fs-6">OFF-SITE CATERING</h5>
+								<p class="mt-3 mb-0">Catering services for events at various locations</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="spec_2i p-4 text-center bg_light box">
+								<span class="font_60 col_green"><i class="bi bi-buildings"></i></span>
+								<h5 class="mt-3 fs-6">OFFICE CATERING</h5>
+								<p class="mt-3 mb-0">Providing meals for company employees</p>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="spec_2i p-4 text-center bg_light box">
+								<span class="font_60 col_green"><i class="bi bi-heart"></i></span>
+								<h5 class="mt-3 fs-6">WEDDING CATERING</h5>
+								<p class="mt-3 mb-0">Organization and catering for weddings</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-    <div class="container-body pusher">
-        <div class="row">
+			<section id="join" class="pt-5 pb-5">
+				<div class="container-xl">
+					<div class="row join_1">
+						<div class="col-md-12">
+							<div class="join_1_inner bg-white p-3 box">
+								<div class="join_1_inner1 border_light p-5 px-4 text-center box">
+									<b class="d-block fs-3 text-uppercase text-black">WE LOVE OUR CHEFS JOIN US NOW</b>
+									<hr class="line mx-auto">
+									<span class="col_green fs-2 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+									<p class="mt-3 text-black">Lorem ipsum dolor sit amet, constetur adicng elit
+										Ultricies
+										interdum volutpat morbi nam ornare neque elit leo, diam. </p>
+									<span class="d-block mt-4 text-center"><a class="button" href="#">Our
+											Chefs</a></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <!-- Sidebar -->
-            <div class="col-auto">
-                <div class="sidebar">
-                    <div class="sidebar-logo">
-                        <img class="rounded-circle" src="../../../public/assets/img/logo.jpg">
-                        <h2>Admin<span class="text-danger">Panel</span></h2>
-                    </div>
-                    <div class="sidebar-menu">
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="index.html">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">dashboard</span>
-                                        <h3>Dashboard</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="users.html">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">person_outline</span>
-                                        <h3>Users</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">history</span>
-                                        <h3>History</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="analytics.html">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">analytics</span>
-                                        <h3>Analytics</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">confirmation_number</span>
-                                        <h3>Tickets</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">receipt_long</span>
-                                        <h3>Sales List</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">report</span>
-                                        <h3>Reports</h3>
-                                    </div>
-                                </a>
-                            </li>
-                            <li class="nav-item">
-                                <div class="nav-link">
-                                    <div class="nav-content">
-                                        <div class="ui accordion">
-                                            <div class="title">
-                                                <span class="material-icons-sharp">settings</span>
-                                                <h3>Settings</h3>
-                                                <i class="dropdown icon"></i>
-                                            </div>
-                                            <div class="content">
-                                                <div class="transition hidden">
-                                                    <ul class="menu-nav navbar-nav">
-                                                        <li class="menu-nav-item">
-                                                            <a class="menu-nav-link" href="settings.html#profile">
-                                                                <div class="menu-nav-content">
-                                                                    <span
-                                                                        class="material-icons-sharp">person_outline</span>
-                                                                    <h3>Profile</h3>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-nav-item">
-                                                            <a class="menu-nav-link" href="settings.html#password">
-                                                                <div class="menu-nav-content">
-                                                                    <span class="material-icons-sharp">password</span>
-                                                                    <h3>Password</h3>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-nav-item">
-                                                            <a class="menu-nav-link" href="settings.html#urls">
-                                                                <div class="menu-nav-content">
-                                                                    <span class="material-icons-sharp">language</span>
-                                                                    <h3>URLs</h3>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                        <li class="menu-nav-item">
-                                                            <a class="menu-nav-link" href="settings.html#deactivate">
-                                                                <div class="menu-nav-content">
-                                                                    <span class="material-icons-sharp">person_off</span>
-                                                                    <h3>Deactivate</h3>
-                                                                </div>
-                                                            </a>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="javascript:void(0);">
-                                    <div class="nav-content">
-                                        <span class="material-icons-sharp">logout</span>
-                                        <h3>Logout</h3>
-                                    </div>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+			<section id="choose" class="pt-5 pb-5 bg_light">
+				<div class="container-xl">
+					<div class="row choose_1">
+						<div class="col-md-6">
+							<div class="choose_1l">
+								<div class="grid clearfix">
+									<figure class="effect-jazz mb-0">
+										<a href="#"><img
+												src="../../../public/assets/img/contents/others/busog-meals.jpg"
+												class="img-fluid" alt="abc"></a>
+									</figure>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="choose_1r">
+								<h6 class="col_green">WHY CHOOSE US</h6>
+								<h1 class="mt-3 mb-3">New London Coffee Founded For Extraordinary Test</h1>
+								<p>Sed ut perspiciatis unde omnis iste natus error voluptate accusantium doloremque
+									laudantium,
+									totam rem aperiam eaque ipsa quae abillo inventore veritatis</p>
+								<div class="choose_1ri row mt-4">
+									<div class="col-md-2 col-sm-2">
+										<div class="choose_1ril">
+											<span class="font_60 col_green lh-1"><i class="bi bi-apple"></i></span>
+										</div>
+									</div>
+									<div class="col-md-10 col-sm-10">
+										<div class="choose_1rir">
+											<h4>Natural Coffee Beans</h4>
+											<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error voluptate
+												accusantium doloremque</p>
+										</div>
+									</div>
+								</div>
+								<div class="choose_1ri row mt-4">
+									<div class="col-md-2 col-sm-2">
+										<div class="choose_1ril">
+											<span class="font_60 col_green lh-1"><i
+													class="bi bi-patch-check-fill"></i></span>
+										</div>
+									</div>
+									<div class="col-md-10 col-sm-10">
+										<div class="choose_1rir">
+											<h4>100% ISO Certification</h4>
+											<p class="mb-0">Sed ut perspiciatis unde omnis iste natus error voluptate
+												accusantium doloremque</p>
+										</div>
+									</div>
+								</div>
+								<h6 class="mb-0 mt-4"><a class="button" href="#"> Explore More <i
+											class="bi bi-arrow-right ms-1 align-middle"></i></a></h6>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-            <!-- Main Content -->
-            <div class="col">
-                <main class="container-main">
-                    <h1>Dashboard</h1>
+			<section id="news" class="pt-5 pb-5">
+				<div class="container-xl">
+					<div class="recipe_1 row text-center mb-4">
+						<div class="col-md-12">
+							<b class="d-block fs-3 text-uppercase">LATEST NEWS</b>
+							<span class="icon_cup col_green fs-4 d-block mt-2"><i class="bi bi-cup-hot"></i></span>
+						</div>
+					</div>
+					<div class="news_1 row row-cols-1 row-cols-md-4 row-cols-sm-2">
+						<div class="col">
+							<div class="news_1_left">
+								<a href="#"><img
+										src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+										class="img-fluid" alt="abc"></a>
+								<b class="mt-3 font_14 d-block"><a href="#">SLIM LINE BETWEEN HEALTH AND
+										UNHEALTHY</a></b>
+								<hr class="line">
+								<span class="font_14"> <i
+										class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>
+									Lorem
+									<i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i>
+									20/02/2024</span>
+								<p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+								<span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="news_1_left">
+								<a href="#"><img
+										src="../../../public/assets/img/contents/menus/breakfast/burger-set.jpg"
+										class="img-fluid" alt="abc"></a>
+								<b class="mt-3 font_14 d-block"><a href="#">PRESENTATION IS AS IMPORTANT AS
+										TASTE</a></b>
+								<hr class="line">
+								<span class="font_14"> <i
+										class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>
+									Ipsum
+									<i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i>
+									22/02/2024</span>
+								<p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+								<span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="news_1_left">
+								<a href="#"><img src="../../../public/assets/img/contents/menus/dinner/inasal.jpg"
+										class="img-fluid" alt="abc"></a>
+								<b class="mt-3 font_14 d-block"><a href="#">SANDWICHES & THEIR BEST ORIGINS</a></b>
+								<hr class="line">
+								<span class="font_14"> <i
+										class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>
+									Dolor
+									<i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i>
+									24/02/2024</span>
+								<p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+								<span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="news_1_left">
+								<a href="#"><img src="../../../public/assets/img/contents/menus/launch/super-steak.jpg"
+										class="img-fluid" alt="abc"></a>
+								<b class="mt-3 font_14 d-block"><a href="#">HEALTHY FOOD IS ACCESSIBLE AND EASY TO
+										MAKE</a></b>
+								<hr class="line">
+								<span class="font_14"> <i
+										class="bi bi-person-fill col_green me-1 fs-6 align-middle"></i>
+									Augue
+									<i class="bi bi-calendar3 col_green me-1 fs-6 align-middle ms-2"></i>
+									27/02/2024</span>
+								<p class="mt-3">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed…</p>
+								<span class="d-block mt-4"><a class="button" href="#">Read More</a></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
 
-                    <!-- Stats Cards -->
-                    <div class="section-container">
-                        <div class="section-wrapper stat-cards">
-                            <div class="row g-4">
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="box stat-card">
-                                        <div class="info">
-                                            <h6 class="text-muted mb-2">
-                                                Total Sales
-                                            </h6>
-                                            <h2>$65,024</h2>
-                                        </div>
-                                        <div class="progress-circle">
-                                            <svg viewBox="0 0 36 36" class="circular-chart">
-                                                <path d="M18 2.0845
-                                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee"
-                                                    stroke-width="3" />
-                                                <path d="M18 2.0845
-                                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#20c997"
-                                                    stroke-width="4.3" stroke-dasharray="81, 100" />
-                                                <text x="18" y="20.35" class="percentage">
-                                                    +81%
-                                                </text>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="box stat-card">
-                                        <div class="info">
-                                            <h6 class="text-muted mb-2">
-                                                Site Visitors
-                                            </h6>
-                                            <h2>1,234</h2>
-                                        </div>
-                                        <div class="progress-circle">
-                                            <svg viewBox="0 0 36 36" class="circular-chart">
-                                                <path d="M18 2.0845
-                                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee"
-                                                    stroke-width="3" />
-                                                <path d="M18 2.0845
-                                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#ff0060"
-                                                    stroke-width="4.3" stroke-dasharray="23, 100" />
-                                                <text x="18" y="20.35" class="percentage">
-                                                    +23%
-                                                </text>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-4 col-sm-4">
-                                    <div class="box stat-card">
-                                        <div class="info">
-                                            <h6 class="text-muted mb-2">
-                                                Searches
-                                            </h6>
-                                            <h2>1,234</h2>
-                                        </div>
-                                        <div class="progress-circle">
-                                            <svg viewBox="0 0 36 36" class="circular-chart">
-                                                <path d="M18 2.0845
-                                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#eee"
-                                                    stroke-width="3" />
-                                                <path d="M18 2.0845
-                                                    a 15.9155 15.9155 0 0 1 0 31.831
-                                                    a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#6c9bcf"
-                                                    stroke-width="4.3" stroke-dasharray="12, 100" />
-                                                <text x="18" y="20.35" class="percentage">
-                                                    +12%
-                                                </text>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+			<section id="trend" class="pt-5 pb-5 bg_light">
+				<div class="container-xl">
+					<div class="row trend_1">
+						<div class="col-md-8">
+							<div class="trend_1_left position-relative">
+								<div class="trend_1_left1">
+									<a href="#"><img src="../../../public/assets/img/contents/others/pasto-pizza.jpg"
+											class="img-fluid" alt="abc"></a>
+								</div>
+								<div class="trend_1_left2 position-absolute top-0 py-3 px-4">
+									<div class="trend_1_left2_inner text-center bg-white p-2 box">
+										<div class="recipe_2_right_inner border_light py-4 px-3 box">
+											<span
+												class="d-inline-block bg_green text-white py-1 px-3 font_14 tag-box">Recipe
+												of
+												the
+												day</span>
+											<b class="d-block mt-3"><a href="#">PASTO PIZZA WITH EXTRA TOPPINGS</a></b>
+											<hr class="line mx-auto">
+											<p> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+												ut
+												aliquip ex ea commodo consequat.</p>
+											<b class="d-block font_14"><a href="#">Read More <i
+														class="bi bi-arrow-right ms-1"></i></a></b>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="trend_1_right bg-white p-3 box">
+								<ul class="nav nav-tabs mb-0  flex-wrap font_13 tab_click border-0 mb-4">
+									<li class="nav-item">
+										<a href="#profile1" data-bs-toggle="tab" aria-expanded="true"
+											class="nav-link active">
+											<span class="d-md-block">RECENT</span>
+										</a>
+									</li>
 
-                    <!-- New Users -->
-                    <div class="section-container">
-                        <h2 class="title">New Users</h2>
-                        <div class="section-wrapper box new-users">
-                            <div class="d-flex flex-wrap justify-content-around">
-                                <div class="user">
-                                    <img src="../../../public/assets/img/profiles/user-1.jpg" class="rounded-circle"
-                                        alt="User avatar" />
-                                    <label class="mt-2 name">John Doe</label>
-                                    <small class="text-muted time-ago">2 mins ago</small>
-                                </div>
-                                <div class="user">
-                                    <img src="../../../public/assets/img/profiles/user-2.jpg" class="rounded-circle"
-                                        alt="User avatar" />
-                                    <label class="mt-2">John Doe</label>
-                                    <small class="text-muted">5 mins ago</small>
-                                </div>
-                                <div class="user">
-                                    <img src="../../../public/assets/img/profiles/user-3.jpg" class="rounded-circle"
-                                        alt="User avatar" />
-                                    <label class="mt-2">John Doe</label>
-                                    <small class="text-muted">15 mins ago</small>
-                                </div>
-                                <div class="user">
-                                    <img src="../../../public/assets/img/profiles/user-4.jpg" class="rounded-circle"
-                                        alt="User avatar" />
-                                    <label class="mt-2">John Doe</label>
-                                    <small class="text-muted">42 mins ago</small>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+									<li class="nav-item">
+										<a href="#profile2" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+											<span class="d-md-block">POPULAR</span>
+										</a>
+									</li>
+									<li class="nav-item">
+										<a href="#profile3" data-bs-toggle="tab" aria-expanded="true" class="nav-link">
+											<span class="d-md-block">RANDOM</span>
+										</a>
+									</li>
 
-                    <!-- Recent Orders -->
-                    <div class="section-container">
-                        <h2 class="title">Recent Orders</h2>
-                        <div class="section-wrapper table-list box">
-                            <div class="table-filters">
-                                <div class="base-filters">
-                                    <div class="ui fluid mini category search">
-                                        <div class="ui icon input">
-                                            <input class="prompt" type="text" placeholder="Search orders..." />
-                                            <i class="search icon"></i>
-                                        </div>
-                                        <div class="results"></div>
-                                    </div>
-                                    <div class="quick-filters">
-                                        <div class="ui mini compact selection floating labeled icon dropdown">
-                                            <input type="hidden" name="status" />
-                                            <i class="signal icon"></i>
-                                            <div class="default text">Status</div>
-                                            <div class="menu">
-                                                <div class="header">
-                                                    <i class="tags icon"></i>
-                                                    Filter by Status
-                                                </div>
-                                                <div class="item" data-value="active">
-                                                    Pending
-                                                </div>
-                                                <div class="item" data-value="inactive">
-                                                    Declined
-                                                </div>
-                                                <div class="item" data-value="pending">
-                                                    Completed
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <button class="ui mini secondary button filter-reset-btn">
-                                            <i class="times icon"></i>
-                                            Reset
-                                        </button>
-                                    </div>
-                                </div>
-                                <button class="ui mini secondary button">
-                                    View All
-                                </button>
-                            </div>
-                            <div class="table-container recent-orders">
-                                <table class="ui fixed single line small center aligned very basic selectable table">
-                                    <thead>
-                                        <tr>
-                                            <th>Course Name</th>
-                                            <th>Course Number</th>
-                                            <th>Payment</th>
-                                            <th>Status</th>
-                                            <th></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody id="recentOrderItems">
-                                        <!-- Table Data -->
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </main>
-            </div>
+								</ul>
+								<div class="tab-content">
+									<!-- Recent -->
+									<div class="tab-pane active" id="profile1">
+										<ul class="mb-0 recipes-downward-fmt">
+											<li class="d-flex border-bottom  pb-3 mb-3">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
+															Imperdiet</a></b>
+													<span class="mt-1 font_14 d-block">Jan 16, 2016</span>
+												</span>
+											</li>
+											<li class="d-flex border-bottom  pb-3 mb-3">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
+															nunc</a></b>
+													<span class="mt-1 font_14 d-block">Jan 18, 2016</span>
+												</span>
+											</li>
+											<li class="d-flex">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
+															Libero</a></b>
+													<span class="mt-1 font_14 d-block">Jan 19, 2016</span>
+												</span>
+											</li>
 
-            <!-- Right Section -->
-            <div class="col-lg-3">
-                <div class="right-section">
-                    <!-- Nav -->
-                    <div class="nav">
-                        <div class="dark-mode-toggle">
-                            <span class="material-icons-sharp light active">
-                                light_mode
-                            </span>
-                            <span class="material-icons-sharp dark">
-                                dark_mode
-                            </span>
-                        </div>
-                        <div class="profile">
-                            <div class="info">
-                                <span>Hey, <b>Jonathan</b></span>
-                                <small class="text-muted">Admin</small>
-                            </div>
-                            <div class="profile-photo">
-                                <img class="rounded-circle" width="37"
-                                    src="../../../public/assets/img/profiles/profile.jpg" />
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End of Nav -->
+										</ul>
+									</div>
+									<!-- Popular -->
+									<div class="tab-pane" id="profile2">
+										<ul class="mb-0 recipes-downward-fmt">
+											<li class="d-flex border-bottom  pb-3 mb-3">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/launch/pulutan.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
+															nunc</a></b>
+													<span class="mt-1 font_14 d-block">Jan 18, 2016</span>
+												</span>
+											</li>
+											<li class="d-flex border-bottom  pb-3 mb-3">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/launch/pulutan.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
+															Imperdiet</a></b>
+													<span class="mt-1 font_14 d-block">Jan 16, 2016</span>
+												</span>
+											</li>
 
-                    <div class="system-info box">
-                        <div class="logo">
-                            <img class="rounded-circle" width="140" src="../../../public/assets/img/logo.jpg" />
-                        </div>
-                        <div class="info">
-                            <h2>Lorem</h2>
-                            <label>Lorem ipsum dolor</label>
-                        </div>
-                    </div>
+											<li class="d-flex">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/dinner/salmong-nakatayo.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
+															Libero</a></b>
+													<span class="mt-1 font_14 d-block">Jan 19, 2016</span>
+												</span>
+											</li>
 
-                    <div class="reminders">
-                        <div class="header">
-                            <h2 class="mt-2">Reminders</h2>
-                            <span class="material-icons-sharp">
-                                notifications_none
-                            </span>
-                        </div>
+										</ul>
 
-                        <div class="notification box-tiny">
-                            <div class="content">
-                                <span class="material-icons-sharp icon">
-                                    volume_up
-                                </span>
-                                <div class="info">
-                                    <h3>Workshop</h3>
-                                    <small class="text_muted">
-                                        08:00 AM - 12:00 PM
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <span class="material-icons-sharp">
-                                    more_vert
-                                </span>
-                            </div>
-                        </div>
+									</div>
+									<!-- Random -->
+									<div class="tab-pane" id="profile3">
 
-                        <div class="notification box-tiny deactive">
-                            <div class="content">
-                                <span class="material-icons-sharp icon">
-                                    edit
-                                </span>
-                                <div class="info">
-                                    <h3>Workshop</h3>
-                                    <small class="text_muted">
-                                        08:00 AM - 12:00 PM
-                                    </small>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <span class="material-icons-sharp">
-                                    more_vert
-                                </span>
-                            </div>
-                        </div>
+										<ul class="mb-0 recipes-downward-fmt">
+											<li class="d-flex border-bottom  pb-3 mb-3">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/breakfast/burger-set.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
+															Libero</a></b>
+													<span class="mt-1 font_14 d-block">Jan 19, 2016</span>
+												</span>
+											</li>
+											<li class="d-flex border-bottom  pb-3 mb-3">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/breakfast/kalderatang-itlog.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
+															Imperdiet</a></b>
+													<span class="mt-1 font_14 d-block">Jan 16, 2016</span>
+												</span>
+											</li>
+											<li class="d-flex">
+												<span><a href="#"><img width="100" alt="abc"
+															src="../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"></a></span>
+												<span class="flex-column ms-3">
+													<b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
+															nunc</a></b>
+													<span class="mt-1 font_14 d-block">Jan 18, 2016</span>
+												</span>
+											</li>
 
-                        <div class="notification box-tiny add-reminder" data-open-modal="#reminderModal">
-                            <span class="material-icons-sharp"> add </span>
-                            <h3>Add Reminder</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
 
-    <!-- Scripts -->
-    <script src="../../../public/lib/jquery/jquery.min.js"></script>
-    <script src="../../../public/lib/jquery/jquery.validate.min.js"></script>
-    <script src="../../../public/lib/jquery/additional-methods.min.js"></script>
-    <script src="../../../public/vendor/fomantic-ui/dist/semantic.min.js"></script>
-    <script src="../../../public/lib/lodash/lodash.min.js"></script>
-    <script src="../../../public/assets/js/spinner.js"></script>
-    <script src="../../../public/assets/js/darkmode.js"></script>
-    <script src="../../../public/assets/js/scripts.js"></script>
-    <script type="text/javascript">
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-        const $reminderModal = $('#reminderModal');
-        const $reminderForm = $reminderModal.find('.ui.form');
+		<footer class="site-footer">
+			<div class="footer_m pt-5 pb-5">
+				<div class="container-xl">
+					<div class="row footer_1">
+						<div class="col-md-3">
+							<div class="footer_1_left">
+								<b class="fs-2 d-block logo text-center text-white"> <span class="family_1">FIL
+										EATS</span> <span class="d-block text-uppercase font_13">Cooking
+										Recipes</span>
+									<span class="d-block font_12 col_green mt-1">
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+										<i class="bi bi-star-fill"></i>
+									</span>
+								</b>
+							</div>
+						</div>
+						<div class="col-md-9">
+							<div class="footer_1_right">
+								<p class="mb-0 mt-3 text-white-50">Lorem ipsum dolor sit amet, consetetur sadipscing
+									elitr,
+									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+									with
+									an
+									extra ordinary design and quality development features in low</p>
+							</div>
+						</div>
+					</div>
+					<div class="row row-cols-1 row-cols-md-3 footer_2 mt-4 pt-4">
+						<div class="col">
+							<div class="footer_2_left">
+								<b class="text-white d-block fs-5">Recent Recipes</b>
+								<hr class="line">
+								<ul class="mb-0 recipes-downward-fmt">
+									<li class="d-flex border-bottom  pb-3 mb-3">
+										<span><a href="#"><img width="100" alt="abc"
+													src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
+										<span class="flex-column ms-3">
+											<b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis
+													Sem
+													Nibh
+													Imperdiet</a></b>
+											<span class="mt-1 font_13 d-block text-white-50">Jan 16, 2016</span>
+										</span>
+									</li>
+									<li class="d-flex border-bottom  pb-3 mb-3">
+										<span><a href="#"><img width="100" alt="abc"
+													src="../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"></a></span>
+										<span class="flex-column ms-3">
+											<b class="d-block font_14"><a class="text-white-50" href="#">Ligula in
+													libero
+													Sed lacinia nunc</a></b>
+											<span class="mt-1 font_13 d-block text-white-50">Jan 18, 2016</span>
+										</span>
+									</li>
+									<li class="d-flex">
+										<span><a href="#"><img width="100" alt="abc"
+													src="../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
+										<span class="flex-column ms-3">
+											<b class="d-block font_14"><a class="text-white-50" href="#">Consectetur
+													Elit
+													Integer Nec Libero</a></b>
+											<span class="mt-1 font_13 d-block text-white-50">Jan 19, 2016</span>
+										</span>
+									</li>
 
-        function getRecentOrders() {
-            // Table Data
-            const orders = [
-                {
-                    courseName: "JavaScript Tutorial",
-                    courseNumber: "85743",
-                    payment: "Due",
-                    status: {
-                        text: "Pending",
-                        color: "#ffb400",
-                    },
-                },
-                {
-                    courseName: "CSS Full Course",
-                    courseNumber: "97245",
-                    payment: "Refunded",
-                    status: {
-                        text: "Declined",
-                        color: "#ff0060",
-                    },
-                },
-                {
-                    courseName: "Python for Beginners",
-                    courseNumber: "34521",
-                    payment: "Paid",
-                    status: {
-                        text: "Completed",
-                        color: "#00ba88",
-                    },
-                },
-                {
-                    courseName: "React Fundamentals",
-                    courseNumber: "65432",
-                    payment: "Due",
-                    status: {
-                        text: "Pending",
-                        color: "#ffb400",
-                    },
-                },
-                {
-                    courseName: "UI/UX Design Course",
-                    courseNumber: "78901",
-                    payment: "Paid",
-                    status: {
-                        text: "Completed",
-                        color: "#00ba88",
-                    },
-                },
-            ];
+								</ul>
+							</div>
+						</div>
+						<div class="col">
+							<div class="footer_1_left">
+								<b class="text-white d-block fs-5">Contact Us</b>
+								<hr class="line">
+								<span class="fw-bold text-white-50 d-block mb-2">Address:</span>
+								<span class="text-white-50  d-block font_14 ps-2">Something Street lorem porta quis
+									sem
+									eget
+									New York 2003 SU</span>
+								<span class="fw-bold text-white-50 mt-3 d-block mb-2">Open hours:</span>
+								<span class="text-white-50 d-block font_14 ps-2">Mon – Fri: 11AM – 8PM</span>
+								<span class="fw-bold text-white-50 mt-3 d-block mb-2">Cell Phone:</span>
+								<span class="text-white-50 mb-0 d-block font_14 ps-2">+(000) 345 67 89</span>
+							</div>
+						</div>
+						<div class="col">
+							<div class="footer_1_left">
+								<b class="text-white d-block fs-5">Subscribe Us</b>
+								<hr class="line">
+								<input class="form-control bg-dark border-0 text-white" type="text">
+								<span class="d-block mt-3"><a class="button py-2" href="#">Subscribe</a></span>
+								<b class="text-white d-block fs-5 mt-4">Follow Us</b>
+								<hr class="line">
+								<ul class="mb-0 d-flex social_brands">
+									<li><a class="bg_green d-inline-block text-white text-center" href="#"><i
+												class="bi bi-facebook"></i></a></li>
+									<li class="ms-2"><a class="bg-success d-inline-block text-white text-center"
+											href="#"><i class="bi bi-instagram"></i></a></li>
+									<li class="ms-2"><a class="bg-warning d-inline-block text-white text-center"
+											href="#"><i class="bi bi-linkedin"></i></a></li>
+									<li class="ms-2"><a class="bg-info d-inline-block text-white text-center"
+											href="#"><i class="bi bi-pinterest"></i></a></li>
+									<li class="ms-2"><a class="bg-danger d-inline-block text-white text-center"
+											href="#"><i class="bi bi-youtube"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="footer_bottom1 row mt-4 pt-4">
+						<div class="col-md-4">
+							<div class="footer_bottom1_right">
+								<ul class="font_13 mb-0">
+									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Home</a></li>
+									<li class="d-inline-block mx-2 text-muted">|</li>
+									<li class="d-inline-block"><a class="text-white-50 link" href="#"> About Us</a>
+									</li>
+									<li class="d-inline-block mx-2 text-muted">|</li>
+									<li class="d-inline-block"><a class="text-white-50 link" href="#"> News</a></li>
+									<li class="d-inline-block mx-2 text-muted">|</li>
+									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Contact
+											Us</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-md-8">
+							<div class="footer_bottom1_left text-end">
+								<p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design
+									by
+									<a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
 
-            let recentOrderItems = $("#recentOrderItems");
-            recentOrderItems.empty();
+	<script src="../../../public/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="../../../public/assets/js/theme.min.js"></script>
 
-            let recentOrdersHTML = "";
-            orders.forEach((order) => {
-                recentOrdersHTML += `
-                    <tr>
-                        <td>${order.courseName}</td>
-                        <td>${order.courseNumber}</td>
-                        <td>${order.payment}</td>
-                        <td style="color: ${order.status.color}">
-                            ${order.status.text}
-                        </td>
-                        <td>
-                            <div class="ui compact floating selection dropdown recent-orders-dd">
-                                <i class="dropdown icon"></i>
-                                <div class="text">Actions</div>
-                                <div class="menu">
-                                    <div class="item" data-value="view">View</div>
-                                    <div class="item" data-value="edit">Edit</div>
-                                    <div class="item" data-value="delete">Delete</div>
-                                </div>
-                            </div>
-                        </td>
-                    </tr>
-                `;
-            });
-
-            recentOrderItems.append(recentOrdersHTML);
-            recentOrderItems.find(".ui.dropdown").dropdown();
-
-            // Add event listener to dropdown
-            $(".recent-orders-dd").dropdown({
-                onChange: function (value) {
-                    console.log(value);
-                    if (value === "view") {
-                        $(".ui.flyout").flyout("toggle");
-                    }
-                },
-            });
-        }
-
-        function validateReminderForm($form = null) {
-            let reminderFormConf = {
-                form: $form,
-                fields: {
-                    employee: {
-                        identifier: "employee",
-                        rules: [
-                            {
-                                type: "empty",
-                                prompt: "Please enter a name"
-                            },
-                        ]
-                    },
-                    employee_search: {
-                        identifier: "employee_search",
-                        optional: true,
-                    },
-                    date: {
-                        identifier: "date",
-                        rules: [
-                            {
-                                type: "empty",
-                                prompt: "Please enter a date"
-                            },
-                        ]
-                    },
-                    time_in: {
-                        identifier: "time_in",
-                        rules: [
-                            {
-                                type: "empty",
-                                prompt: "Please select a time in"
-                            }
-                        ]
-                    },
-                    time_out: {
-                        identifier: "time_out",
-                        rules: [
-                            {
-                                type: "empty",
-                                prompt: "Please select a time in"
-                            }
-                        ]
-                    },
-                    memo: {
-                        identifier: "memo",
-                        rules: [
-                            {
-                                type: "empty",
-                                prompt: "Please enter a memo"
-                            },
-                            {
-                                type: "minLength[2]",
-                                prompt: "Memo must be at least 2 characters"
-                            }
-                        ]
-                    }
-                }
-            };
-            validateHandler(reminderFormConf);
-        }
-
-        $(function () {
-
-            initModal({
-                modal_id: $reminderModal,
-                transition: "swing down",
-                duration: 800,
-            });
-
-            getRecentOrders();
-            validateReminderForm($reminderForm);
-
-        });
-    </script>
 </body>
 
 </html>
