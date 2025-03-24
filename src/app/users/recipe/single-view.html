@@ -8,7 +8,7 @@
 	<title>Cooking</title>
 	<link href="../../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../../../public/assets/css/global.css" rel="stylesheet">
-	<link href="../../../../public/assets/css/landing/recipe.css" rel="stylesheet">
+	<link href="../../../../public/assets/css/users/recipe.css" rel="stylesheet">
 </head>
 
 <body>
@@ -34,8 +34,8 @@
 					<div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
 						<div class="offcanvas-header shadow">
 							<a class="d-flex" href="../index.html">
-								<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span> <span
-										class="d-block text-uppercase font_13">Cooking Recipes</span>
+								<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span>
+									<span class="d-block text-uppercase font_13">Cooking Recipes</span>
 									<span class="d-block font_12 col_green mt-1">
 										<i class="bi bi-star-fill"></i>
 										<i class="bi bi-star-fill"></i>
@@ -46,80 +46,84 @@
 							<img src="../../../../public/assets/img/icons-svg/x.svg" width="40" height="40"
 								class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"
 								alt="Close TemplateOnweb website menu" />
-
 						</div>
 						<div class="offcanvas-body pt-0 align-items-center">
 							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
 								<li class="nav-item">
-									<a class="nav-link  fs-4 mt-1" href="../index.html" title="Visit home page">
-										<i class="bi bi-house"></i>
-									</a>
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link" href="../about.html" title="Visit home page">
-										About Us
+									<a class="nav-link" href="../index.html" title="Visit home page">
+										Dashboard
 									</a>
 								</li>
 								<li class="nav-item dropdown drop_border">
 									<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
 										role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										Recipes<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
+										Find Recipes<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
 											width="15" height="15" alt="Submenu open/close icon">
 									</a>
 									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="index.html"> Recipes</a></li>
-										<li><a class="dropdown-item border-0" href="single-view.html"> Recipe Detail</a>
+										<li><a class="dropdown-item" href="index.html">Discover Recipes</a></li>
+										<li><a class="dropdown-item border-0" href="single-view.html"> Discover
+												Chefs</a>
 										</li>
 									</ul>
 								</li>
-
-
-								<li class="nav-item dropdown drop_border">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-										data-bs-toggle="dropdown" aria-expanded="false">
-										Blog<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
-											width="15" height="15" alt="Submenu open/close icon">
-									</a>
-									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="../blog/index.html"> Blog</a></li>
-										<li><a class="dropdown-item border-0" href="../blog/single-view.html"> Blog
-												Detail</a></li>
-									</ul>
-								</li>
-
 								<li class="nav-item">
-									<a class="nav-link" href="../team.html" title="Visit home page">
-										Team
+									<a class="nav-link" href="../bookmarks.html" title="Visit Bookmarked recipes">
+										Bookmarks
 									</a>
 								</li>
-
 								<li class="nav-item dropdown drop_border">
 									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
 										data-bs-toggle="dropdown" aria-expanded="false">
-										Pages<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
-											width="15" height="15" alt="Submenu open/close icon">
+										Manage Recipes<img
+											src="../../../../public/assets/img/icons-svg/chevron-down.svg" width="15"
+											height="15" alt="Submenu open/close icon">
 									</a>
 									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="../../auth/login.html"> Login</a></li>
-										<li><a class="dropdown-item border-0"
-												href="../../auth/register.html">Register</a>
+										<li><a class="dropdown-item" href="blog/index.html"> Submit a Recipe</a></li>
+										<li><a class="dropdown-item border-0" href="blog/single-view.html"> My
+												Recipes</a>
 										</li>
 									</ul>
 								</li>
-
 								<li class="nav-item">
-									<a class="nav-link" href="../contact.html" title="Visit home page">
-										Contact Us
+									<a class="nav-link" href="../settings.html" title="Visit Settings">
+										Settings
 									</a>
 								</li>
 							</ul>
-							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
+							<ul class="navbar-nav align-items-lg-center ms-auto mt-2 gap-2 right-end">
 								<li class="nav-item">
-									<a class="nav-link button submit-recipe-btn" href="../../auth/index.html"
-										title="Submit Recipe">
-										Submit Recipe
+									<a class="nav-link fs-4" href="#" title="Notifications">
+										<i class="bi bi-bell"></i>
 									</a>
+								</li>
+								<li class="nav-item">
+									<div class="user-greeting d-flex align-items-center dropdown drop_border">
+										<div class="profile">
+											<img src="../../../../public/assets/img/members/jack.jpg"
+												class="rounded-circle me-2" width="37" height="37"
+												alt="User profile picture">
+										</div>
+										<div class="greeting d-flex align-items-start flex-column">
+											<span class="name">Hello, Jack</span>
+											<span class="role">User</span>
+										</div>
+										<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+											data-bs-toggle="dropdown" aria-expanded="false"><img
+												src="../../../../public/assets/img/icons-svg/chevron-down.svg"
+												width="15" height="15" alt="Submenu open/close icon">
+										</a>
+										<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+											<li><a class="dropdown-item" href="../blog/index.html"> Dashboard</a></li>
+											<li><a class="dropdown-item" href="../blog/single-view.html">
+													Settings</a>
+											</li>
+											<li><a class="dropdown-item border-0" href="../../landing/index.html">
+													Logout</a>
+											</li>
+										</ul>
+									</div>
 								</li>
 							</ul>
 						</div>
@@ -129,7 +133,7 @@
 		</header>
 
 		<main class="site-main">
-			<section id="center" class="pt-4 pb-4 center_o shadow">
+			<!-- <section id="center" class="pt-4 pb-4 center_o shadow">
 				<div class="container-xl">
 					<div class="row center_o1 text-center">
 						<div class="col-md-12">
@@ -142,7 +146,7 @@
 						</div>
 					</div>
 				</div>
-			</section>
+			</section> -->
 			<section id="recipe" class="pt-5 pb-5 img-nr">
 				<div class="container-xl">
 					<div class="row recipe_dt1 row border-bottom pb-4 mb-4">
@@ -902,7 +906,7 @@
 			</section>
 		</main>
 
-		<footer class="site-footer">
+		<!-- <footer class="site-footer">
 			<div class="footer_m pt-5 pb-5">
 				<div class="container-xl">
 					<div class="row footer_1">
@@ -1037,7 +1041,7 @@
 					</div>
 				</div>
 			</div>
-		</footer>
+		</footer> -->
 	</div>
 
 	<script src="../../../../public/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
