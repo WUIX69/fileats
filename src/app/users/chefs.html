@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cooking</title>
+    <link href="../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../public/assets/css/global.css" rel="stylesheet">
+    <link href="../../../public/assets/css/users/recipe.css" rel="stylesheet">
+    <style>
+        /* Main container styles */
+        main .chefs-header {
+            padding: 2rem 0;
+        }
+
+        main .chefs-header .header-title {
+            font-size: 1.75rem;
+            font-weight: 600;
+        }
+
+        main .chefs-header .header-subtitle {
+            color: #6c757d;
+            margin-bottom: 0;
+        }
+
+        /* Filters section */
+        main .filters-row {
+            padding: 1rem 0;
+            border-top: 1px solid #eee;
+            margin-top: 1rem;
+        }
+
+        main .filters-row .filters-button {
+            padding: 0.5rem 1.5rem;
+            border-radius: 20px;
+        }
+
+        main .filters-row .filters-button.active {
+            background-color: #0d6efd;
+            color: white;
+        }
+
+        main .filters-row .filters-select {
+            min-width: 160px;
+        }
+
+        /* Search box */
+        main .search-box .search-input {
+            border-right: none;
+        }
+
+        main .search-box .search-button {
+            border-left: none;
+        }
+
+        /* Chefs grid section */
+        main .chefs-grid {
+            padding: 2rem 0;
+        }
+
+        main .chefs-grid .chef-card {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        main .chefs-grid .chef-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Chef card components */
+        main .chef-card .card-banner {
+            height: 300px;
+            margin-top: 1rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-color: #f8f9fa;
+        }
+
+        main .chef-card .chef-avatar {
+            width: 300px;
+            height: 300px;
+            /* position: absolute;
+            bottom: -60px;
+            left: 50%;
+            transform: translateX(-50%); */
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        main .chef-card .chef-avatar-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        main .chef-card .card-body {
+            position: relative;
+        }
+
+        main .chef-card .card-title {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        main .chef-card .card-subtitle {
+            color: #6c757d;
+            font-size: 0.875rem;
+        }
+
+        /* Stats section */
+        main .chef-card .stats-row {
+            padding: 0.5rem 0;
+            border-top: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            margin: 1rem 0;
+        }
+
+        main .chef-card .stats-item {
+            text-align: center;
+        }
+
+        main .chef-card .stats-number {
+            font-size: 1.1rem;
+            font-weight: 600;
+            display: block;
+        }
+
+        main .chef-card .stats-label {
+            font-size: 0.75rem;
+            color: #6c757d;
+        }
+
+        /* Follow button */
+        main .chef-card .follow-button {
+            width: 100%;
+            border-radius: 20px;
+            padding: 0.5rem 1rem;
+        }
+
+        /* Pagination */
+        main .pagination-container {
+            margin-top: 3rem;
+        }
+
+        main .pagination-container .page-link {
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            margin: 0 0.25rem;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            main .filters-row .filters-wrapper {
+                flex-direction: column;
+            }
+
+            main .filters-row .filters-select {
+                margin-left: 0 !important;
+                margin-top: 1rem;
+                width: 100%;
+            }
+
+            main .search-box {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="shared-standalone-cont">
+        <div class="loader-window-cont">
+            <div class="loader-window-overlay"></div>
+            <div class="loader-window"></div>
+        </div>
+    </div>
+
+    <div class="site-cont">
+        <header class="site-header">
+            <nav class="navbar navbar-expand-lg navbar-light w-100 pb-2 border-bottom">
+                <div class="container-xl">
+                    <a class="d-flex" href="../index.html">
+                        <b class="fs-2 d-block logo text-center"> <span class="family_1">Fil Eats</span> <span
+                                class="d-block text-uppercase font_13">Cooking Recipes</span>
+                            <span class="d-block font_12 col_green mt-1">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                            </span>
+                        </b>
+                    </a>
+                    <button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
+                        <img src="../../../public/assets/img/icons-svg/list.svg" width="40" height="40"
+                            alt="Open TemplateOnweb website menu" />
+                    </button>
+                    <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
+                        <div class="offcanvas-header shadow">
+                            <a class="d-flex" href="../index.html">
+                                <b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span>
+                                    <span class="d-block text-uppercase font_13">Cooking Recipes</span>
+                                    <span class="d-block font_12 col_green mt-1">
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                        <i class="bi bi-star-fill"></i>
+                                    </span>
+                                </b>
+                            </a>
+                            <img src="../../../public/assets/img/icons-svg/x.svg" width="40" height="40" class="ms-auto"
+                                data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
+                        </div>
+                        <div class="offcanvas-body pt-0 align-items-center">
+                            <ul class="navbar-nav align-items-lg-center ms-auto mt-2">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../index.html" title="Visit home page">
+                                        Dashboard
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown drop_border">
+                                    <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Find Recipes<img src="../../../public/assets/img/icons-svg/chevron-down.svg"
+                                            width="15" height="15" alt="Submenu open/close icon">
+                                    </a>
+                                    <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="index.html">Discover Recipes</a></li>
+                                        <li><a class="dropdown-item border-0" href="chefs.html"> Discover
+                                                Chefs</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../bookmarks.html" title="Visit Bookmarked recipes">
+                                        Bookmarks
+                                    </a>
+                                </li>
+                                <li class="nav-item dropdown drop_border">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        Manage Recipes<img src="../../../public/assets/img/icons-svg/chevron-down.svg"
+                                            width="15" height="15" alt="Submenu open/close icon">
+                                    </a>
+                                    <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="blog/index.html"> Submit a Recipe</a></li>
+                                        <li><a class="dropdown-item border-0" href="blog/single-view.html"> My
+                                                Recipes</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="../settings.html" title="Visit Settings">
+                                        Settings
+                                    </a>
+                                </li>
+                            </ul>
+                            <ul class="navbar-nav align-items-lg-center ms-auto mt-2 gap-2 right-end">
+                                <li class="nav-item">
+                                    <a class="nav-link fs-4" href="#" title="Notifications">
+                                        <i class="bi bi-bell"></i>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <div class="user-greeting d-flex align-items-center dropdown drop_border">
+                                        <div class="profile">
+                                            <img src="../../../public/assets/img/members/jack.jpg"
+                                                class="rounded-circle me-2" width="37" height="37"
+                                                alt="User profile picture">
+                                        </div>
+                                        <div class="greeting d-flex align-items-start flex-column">
+                                            <span class="name">Hello, Jack</span>
+                                            <span class="role">User</span>
+                                        </div>
+                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false"><img
+                                                src="../../../public/assets/img/icons-svg/chevron-down.svg" width="15"
+                                                height="15" alt="Submenu open/close icon">
+                                        </a>
+                                        <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                            <li><a class="dropdown-item" href="../blog/index.html"> Dashboard</a></li>
+                                            <li><a class="dropdown-item" href="../blog/single-view.html">
+                                                    Settings</a>
+                                            </li>
+                                            <li><a class="dropdown-item border-0" href="../../landing/index.html">
+                                                    Logout</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main class="site-main">
+            <!-- Header Section -->
+            <section class="chefs-header">
+                <div class="container-xl">
+                    <div class="d-flex justify-content-between align-items-center mb-4">
+                        <div>
+                            <h1 class="header-title">Discover Chefs</h1>
+                            <p class="header-subtitle">Find and follow amazing chefs from around the world</p>
+                        </div>
+                        <div class="search-box">
+                            <div class="input-group">
+                                <input type="text" class="form-control search-input" placeholder="Search chefs...">
+                                <button class="btn btn-primary search-button" type="button">
+                                    <i class="bi bi-search"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filters -->
+                    <div class="filters-row">
+                        <div class="filters-wrapper d-flex gap-3 flex-wrap">
+                            <button class="btn btn-outline-primary filters-button active">All Chefs</button>
+                            <button class="btn btn-outline-primary filters-button">Popular</button>
+                            <button class="btn btn-outline-primary filters-button">New</button>
+                            <button class="btn btn-outline-primary filters-button">Following</button>
+                            <div class="ms-auto">
+                                <select class="form-select filters-select">
+                                    <option>All Cuisines</option>
+                                    <option>Italian</option>
+                                    <option>Japanese</option>
+                                    <option>Indian</option>
+                                    <option>French</option>
+                                    <option>Mediterranean</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Chefs Grid -->
+            <section class="chefs-grid">
+                <div class="container-xl">
+                    <div class="row g-4">
+                        <!-- Chef Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="chef-card">
+                                <div class="card h-100">
+                                    <div class="card-banner">
+                                        <div class="chef-avatar">
+                                            <img src="../../../public/assets/img/members/badang.jpg"
+                                                class="chef-avatar-img" alt="Chef Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-1">Tito Badang</h5>
+                                        <p class="text-muted small mb-2">Master Chef • Italian Cuisine</p>
+                                        <div class="chef-stats d-flex justify-content-center gap-3 mb-3">
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">126</span>
+                                                <small class="text-muted">Recipes</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">45K</span>
+                                                <small class="text-muted">Followers</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">4.8</span>
+                                                <small class="text-muted">Rating</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small mb-3">Award-winning chef specializing in authentic
+                                            Italian cuisine with a modern twist.</p>
+                                        <button class="btn btn-primary w-100">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chef Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="chef-card">
+                                <div class="card h-100">
+                                    <div class="card-banner">
+                                        <div class="chef-avatar">
+                                            <img src="../../../public/assets/img/members/nicolas.jpg"
+                                                class="chef-avatar-img" alt="Chef Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-1">Nicolas</h5>
+                                        <p class="text-muted small mb-2">Master Chef • Italian Cuisine</p>
+                                        <div class="chef-stats d-flex justify-content-center gap-3 mb-3">
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">126</span>
+                                                <small class="text-muted">Recipes</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">45K</span>
+                                                <small class="text-muted">Followers</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">4.8</span>
+                                                <small class="text-muted">Rating</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small mb-3">Award-winning chef specializing in authentic
+                                            Italian cuisine with a modern twist.</p>
+                                        <button class="btn btn-primary w-100">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chef Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="chef-card">
+                                <div class="card h-100">
+                                    <div class="card-banner">
+                                        <div class="chef-avatar">
+                                            <img src="../../../public/assets/img/members/sophia.jpg"
+                                                class="chef-avatar-img" alt="Chef Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-1">Sophia the 1st</h5>
+                                        <p class="text-muted small mb-2">Master Chef • Italian Cuisine</p>
+                                        <div class="chef-stats d-flex justify-content-center gap-3 mb-3">
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">126</span>
+                                                <small class="text-muted">Recipes</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">45K</span>
+                                                <small class="text-muted">Followers</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">4.8</span>
+                                                <small class="text-muted">Rating</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small mb-3">Award-winning chef specializing in authentic
+                                            Italian cuisine with a modern twist.</p>
+                                        <button class="btn btn-primary w-100">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chef Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="chef-card">
+                                <div class="card h-100">
+                                    <div class="card-banner">
+                                        <div class="chef-avatar">
+                                            <img src="../../../public/assets/img/members/jack.jpg"
+                                                class="chef-avatar-img" alt="Chef Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-1">Gordon Chapman</h5>
+                                        <p class="text-muted small mb-2">Master Chef • Italian Cuisine</p>
+                                        <div class="chef-stats d-flex justify-content-center gap-3 mb-3">
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">126</span>
+                                                <small class="text-muted">Recipes</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">45K</span>
+                                                <small class="text-muted">Followers</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">4.8</span>
+                                                <small class="text-muted">Rating</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small mb-3">Award-winning chef specializing in authentic
+                                            Italian cuisine with a modern twist.</p>
+                                        <button class="btn btn-primary w-100">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chef Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="chef-card">
+                                <div class="card h-100">
+                                    <div class="card-banner">
+                                        <div class="chef-avatar">
+                                            <img src="../../../public/assets/img/members/jack.jpg"
+                                                class="chef-avatar-img" alt="Chef Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-1">Gordon Chapman</h5>
+                                        <p class="text-muted small mb-2">Master Chef • Italian Cuisine</p>
+                                        <div class="chef-stats d-flex justify-content-center gap-3 mb-3">
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">126</span>
+                                                <small class="text-muted">Recipes</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">45K</span>
+                                                <small class="text-muted">Followers</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">4.8</span>
+                                                <small class="text-muted">Rating</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small mb-3">Award-winning chef specializing in authentic
+                                            Italian cuisine with a modern twist.</p>
+                                        <button class="btn btn-primary w-100">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Chef Card -->
+                        <div class="col-md-6 col-lg-4">
+                            <div class="chef-card">
+                                <div class="card h-100">
+                                    <div class="card-banner">
+                                        <div class="chef-avatar">
+                                            <img src="../../../public/assets/img/members/jack.jpg"
+                                                class="chef-avatar-img" alt="Chef Avatar">
+                                        </div>
+                                    </div>
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title mb-1">Gordon Chapman</h5>
+                                        <p class="text-muted small mb-2">Master Chef • Italian Cuisine</p>
+                                        <div class="chef-stats d-flex justify-content-center gap-3 mb-3">
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">126</span>
+                                                <small class="text-muted">Recipes</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">45K</span>
+                                                <small class="text-muted">Followers</small>
+                                            </div>
+                                            <div class="stat-item">
+                                                <span class="d-block fw-bold">4.8</span>
+                                                <small class="text-muted">Rating</small>
+                                            </div>
+                                        </div>
+                                        <p class="card-text small mb-3">Award-winning chef specializing in authentic
+                                            Italian cuisine with a modern twist.</p>
+                                        <button class="btn btn-primary w-100">
+                                            <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Pagination -->
+                    <nav class="pagination-container">
+                        <ul class="pagination justify-content-center">
+                            <li class="page-item disabled">
+                                <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+                            </li>
+                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                            <li class="page-item">
+                                <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="../../../public/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../public/assets/js/theme.min.js"></script>
+
+</body>
+
+</html>
