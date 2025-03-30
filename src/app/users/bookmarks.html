@@ -8,6 +8,7 @@
     <title>Cooking</title>
     <link href="../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../../public/assets/css/global.css" rel="stylesheet">
+    <link href="../../../public/assets/css/users/style.css" rel="stylesheet">
     <link href="../../../public/assets/css/loader/window.css" rel="stylesheet">
     <style>
         .recipe-card {
@@ -100,7 +101,7 @@
                         <div class="offcanvas-body pt-0 align-items-center">
                             <ul class="navbar-nav align-items-lg-center ms-auto mt-2">
                                 <li class="nav-item">
-                                    <a class="nav-link active" href="index.html" title="Visit home page">
+                                    <a class="nav-link" href="index.html" title="Visit home page">
                                         Dashboard
                                     </a>
                                 </li>
@@ -118,7 +119,7 @@
                                     </ul>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="bookmarks.html" title="Visit Bookmarked recipes">
+                                    <a class="nav-link active" href="bookmarks.html" title="Visit Bookmarked recipes">
                                         Bookmarks
                                     </a>
                                 </li>
@@ -182,15 +183,15 @@
         </header>
 
         <main class="site-main">
-            <!-- Bookmarks Header -->
-            <section class="bookmarks-header pt-4 pb-3">
+            <section id="header">
                 <div class="container-xl">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <div>
-                            <h1 class="mb-1">My Bookmarks</h1>
+                    <div class="content">
+                        <div class="header">
+                            <h1 class="mb-1">My Bookmarks <span class="emoji">🏷️</span></h1>
                             <p class="text-muted mb-0">Manage your favorite recipes</p>
                         </div>
-                        <div class="d-flex gap-2">
+                        <div class="filters">
+                            <!-- Filter Dropdown -->
                             <div class="dropdown">
                                 <button class="btn btn-outline-secondary dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown">
@@ -203,6 +204,7 @@
                                     <li><a class="dropdown-item" href="#">Beverages</a></li>
                                 </ul>
                             </div>
+                            <!-- Sort Dropdown -->
                             <div class="dropdown">
                                 <button class="btn btn-outline-secondary dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown">
@@ -214,6 +216,10 @@
                                     <li><a class="dropdown-item" href="#">Alphabetical</a></li>
                                 </ul>
                             </div>
+                            <!-- Add Recipe Button -->
+                            <a href="submit.html" class="btn btn-success">
+                                <i class="bi bi-plus-lg"></i> Add Recipe
+                            </a>
                         </div>
                     </div>
                 </div>

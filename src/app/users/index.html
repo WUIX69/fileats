@@ -8,8 +8,8 @@
 	<title>Cooking</title>
 	<link href="../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link href="../../../public/assets/css/global.css" rel="stylesheet">
-	<link href="../../../public/assets/css/users/index.css" rel="stylesheet">
 	<link href="../../../public/assets/css/loader/window.css" rel="stylesheet">
+	<link href="../../../public/assets/css/users/style.css" rel="stylesheet">
 	<style>
 		:root {
 			--c-white-1: #fefefe;
@@ -37,9 +37,12 @@
 			background-color: var(--bg_light);
 		}
 
+		section#header {
+			background-color: var(--bg_light);
+		}
+
 		/* Stats Cards */
 		section#stats {
-			padding: 2rem 0;
 			border-radius: 0 0 40px 40px;
 			background-color: var(--bg_light);
 		}
@@ -129,23 +132,18 @@
 			padding-top: 2.2rem;
 		}
 
-		/* Popular Recipes */
-		section.popular-recipes {
-			padding: 2rem 0;
+		section#trend .trend_1_left2_inner {
+			width: 40%;
 		}
 
-		section.popular-recipes .recipe-card {
-			background: white;
-			border-radius: 15px;
-			padding: 1rem;
-			margin-bottom: 1rem;
-		}
+		@media screen and (max-width: 767px) {
+			section#trend .trend_1_left2 {
+				position: static !important;
+			}
 
-		section.popular-recipes .recipe-image {
-			width: 80px;
-			height: 80px;
-			border-radius: 10px;
-			object-fit: cover;
+			section#trend .trend_1_left2_inner {
+				width: 100% !important;
+			}
 		}
 	</style>
 </head>
@@ -279,8 +277,22 @@
 		</header>
 
 		<main class="site-main">
+			<!-- Header -->
+			<section id="header">
+				<div class="container-xl">
+					<div class="content">
+						<div class="header">
+							<h1 class="mb-1">Dashboard</h1>
+							<p class="text-muted mb-0">Welcome back, Jonathan Violeta <span
+									class="text-success emoji">👋</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
 			<!-- Stats -->
-			<section id="stats" class="pt-5 pb-5">
+			<section id="stats" class="pt-3 pb-5">
 				<div class="container-xl">
 					<div class="row">
 						<div class="col-md-3">
@@ -654,7 +666,7 @@
 							display: false
 						}
 					},
-					cutout: '70%'
+					// cutout: '70%'
 				}
 			});
 

@@ -8,60 +8,17 @@
     <title>Cooking</title>
     <link href="../../../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../../../../../public/assets/css/global.css" rel="stylesheet">
-    <link href="../../../../../public/assets/css/users/recipe.css" rel="stylesheet">
+    <link href="../../../../../public/assets/css/users/style.css" rel="stylesheet">
+    <link href="../../../../../public/assets/css/loader/window.css" rel="stylesheet">
     <style>
-        /* Main container styles */
-        main .chefs-header {
-            padding: 2rem 0;
-        }
-
-        main .chefs-header .header-title {
-            font-size: 1.75rem;
-            font-weight: 600;
-        }
-
-        main .chefs-header .header-subtitle {
-            color: #6c757d;
-            margin-bottom: 0;
-        }
-
-        /* Filters section */
-        main .filters-row {
-            padding: 1rem 0;
-            border-top: 1px solid #eee;
-            margin-top: 1rem;
-        }
-
-        main .filters-row .filters-button {
-            padding: 0.5rem 1.5rem;
-            border-radius: 20px;
-        }
-
-        main .filters-row .filters-button.active {
-            background-color: #0d6efd;
-            color: white;
-        }
-
-        main .filters-row .filters-select {
-            min-width: 160px;
-        }
-
-        /* Search box */
-        main .search-box .search-input {
-            border-right: none;
-        }
-
-        main .search-box .search-button {
-            border-left: none;
-        }
-
         /* Chefs grid section */
         main .chefs-grid {
-            padding: 2rem 0;
+            padding-bottom: 2rem;
         }
 
         main .chefs-grid .chef-card {
             transition: transform 0.2s ease-in-out;
+            position: relative;
         }
 
         main .chefs-grid .chef-card:hover {
@@ -70,29 +27,22 @@
 
         /* Chef card components */
         main .chef-card .card-banner {
-            height: 300px;
-            margin-top: 1rem;
             display: flex;
             justify-content: center;
             align-items: center;
-            position: relative;
-            background-color: #f8f9fa;
+            padding: 1rem;
         }
 
-        main .chef-card .chef-avatar {
+        main .chef-card .card-banner .chef-avatar {
             width: 300px;
             height: 300px;
-            /* position: absolute;
-            bottom: -60px;
-            left: 50%;
-            transform: translateX(-50%); */
             border-radius: 50%;
             overflow: hidden;
             border: 4px solid #fff;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
         }
 
-        main .chef-card .chef-avatar-img {
+        main .chef-card .card-banner .chef-avatar-img {
             width: 100%;
             height: 100%;
             object-fit: cover;
@@ -102,42 +52,41 @@
             position: relative;
         }
 
-        main .chef-card .card-title {
+        main .chef-card .card-body .card-title {
             font-size: 1.25rem;
             font-weight: 600;
             margin-bottom: 0.25rem;
         }
 
-        main .chef-card .card-subtitle {
+        main .chef-card .card-body .card-subtitle {
             color: #6c757d;
             font-size: 0.875rem;
         }
 
         /* Stats section */
-        main .chef-card .stats-row {
+        main .chef-card .card-body .stats-row {
             padding: 0.5rem 0;
             border-top: 1px solid #eee;
             border-bottom: 1px solid #eee;
             margin: 1rem 0;
         }
 
-        main .chef-card .stats-item {
+        main .chef-card .card-body .stats-item {
             text-align: center;
         }
 
-        main .chef-card .stats-number {
+        main .chef-card .card-body .stats-number {
             font-size: 1.1rem;
             font-weight: 600;
             display: block;
         }
 
-        main .chef-card .stats-label {
+        main .chef-card .card-body .stats-label {
             font-size: 0.75rem;
             color: #6c757d;
         }
 
-        /* Follow button */
-        main .chef-card .follow-button {
+        main .chef-card .card-body .follow-button {
             width: 100%;
             border-radius: 20px;
             padding: 0.5rem 1rem;
@@ -152,24 +101,6 @@
             padding: 0.5rem 1rem;
             border-radius: 4px;
             margin: 0 0.25rem;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 768px) {
-            main .filters-row .filters-wrapper {
-                flex-direction: column;
-            }
-
-            main .filters-row .filters-select {
-                margin-left: 0 !important;
-                margin-top: 1rem;
-                width: 100%;
-            }
-
-            main .search-box {
-                width: 100%;
-                margin-top: 1rem;
-            }
         }
     </style>
 </head>
@@ -306,39 +237,45 @@
 
         <main class="site-main">
             <!-- Header Section -->
-            <section class="chefs-header">
+            <section id="header">
                 <div class="container-xl">
-                    <div class="d-flex justify-content-between align-items-center mb-4">
-                        <div>
-                            <h1 class="header-title">Discover Chefs</h1>
-                            <p class="header-subtitle">Find and follow amazing chefs from around the world</p>
-                        </div>
-                        <div class="search-box">
-                            <div class="input-group">
-                                <input type="text" class="form-control search-input" placeholder="Search chefs...">
-                                <button class="btn btn-primary search-button" type="button">
-                                    <i class="bi bi-search"></i>
-                                </button>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="content">
+                                <div class="header">
+                                    <h1 class="mb-1">Discover Chefs <span class="emoji">👨🏼‍🍳</span></h1>
+                                    <p class="text-muted mb-0">Find and follow amazing chefs from around the world</p>
+                                </div>
+                                <div class="search-box">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-input"
+                                            placeholder="Search chefs...">
+                                        <button class="btn btn-primary search-button" type="button">
+                                            <i class="bi bi-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                    </div>
-
-                    <!-- Filters -->
-                    <div class="filters-row">
-                        <div class="filters-wrapper d-flex gap-3 flex-wrap">
-                            <button class="btn btn-outline-primary filters-button active">All Chefs</button>
-                            <button class="btn btn-outline-primary filters-button">Popular</button>
-                            <button class="btn btn-outline-primary filters-button">New</button>
-                            <button class="btn btn-outline-primary filters-button">Following</button>
-                            <div class="ms-auto">
-                                <select class="form-select filters-select">
-                                    <option>All Cuisines</option>
-                                    <option>Italian</option>
-                                    <option>Japanese</option>
-                                    <option>Indian</option>
-                                    <option>French</option>
-                                    <option>Mediterranean</option>
-                                </select>
+                        <!-- Filters -->
+                        <div class="col-12">
+                            <div class="content-2">
+                                <div class="filters">
+                                    <button class="btn btn-outline-primary filters-button active">All Chefs</button>
+                                    <button class="btn btn-outline-primary filters-button">Popular</button>
+                                    <button class="btn btn-outline-primary filters-button">New</button>
+                                    <button class="btn btn-outline-primary filters-button">Following</button>
+                                    <div class="ms-auto">
+                                        <select class="form-select filters-select">
+                                            <option>All Cuisines</option>
+                                            <option>Italian</option>
+                                            <option>Japanese</option>
+                                            <option>Indian</option>
+                                            <option>French</option>
+                                            <option>Mediterranean</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -573,19 +510,36 @@
                     </div>
 
                     <!-- Pagination -->
-                    <nav class="pagination-container">
-                        <ul class="pagination justify-content-center">
-                            <li class="page-item disabled">
-                                <a class="page-link" href="#"><i class="bi bi-chevron-left"></i></a>
+                    <div class="paging">
+                        <ul class="mb-0 paginate text-center mt-4">
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html"><i
+                                        class="bi bi-chevron-left"></i> </a></li>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block active"
+                                    href="single-view.html">1</a></li>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">2</a>
                             </li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item">
-                                <a class="page-link" href="#"><i class="bi bi-chevron-right"></i></a>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">3</a>
                             </li>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">4</a>
+                            </li>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">5</a>
+                            </li>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">6</a>
+                            </li>
+                            <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html"><i
+                                        class="bi bi-chevron-right"></i></a></li>
                         </ul>
-                    </nav>
+                    </div>
+
+                    <!-- Empty State -->
+                    <div class="text-center py-5 d-none">
+                        <i class="bi bi-journal-text display-1 text-muted"></i>
+                        <h3 class="mt-3">No Chefs Yet</h3>
+                        <p class="text-muted">Start creating your culinary collection by adding your first chef.</p>
+                        <a href="submit.html" class="btn btn-success">
+                            <i class="bi bi-plus-lg"></i> Add Your First Chef
+                        </a>
+                    </div>
                 </div>
             </section>
         </main>

@@ -1,0 +1,102 @@
+main section#header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+/*####################### SECTION (Header)[CONTENT 1] #######################*/
+main section#header .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main section#header .content .header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+main section#header .content .header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    position: relative;
+}
+
+main section#header .content .header p {
+    font-size: 1rem;
+    font-weight: 400;
+    position: relative;
+}
+
+main section#header .content .header p .emoji {
+    font-size: 1.8rem;
+    position: absolute;
+    top: -0.87rem;
+    right: -2.7rem;
+}
+
+main section#header .content .filters {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+/* Search box */
+main section#header .content .search-box .search-input {
+    border-right: none;
+}
+
+main section#header .content .search-box .search-button {
+    border-left: none;
+}
+/*####################### SECTION (Header)[CONTENT 1] END #######################*/
+
+/*####################### SECTION (Header)[CONTENT 2] #######################*/
+main section#header .content-2 {
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+}
+
+main section#header .content-2 .filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+main section#header .content-2 .filters-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+}
+
+main section#header .content-2 .filters-button.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+main section#header .content-2 .filters-select {
+    min-width: 160px;
+}
+/*####################### SECTION (Header)[CONTENT 2] END #######################*/
+
+/*####################### RESPONSIVE ADJUSTMENTS #######################*/
+@media (max-width: 768px) {
+    main .content {
+        flex-direction: column;
+    }
+
+    main .content-2 .filters {
+        flex-direction: column;
+    }
+
+    main .content-2 .filters-select {
+        margin-left: 0 !important;
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    main .content .search-box {
+        width: 100%;
+        margin-top: 1rem;
+    }
+}
