@@ -77,17 +77,17 @@ section#recipe .recipe_dt13_inner1_left .nav-tabs .nav-link.active {
     color: var(--bs-white);
 }
 
-section#recipe #profile2 .recipe_1_left2_inner_left1 img {
+/* section#recipe #profile2 .recipe_1_left2_inner_left1 img {
     min-height: 277px;
-}
+} */
 
 section#recipe .recipe_1_left2_inner_right {
     min-height: 320px;
 }
 
-section#recipe .recipe_dt4_left img {
+/* section#recipe .recipe_dt4_left img {
     min-height: 275px;
-}
+} */
 
 section#recipe .recipe_dt4_right {
     min-height: 320px;
