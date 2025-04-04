@@ -1,0 +1,28 @@
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/vendor/bootstrap/dist/css/bootstrap.min.css
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/vendor/fomantic-ui/dist/semantic.min.css
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/assets/css/global.css
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/assets/css/auth/style.css
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/assets/css/loader/window.css
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/lib/jquery/jquery.min.js
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/vendor/bootstrap/dist/js/bootstrap.bundle.min.js
+[04-Apr-2025 18:57:01 Europe/Berlin] publicDir: D:\fileats/public/
+[04-Apr-2025 18:57:01 Europe/Berlin] publicPath: D:\fileats/public/vendor/fomantic-ui/dist/semantic.min.js
+[04-Apr-2025 19:56:32 Europe/Berlin] http://localhost:3000/src/app//
+[04-Apr-2025 19:56:32 Europe/Berlin] PHP Warning:  Undefined variable $page in D:\fileats\src\shared\elements\styles.php on line 10
+[04-Apr-2025 19:57:08 Europe/Berlin] http://localhost:3000/src/app//
+[04-Apr-2025 19:57:26 Europe/Berlin] http://localhost:3000/src/app//
+[04-Apr-2025 20:00:02 Europe/Berlin] auth
+[04-Apr-2025 20:00:24 Europe/Berlin] /src/app/auth/index.php
+[04-Apr-2025 20:00:24 Europe/Berlin] auth
+[04-Apr-2025 20:06:36 Europe/Berlin] auth
+[04-Apr-2025 20:06:38 Europe/Berlin] auth
+[04-Apr-2025 20:06:51 Europe/Berlin] auth
+[04-Apr-2025 20:07:03 Europe/Berlin] auth
+[04-Apr-2025 20:07:10 Europe/Berlin] auth
