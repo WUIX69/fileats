@@ -12,5 +12,5 @@ $styles = [
 ];
 
 foreach ($styles as $style) {
-    echo '<link rel="stylesheet" href="' . static_file($style) . '">';
+    echo '<link rel="stylesheet" href="' . statf($style) . '">';
 }

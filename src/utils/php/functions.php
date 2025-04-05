@@ -17,7 +17,7 @@ function tryCatch($callback, $errorMessage = "Error: ")
     }
 }
 
-function base_url($path = '')
+function baseURL($path = '')
 {
     // Get the protocol and host only once per page load
     static $baseUrl = null;
@@ -38,16 +38,10 @@ function base_url($path = '')
     return $baseUrl . ltrim($path, '/');
 }
 
-function app($link = '')
-{
-    $url = $link . (strpos($link, '/') === false ? '/' : '' . '.php');
-    return base_url('src/app/' . $url);
-}
-
-function static_file($path)
+function statf($path)
 {
     $web_path = 'public/' . ltrim($path, '/');
-    return base_url($web_path);
+    return baseURL($web_path);
 }
 
 function shared($file)
@@ -65,4 +59,10 @@ function shared($file)
         // Include the file
         include $file_path;
     }, "Shared file Error, ");
+}
+
+function app($link = '')
+{
+    $url = $link . (strpos($link, '/') === false ? '/' : '' . '.php');
+    return baseURL('src/app/' . $url);
 }
