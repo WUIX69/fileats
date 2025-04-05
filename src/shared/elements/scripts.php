@@ -5,7 +5,7 @@ $scripts = [
     'vendor/fomantic-ui/dist/semantic.min.js',
     'assets/js/theme.min.js',
     'lib/lodash/lodash.min.js',
-    'assets/js/scripts.js',
+    // 'assets/js/scripts.js',
 ];
 
 foreach ($scripts as $script) {

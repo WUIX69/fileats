@@ -1,3 +1,3 @@
 $(function () {
-    // Custom js here...
+    console.log("register javascript here...");
 });

@@ -63,6 +63,12 @@ function shared($file)
 
 function app($link = '')
 {
-    $url = $link . (strpos($link, '/') === false ? '/' : '' . '.php');
-    return baseURL('src/app/' . $url);
+    $url = 'src/app/' . $link . (strpos($link, '/') === false ? '/' : '' . '.php');
+    return baseURL($url);
+}
+
+function feature($path)
+{
+    $path = 'src/features/' . ltrim($path, '/');
+    return baseURL($path);
 }
