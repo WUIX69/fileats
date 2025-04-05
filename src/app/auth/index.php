@@ -15,7 +15,7 @@ $title = 'Sign In';
 				<div class="row justify-content-center">
 					<div class="col-md-5">
 						<div class="auth-wrapper">
-							<?= shared('components/auth/header'); ?>
+							<?= feature('auth/components/header'); ?>
 							<div class="auth-body shadow mx-auto p-4">
 								<div class="auth-body-header">
 									<h3 class="col_green">Login</h3>
@@ -59,6 +59,6 @@ $title = 'Sign In';
 
 <!-- scripts -->
 <?= shared('elements/scripts'); ?>
-<script src="<?= feature('auth/login/main.js'); ?>"></script>
+<script src="<?= feature('auth/login/main.js', true); ?>"></script>
 
 <?= shared('partials/bot'); ?>

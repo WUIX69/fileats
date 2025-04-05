@@ -38,37 +38,55 @@ function baseURL($path = '')
     return $baseUrl . ltrim($path, '/');
 }
 
-function statf($path)
+function sysfHelper($dir, $file)
 {
-    $web_path = 'public/' . ltrim($path, '/');
-    return baseURL($web_path);
-}
-
-function shared($file)
-{
-    // Define the directory where your shared files are located
-    $shared_dir = dirname(dirname(__DIR__)) . '/shared/';
-
+    // Define the directory where your files are located
+    $dir_path = dirname(dirname(__DIR__)) . '/' . $dir . '/';
     // Construct the full path to the file
-    $file_path = $shared_dir . $file . '.php';
+    $file_path = $dir_path . $file . '.php';
 
     tryCatch(function () use ($file_path) {
         if (!file_exists($file_path)) {
             throw new Exception("File not found: $file_path");
         }
-        // Include the file
-        include $file_path;
-    }, "Shared file Error, ");
+        include $file_path; // Include the file
+    }, "$dir file Error, ");
+}
+
+function srcfHelper($dir, $file)
+{
+    // Define the directory where your source files are located
+    $web_path = $dir . '/' . ltrim($file, '/');
+    // Return the URL of the source file
+    return baseURL($web_path);
+}
+
+function statf($file)
+{
+    return srcfHelper('public', $file);
 }
 
 function app($link = '')
 {
-    $url = 'src/app/' . $link . (strpos($link, '/') === false ? '/' : '' . '.php');
-    return baseURL($url);
+    $url = $link . (strpos($link, '/') === false ? '/' : '' . '.php');
+    return srcfHelper('src/app', $url);
 }
 
-function feature($path)
+function shared($file, $is_src = false)
 {
-    $path = 'src/features/' . ltrim($path, '/');
-    return baseURL($path);
+    // Early return if src base url
+    if ($is_src) {
+        return srcfHelper('src/shared', $file);
+    }
+    // system file base url
+    sysfHelper('shared', $file);
+}
+
+function feature($path, $is_src = false)
+{
+    if ($is_src) {
+        return srcfHelper('src/features', $path);
+    }
+
+    sysfHelper('features', $path);
 }
