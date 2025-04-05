@@ -1,6 +1,6 @@
-/logs
 /logs/*
+/logs
+logs/error.log
 
 /src/uploads/*
 /src/uploads
-logs/error.log
