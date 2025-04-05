@@ -1,6 +1,6 @@
 <?php
 // include_once __DIR__ . '/../../utils/php/functions.php';
-$title = $title ?? 'Unknown';
+global $title;
 ?>
 
 <!DOCTYPE html>
