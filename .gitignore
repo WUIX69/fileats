@@ -1,6 +1,8 @@
-/logs/*
+.env
+
 /logs
-logs/error.log
+/logs/*
+logs
 
 /src/uploads/*
 /src/uploads
