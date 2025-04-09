@@ -1,0 +1,1 @@
+<script src="<?= featured('landing/home/assets/js/main.js', true); ?>"></script>

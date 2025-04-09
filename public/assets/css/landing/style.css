@@ -1,0 +1,83 @@
+section:not(.img-nr) img,
+footer.site-footer img {
+    border-radius: 0.25rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.img-nr img {
+    border-radius: 0 !important;
+    object-fit: cover;
+    object-position: center;
+}
+
+/*####################### SITE FOOTER #######################*/
+footer.site-footer {
+    background-image: linear-gradient(
+            315deg,
+            rgba(45, 52, 54, 0.7) 0%,
+            rgba(0, 0, 0, 0.8) 74%
+        ),
+        url(../../img/contents/footer.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+footer.site-footer p,
+footer.site-footer li span b a,
+footer.site-footer span:has(:not(i)),
+footer.site-footer span.fw-bold {
+    color: #ffffff !important;
+}
+
+footer.site-footer li span b,
+footer.site-footer span.fw-bold {
+    font-weight: 500 !important;
+}
+
+footer.site-footer span.font_14,
+footer.site-footer span.mt-1.font_13 {
+    color: #cccccc !important;
+}
+
+footer.site-footer .footer_2 {
+    border-top: 1px solid var(--border_dark);
+}
+
+footer.site-footer .footer_2 .border-bottom {
+    border-bottom: 1px solid var(--border_dark) !important;
+}
+
+footer.site-footer .social_brands a {
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+
+    border-radius: 50%;
+}
+
+footer.site-footer .footer_bottom1 {
+    border-top: 1px solid var(--border_dark);
+}
+/*####################### SITE FOOTER END #######################*/
+
+/*####################### MEDIA RESPONSIVE ########################*/
+@media screen and (max-width: 767px) {
+    /*####################### SITE FOOTER #######################*/
+    footer.site-footer .footer_2_left {
+        margin-top: 15px;
+    }
+    footer.site-footer .footer_2 .footer_1_left {
+        margin-top: 15px;
+    }
+    footer.site-footer .footer_bottom1_left {
+        margin-top: 10px;
+        text-align: left !important;
+    }
+    /*####################### SITE FOOTER END #######################*/
+}
+/*####################### MEDIA RESPONSIVE END ########################*/

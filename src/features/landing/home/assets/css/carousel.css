@@ -1,0 +1,9 @@
+/* Small changes for carousel on landing homepage */
+section#center {
+    background-image: none;
+    height: 100%;
+}
+
+section#center::after {
+    display: none;
+}
