@@ -1,0 +1,46 @@
+/* Stats Cards */
+main section#stats {
+    border-radius: 0 0 40px 40px;
+    background-color: var(--bg_light);
+}
+
+main section#stats .card {
+    transition: transform 0.2s;
+    position: relative;
+}
+
+main section#stats .card .info .text {
+    font-size: 0.8rem;
+}
+
+main section#stats .card h5 {
+    font-size: 0.93rem;
+    font-weight: 500;
+}
+
+main section#stats .card i {
+    position: absolute;
+    top: 1rem;
+    right: 1.3rem;
+}
+
+main section#stats .card.recipes {
+    background-color: #e3f2fd;
+}
+
+main section#stats .card.collections {
+    background-color: #f5e6ff;
+}
+
+main section#stats .card.followers {
+    background-color: #fff3e0;
+}
+
+main section#stats .card.weekly-act {
+    background-color: transparent;
+}
+
+main section#stats .progress {
+    height: 8px;
+    border-radius: 10px;
+}

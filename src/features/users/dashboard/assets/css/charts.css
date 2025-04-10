@@ -1,0 +1,43 @@
+/* Charts */
+main section#charts {
+    padding: 2rem 0;
+}
+
+main section#charts .details {
+    display: flex;
+    gap: 1rem;
+}
+
+main section#charts .details h2 {
+    font-weight: 500;
+}
+
+main section#charts .details small {
+    font-size: 0.8rem;
+}
+
+main section#charts .details .separator {
+    width: 2px;
+    background: #f3f3f3;
+}
+
+main section#charts .chart-container {
+    position: relative;
+    padding-top: 2rem;
+}
+
+main section#charts .engagement-chart small i {
+    position: relative;
+    top: 1px;
+}
+
+main section#charts .engagement-chart h2 {
+    font-size: 1.6rem;
+    margin: 0;
+    text-align: center;
+}
+
+main section#charts .engagement-chart .chart-container {
+    padding-bottom: 1rem;
+    padding-top: 2.2rem;
+}

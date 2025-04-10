@@ -1,0 +1,31 @@
+/*####################### Small Changes on users global styles #######################*/
+header.site-header,
+header.site-header .offcanvas-body {
+    background-color: var(--bg_light);
+}
+/*####################### Small Changes on users global styles END #######################*/
+
+section#header {
+    background-color: var(--bg_light);
+    position: relative;
+    overflow: hidden;
+}
+
+section#header .content {
+    padding-top: 7rem;
+}
+
+section#header .cooking-img {
+    width: 1030px;
+    height: 300px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+section#header .cooking-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 30%;
+}

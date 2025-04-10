@@ -1,0 +1,18 @@
+@media screen and (max-width: 767px) {
+    section#header .content {
+        padding: 0;
+    }
+
+    section#stats .row,
+    section#charts .row {
+        gap: 1.5rem;
+    }
+
+    section#trend .trend_1_left2 {
+        position: static !important;
+    }
+
+    section#trend .trend_1_left2_inner {
+        width: 100% !important;
+    }
+}
