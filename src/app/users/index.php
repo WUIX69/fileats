@@ -16,7 +16,7 @@
 	</div>
 
 	<div class="site-cont">
-		<!-- Header -->
+		<!-- Site Header -->
 		<?= featured('users/shared/layouts/header'); ?>
 
 		<main class="site-main">

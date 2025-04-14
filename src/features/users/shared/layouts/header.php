@@ -44,9 +44,9 @@
                                     height="15" alt="Submenu open/close icon">
                             </a>
                             <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?= app('users/discovers/recipes'); ?>">Discover
+                                <li><a class="dropdown-item" href="<?= app('users/discovers/recipes/'); ?>">Discover
                                         Recipes</a></li>
-                                <li><a class="dropdown-item border-0" href="<?= app('users/discovers/chefs'); ?>">
+                                <li><a class="dropdown-item border-0" href="<?= app('users/discovers/chefs/'); ?>">
                                         Discover
                                         Chefs</a>
                                 </li>

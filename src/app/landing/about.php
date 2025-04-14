@@ -6,34 +6,24 @@
 	<?= shared('elements/meta'); ?>
 	<title>Fil Eats</title>
 	<?= shared('elements/styles'); ?>
-	<?= featured('landing/home/styles'); ?>
+	<?= featured('landing/about/styles'); ?>
 </head>
 
 <body>
-
-	<div class="shared-standalone-cont">
-		<?= shared('layouts/loader/window'); ?>
-	</div>
 
 	<div class="site-cont">
 		<!-- Site Header -->
 		<?= featured('landing/shared/layouts/header'); ?>
 
 		<main class="site-main">
-			<!-- Section Header -->
-			<?= featured('landing/home/components/carousel'); ?>
+			<!-- Header section -->
+			<?= featured('landing/shared/components/hero'); ?>
 
-			<?= featured('landing/home/components/recipes'); ?>
+			<?= featured('landing/about/components/about'); ?>
 
-			<?= featured('landing/home/components/spec'); ?>
+			<?= featured('landing/about/components/testimonials'); ?>
 
 			<?= featured('landing/shared/components/join'); ?>
-
-			<?= featured('landing/home/components/choose'); ?>
-
-			<?= featured('landing/home/components/news'); ?>
-
-			<?= featured('landing/home/components/trend'); ?>
 		</main>
 
 		<!-- Footer -->
@@ -42,7 +32,8 @@
 
 	<!-- Scripts -->
 	<?= shared('elements/scripts'); ?>
-	<?= featured('landing/home/scripts'); ?>
+	<?= featured('landing/about/scripts'); ?>
+
 </body>
 
 </html>
