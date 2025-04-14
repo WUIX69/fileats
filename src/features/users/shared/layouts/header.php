@@ -1,7 +1,7 @@
 <header class="site-header">
     <nav class="navbar navbar-expand-lg navbar-light w-100 pb-2 border-bottom">
         <div class="container-xl">
-            <a class="d-flex" href="index.html">
+            <a class="d-flex" href="<?= app('users'); ?>">
                 <b class="fs-2 d-block logo text-center"> <span class="family_1">Fil Eats</span> <span
                         class="d-block text-uppercase font_13">Cooking Recipes</span>
                     <span class="d-block font_12 col_green mt-1">
@@ -12,12 +12,12 @@
                 </b>
             </a>
             <button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
-                <img src="../../../public/assets/img/icons-svg/list.svg" width="40" height="40"
+                <img src="<?= statf('assets/img/icons-svg/list.svg'); ?>" width="40" height="40"
                     alt="Open TemplateOnweb website menu" />
             </button>
             <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
                 <div class="offcanvas-header shadow">
-                    <a class="d-flex" href="index.html">
+                    <a class="d-flex" href="<?= app('users'); ?>">
                         <b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span>
                             <span class="d-block text-uppercase font_13">Cooking Recipes</span>
                             <span class="d-block font_12 col_green mt-1">
@@ -27,51 +27,52 @@
                             </span>
                         </b>
                     </a>
-                    <img src="../../../public/assets/img/icons-svg/x.svg" width="40" height="40" class="ms-auto"
+                    <img src="<?= statf('assets/img/icons-svg/x.svg'); ?>" width="40" height="40" class="ms-auto"
                         data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
                 </div>
                 <div class="offcanvas-body pt-0 align-items-center">
                     <ul class="navbar-nav align-items-lg-center ms-auto mt-2">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html" title="Visit home page">
+                            <a class="nav-link active" href="<?= app('users'); ?>" title="Visit home page">
                                 Dashboard
                             </a>
                         </li>
                         <li class="nav-item dropdown drop_border">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Find Recipes<img src="../../../public/assets/img/icons-svg/chevron-down.svg" width="15"
+                                Find Recipes<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"
                                     height="15" alt="Submenu open/close icon">
                             </a>
                             <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="discovers/recipes/index.html">Discover
+                                <li><a class="dropdown-item" href="<?= app('users/discovers/recipes'); ?>">Discover
                                         Recipes</a></li>
-                                <li><a class="dropdown-item border-0" href="discovers/chefs/index.html">
+                                <li><a class="dropdown-item border-0" href="<?= app('users/discovers/chefs'); ?>">
                                         Discover
                                         Chefs</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="bookmarks.html" title="Visit Bookmarked recipes">
+                            <a class="nav-link" href="<?= app('users/bookmarks'); ?>" title="Visit Bookmarked recipes">
                                 Bookmarks
                             </a>
                         </li>
                         <li class="nav-item dropdown drop_border">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
-                                Manage Recipes<img src="../../../public/assets/img/icons-svg/chevron-down.svg"
+                                Manage Recipes<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>"
                                     width="15" height="15" alt="Submenu open/close icon">
                             </a>
                             <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="recipe/submit.html"> Submit a Recipe</a></li>
-                                <li><a class="dropdown-item border-0" href="recipe/mine.html"> My
+                                <li><a class="dropdown-item" href="<?= app('users/recipe/submit'); ?>"> Submit a
+                                        Recipe</a></li>
+                                <li><a class="dropdown-item border-0" href="<?= app('users/recipe/mine'); ?>"> My
                                         Recipes</a>
                                 </li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="settings.html" title="Visit Settings">
+                            <a class="nav-link" href="<?= app('users/settings'); ?>" title="Visit Settings">
                                 Settings
                             </a>
                         </li>
@@ -85,7 +86,7 @@
                         <li class="nav-item dropdown drop_border">
                             <div class="user-greeting d-flex align-items-center">
                                 <div class="profile">
-                                    <img src="../../../public/assets/img/members/jack.jpg" class="rounded-circle me-2"
+                                    <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="rounded-circle me-2"
                                         width="37" height="37" alt="User profile picture">
                                 </div>
                                 <div class="greeting d-flex align-items-start flex-column">
@@ -95,15 +96,15 @@
                             </div>
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false"><img
-                                    src="../../../public/assets/img/icons-svg/chevron-down.svg" width="15" height="15"
+                                    src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15" height="15"
                                     alt="Submenu open/close icon">
                             </a>
                             <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="blog/index.html"> Dashboard</a></li>
-                                <li><a class="dropdown-item" href="blog/single-view.html">
+                                <li><a class="dropdown-item" href="<?= app('users'); ?>/index.html"> Dashboard</a></li>
+                                <li><a class="dropdown-item" href="<?= app('users/settings'); ?>/single-view.html">
                                         Settings</a>
                                 </li>
-                                <li><a class="dropdown-item border-0" href="blog/single-view.html">
+                                <li><a class="dropdown-item border-0" href="<?= app('landing'); ?>/single-view.html">
                                         Logout</a>
                                 </li>
                             </ul>

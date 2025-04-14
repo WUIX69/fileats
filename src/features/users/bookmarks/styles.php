@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?= featured('users/bookmarks/assets/css/bookmarks-grid.css', true); ?>">
