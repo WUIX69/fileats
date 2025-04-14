@@ -1,4 +1,3 @@
-<!-- Archive Old Messages Flyout -->
 <div class="ui flyout" id="archiveFlyout">
     <i class="close icon"></i>
     <div class="ui header">
