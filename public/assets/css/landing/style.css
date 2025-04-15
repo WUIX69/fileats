@@ -1,12 +1,56 @@
-section:not(.img-nr) img,
-footer.site-footer img {
-    border-radius: 0.25rem;
+.img-nr img {
+    border-radius: 0 !important;
     object-fit: cover;
     object-position: center;
 }
 
-.img-nr img {
-    border-radius: 0 !important;
+/*####################### SECTION (HEADER) #######################*/
+main section#header {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+    /* margin-bottom: 2rem;
+    border-bottom: 1px solid #eee; */
+}
+
+main section#header .content {
+    margin: 0;
+    padding: 0;
+}
+
+/* Search box */
+main section#header .content .search-box .search-input {
+    border-right: none;
+}
+
+main section#header .content .search-box .search-button {
+    border-left: none;
+}
+
+main section#header .content .filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+main section#header .content .filters-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+}
+
+main section#header .content .filters-button.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+main section#header .content .filters-select {
+    min-width: 160px;
+}
+/*####################### SECTION (HEADER) END #######################*/
+
+section:not(.img-nr) img,
+footer.site-footer img {
+    border-radius: 0.25rem;
     object-fit: cover;
     object-position: center;
 }

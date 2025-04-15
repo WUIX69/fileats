@@ -19,34 +19,6 @@
     font-weight: 600;
 }
 
-.btn-success {
-    background-color: var(--green);
-    border-color: var(--green);
-}
-
-.btn-success:hover {
-    background-color: var(--green);
-    border-color: var(--green);
-    opacity: 0.8;
-}
-
-.btn-outline-success {
-    border-color: var(--green);
-    color: var(--green);
-}
-
-.btn-outline-success:hover {
-    border-color: var(--green);
-    background-color: var(--green);
-    color: var(--bg_light);
-}
-
-.btn-outline-success.active {
-    background-color: var(--green) !important;
-    border-color: var(--green);
-    color: var(--bg_light);
-}
-
 /*####################### SECTION (Header) #######################*/
 main section#header {
     padding-top: 2rem;
