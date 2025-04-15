@@ -83,6 +83,19 @@ section#recipe .recipe_dt13_inner1_left .nav-tabs .nav-link.active {
 
 section#recipe .recipe_1_left2_inner_right {
     min-height: 320px;
+    position: relative;
+}
+
+section#recipe .recipe_1_left2_inner_right .actions {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+
+    position: relative;
+    bottom: -1.3rem;
+    right: 0;
 }
 
 /* section#recipe .recipe_dt4_left img {

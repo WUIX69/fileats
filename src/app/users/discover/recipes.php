@@ -20,7 +20,7 @@
             <?= featured('users/recipes/components/header') ?>
 
             <!-- Recipes Section -->
-            <?= featured('users/recipes/components/recipes') ?>
+            <?= shared('features/recipes/components/recipes') ?>
         </main>
     </div>
 

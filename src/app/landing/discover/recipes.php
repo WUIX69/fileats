@@ -27,7 +27,7 @@
             <?= featured('landing/recipes/components/header') ?>
 
             <!-- Recipes Section -->
-            <?= featured('landing/recipes/components/recipes') ?>
+            <?= shared('features/recipes/components/recipes') ?>
         </main>
 
         <!-- Footer -->
