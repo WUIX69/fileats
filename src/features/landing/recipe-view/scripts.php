@@ -1,0 +1,1 @@
+<script src="<?= featured('landing/recipe-view/assets/js/main.js', true); ?>"></script>

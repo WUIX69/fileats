@@ -93,6 +93,10 @@ section#recipe .recipe_dt4_right {
     min-height: 320px;
 }
 
+section#recipe .recipe_1_left2o1i1 {
+    min-height: 263px;
+}
+
 /*####################### SECTION (RECIPE) END #######################*/
 
 @media screen and (max-width: 767px) {

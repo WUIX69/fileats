@@ -92,7 +92,8 @@
                                             </div>
                                             <div class="recipe_1_left2o1i p-2 shadow">
                                                 <div class="recipe_1_left2o1i1 p-3 border_light">
-                                                    <b class="font_14 d-block"><a href="single-view.html">PASTO
+                                                    <b class="font_14 d-block"><a
+                                                            href="<?= app('landing/views/recipe-single-view'); ?>">PASTO
                                                             PIZZA WITH EXTRA TOPPINGS</a></b>
                                                     <hr class="line">
                                                     <p> Cum quo odit molestiae repellendus, repudiandae
@@ -425,7 +426,9 @@
                                     </div>
                                     <div class="col-md-8 ps-0">
                                         <div class="recipe_1_left2_inner_right shadow py-5 px-4">
-                                            <b class="d-block"><a href="single-view.html">PASTO PIZZA WITH
+                                            <b class="d-block"><a
+                                                    href="<?= app('landing/views/recipe-single-view'); ?>">PASTO PIZZA
+                                                    WITH
                                                     EXTRA
                                                     TOPPINGS</a></b>
                                             <hr class="line">
