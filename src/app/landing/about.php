@@ -16,7 +16,7 @@
 		<?= featured('landing/shared/layouts/header'); ?>
 
 		<main class="site-main">
-			<!-- Header section -->
+			<!-- Hero section -->
 			<?= featured('landing/shared/components/hero'); ?>
 
 			<?= featured('landing/about/components/about'); ?>

@@ -1,0 +1,4 @@
+header.site-header,
+header.site-header .offcanvas-body {
+    background-color: var(--bg_light);
+}

@@ -50,41 +50,35 @@ $activeLink = str_replace('.php', '', $pageName);
                             </a>
                         </li>
 
+                        <li class="nav-item dropdown drop_border">
+                            <a class="nav-link dropdown-toggle <?= ($activeLink === 'discover' || $activeLink === 'views') ? 'active' : '' ?>"
+                                href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Find Recipes<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"
+                                    height="15" alt="Submenu open/close icon">
+                            </a>
+                            <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="<?= app('landing/discover/recipes'); ?>"> Discover
+                                        Recipes</a>
+                                </li>
+                                <li><a class="dropdown-item border-0" href="<?= app('landing/discover/chefs'); ?>">
+                                        Discover Chefs</a>
+                                </li>
+                            </ul>
+                        </li>
+
                         <li class="nav-item">
                             <a class="nav-link <?= $activeLink === 'about' ? 'active' : '' ?>"
                                 href="<?= app('landing/about'); ?>" title="Visit home page">
                                 About Us
                             </a>
                         </li>
-                        <li class="nav-item dropdown drop_border">
-                            <a class="nav-link dropdown-toggle <?= $activeLink === 'recipe' ? 'active' : '' ?>" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Recipes<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"
-                                    height="15" alt="Submenu open/close icon">
-                            </a>
-                            <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?= app('landing/recipe/'); ?>"> Recipes</a></li>
-                                <li><a class="dropdown-item border-0" href="<?= app('landing/recipe/single-view'); ?>">
-                                        Recipe
-                                        Detail</a>
-                                </li>
-                            </ul>
-                        </li>
 
-
-                        <li class="nav-item dropdown drop_border">
-                            <a class="nav-link dropdown-toggle <?= $activeLink === 'blog' ? 'active' : '' ?>" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Blog<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"
-                                    height="15" alt="Submenu open/close icon">
+                        <li class="nav-item">
+                            <a class="nav-link <?= $activeLink === 'blog' ? 'active' : '' ?>"
+                                href="<?= app('landing/blog/'); ?>" title="Visit home page">
+                                Blog
                             </a>
-                            <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?= app('landing/blog/'); ?>"> Blog</a></li>
-                                <li><a class="dropdown-item border-0" href="<?= app('landing/blog/single-view'); ?>">
-                                        Blog
-                                        Detail</a>
-                                </li>
-                            </ul>
                         </li>
 
                         <li class="nav-item">
@@ -92,19 +86,6 @@ $activeLink = str_replace('.php', '', $pageName);
                                 href="<?= app('landing/team'); ?>" title="Visit home page">
                                 Team
                             </a>
-                        </li>
-
-                        <li class="nav-item dropdown drop_border">
-                            <a class="nav-link dropdown-toggle <?= $activeLink === 'auth' ? 'active' : '' ?>" href="#"
-                                id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Pages<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"
-                                    height="15" alt="Submenu open/close icon">
-                            </a>
-                            <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="<?= app('auth'); ?>"> Login</a></li>
-                                <li><a class="dropdown-item border-0" href="<?= app('auth/register'); ?>">Register</a>
-                                </li>
-                            </ul>
                         </li>
 
                         <li class="nav-item">

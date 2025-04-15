@@ -1,0 +1,1 @@
+<script src="<?= featured('landing/chefs/assets/js/main.js', true); ?>"></script>

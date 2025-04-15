@@ -1,0 +1,8 @@
+main section#header {
+    margin-bottom: 2rem;
+    border-bottom: 1px solid #eee;
+}
+
+main section#header .ms-auto .form-select {
+    height: 38px;
+}

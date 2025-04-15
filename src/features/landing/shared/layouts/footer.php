@@ -34,7 +34,7 @@
                         <ul class="mb-0 recipes-downward-fmt">
                             <li class="d-flex border-bottom  pb-3 mb-3">
                                 <span><a href="#"><img width="100" alt="abc"
-                                            src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
+                                            src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"></a></span>
                                 <span class="flex-column ms-3">
                                     <b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis
                                             Sem
@@ -45,7 +45,7 @@
                             </li>
                             <li class="d-flex border-bottom  pb-3 mb-3">
                                 <span><a href="#"><img width="100" alt="abc"
-                                            src="../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"></a></span>
+                                            src="<?= statf('assets/img/contents/menus/launch/tooplate-soup.jpg'); ?>"></a></span>
                                 <span class="flex-column ms-3">
                                     <b class="d-block font_14"><a class="text-white-50" href="#">Ligula in
                                             libero
@@ -55,7 +55,7 @@
                             </li>
                             <li class="d-flex">
                                 <span><a href="#"><img width="100" alt="abc"
-                                            src="../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
+                                            src="<?= statf('assets/img/contents/menus/dinner/salmon.jpg'); ?>"></a></span>
                                 <span class="flex-column ms-3">
                                     <b class="d-block font_14"><a class="text-white-50" href="#">Consectetur
                                             Elit
@@ -124,9 +124,8 @@
                 </div>
                 <div class="col-md-8">
                     <div class="footer_bottom1_left text-end">
-                        <p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design
-                            by
-                            <a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a>
+                        <p class="mb-0 text-white-50">© 2025 Fil Eats. All Rights Reserved | Design by
+                            <a class="col_green fw-bold" href="#">Fil Eats</a>
                         </p>
                     </div>
                 </div>

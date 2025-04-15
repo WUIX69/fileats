@@ -1,3 +1,74 @@
+.btn-success {
+    background-color: var(--green);
+    border-color: var(--green);
+}
+
+.btn-success:hover {
+    background-color: var(--green);
+    border-color: var(--green);
+    opacity: 0.8;
+}
+
+.btn-outline-success {
+    border-color: var(--green);
+    color: var(--green);
+}
+
+.btn-outline-success:hover {
+    border-color: var(--green);
+    background-color: var(--green);
+    color: var(--bg_light);
+}
+
+.btn-outline-success.active {
+    background-color: var(--green) !important;
+    border-color: var(--green);
+    color: var(--bg_light);
+}
+
+main section#header {
+    padding-top: 2rem;
+    padding-bottom: 1.5rem;
+
+    /* margin-bottom: 2rem;
+    border-bottom: 1px solid #eee; */
+}
+
+/* Search box */
+main section#header .content .search-box .search-input {
+    border-right: none;
+}
+
+main section#header .content .search-box .search-button {
+    border-left: none;
+}
+
+/* main section#header .content {
+    padding: 1rem 0;
+    border-top: 1px solid #eee;
+    margin-top: 1rem;
+} */
+
+main section#header .content .filters {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+main section#header .content .filters-button {
+    padding: 0.5rem 1.5rem;
+    border-radius: 20px;
+}
+
+main section#header .content .filters-button.active {
+    background-color: #0d6efd;
+    color: white;
+}
+
+main section#header .content .filters-select {
+    min-width: 160px;
+}
+
 /*####################### Styles DRY #######################*/
 section#center,
 section#join {

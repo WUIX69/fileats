@@ -1,0 +1,126 @@
+/* Modern Profile Header */
+section#profile {
+    background: var(--bg_light);
+    border-radius: 0 0 2rem 2rem;
+    padding: 3rem 0;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+section#profile .profile-image-wrapper {
+    width: 250px;
+    height: 250px;
+    position: relative;
+    margin: 0 auto;
+}
+
+section#profile .profile-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border: 5px solid #fff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+section#profile .profile-image:hover {
+    transform: scale(1.02);
+}
+
+section#profile .online-status {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    width: 43px;
+    height: 43px;
+    background-color: #28a745;
+    border: 4px solid #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Enhanced Typography */
+section#profile h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    margin-bottom: 0.5rem;
+}
+
+section#profile .chef-title {
+    font-size: 1.1rem;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+/* Modern Badges */
+section#profile .chef-badges .badge {
+    padding: 0.6rem 1.2rem;
+    font-weight: 500;
+    border-radius: 12px;
+    margin-right: 0.5rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* Enhanced Stats Cards */
+section#profile .stats-row .stat-card {
+    background: white;
+    border-radius: 0.8rem !important;
+    box-shadow: var(--bs-box-shadow);
+    transition: all 0.3s ease;
+
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+section#profile .stats-row .stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+section#profile .stat-card h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+section#profile .stat-card .stat-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+section#profile .stat-card .stat-content p {
+    font-size: 0.8rem;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+section#profile .stat-card .stat-emoji {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #2c3e50;
+
+    position: relative;
+    top: -0.3rem;
+}
+
+section#profile .stat-card.recipes {
+    background-color: #e3f2fd !important;
+}
+
+section#profile .stat-card.followers {
+    background-color: #f5e6ff !important;
+}
+
+section#profile .stat-card.rating {
+    background-color: #f8f9fa !important;
+}
+
+section#profile .stat-card.yrs-exp {
+    background-color: #fff3e0 !important;
+}
