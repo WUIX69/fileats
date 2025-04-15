@@ -1,3 +1,4 @@
+<?php include_once __DIR__ . '/../../../utils/php/functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
