@@ -6,7 +6,6 @@
     <?= shared('elements/meta'); ?> <!-- rcs Meta -->
     <title>Discover Chefs (View) - Fil Eats</title>
     <?= shared('elements/styles'); ?> <!-- rcs Styles -->
-    <?= shared('features/chef-view/styles'); ?>
     <?= featured('landing/chef-view/styles'); ?>
 </head>
 
@@ -22,10 +21,10 @@
 
         <main class="site-main">
             <!-- Chef Profile Header -->
-            <?= shared('features/chef-view/components/profile'); ?>
+            <?= shared('components/ui/chef-view/profile'); ?>
 
             <!-- Chef Content Tabs -->
-            <?= shared('features/chef-view/components/overview'); ?>
+            <?= shared('components/ui/chef-view/overview'); ?>
         </main>
 
         <!-- Site Footer -->
@@ -33,7 +32,6 @@
     </div>
 
     <?= shared('elements/scripts'); ?> <!-- rcs Scripts -->
-    <?= shared('features/chef-view/scripts'); ?>
     <?= featured('landing/chef-view/scripts'); ?>
 
 </body>

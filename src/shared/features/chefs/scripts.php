@@ -1,1 +1,0 @@
-<script src="<?= shared('features/chefs/assets/js/main.js', true); ?>"></script>

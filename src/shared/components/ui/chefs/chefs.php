@@ -255,7 +255,7 @@
         </div>
 
         <!-- Pagination -->
-        <?= shared('components/ui/pagination-grid'); ?>
+        <?= shared('components/primitives/pagination-grid'); ?>
 
         <!-- Empty State -->
         <div class="text-center py-5 d-none">

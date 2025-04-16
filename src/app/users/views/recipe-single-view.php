@@ -6,7 +6,7 @@
     <?= shared('elements/meta'); ?> <!-- rcs Meta -->
     <title>Recipe (View) - Fil Eats</title>
     <?= shared('elements/styles'); ?> <!-- rcs Styles -->
-    <?= featured('landing/recipe-view/styles'); ?>
+    <?= featured('users/recipe-view/styles'); ?>
 </head>
 
 <body>
@@ -17,18 +17,16 @@
 
     <div class="site-cont">
         <!-- Site Header -->
-        <?= featured('landing/shared/layouts/header'); ?>
+        <?= featured('users/shared/layouts/header'); ?>
 
         <main class="site-main">
             <?= shared('components/ui/recipe-view/recipe'); ?>
         </main>
 
-        <!-- Site Footer -->
-        <?= featured('landing/shared/layouts/footer'); ?>
     </div>
 
     <?= shared('elements/scripts'); ?> <!-- rcs Scripts -->
-    <?= featured('landing/recipe-view/scripts'); ?>
+    <?= featured('users/recipe-view/scripts'); ?>
 
 </body>
 

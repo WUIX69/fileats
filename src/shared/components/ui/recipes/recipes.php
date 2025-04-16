@@ -31,31 +31,31 @@
                     <div class="recipe_1_left2 mt-4">
                         <div class="tab-content">
                             <!-- Recipe Portrait View -->
-                            <?= shared('features/recipes/components/tab/portrait'); ?>
+                            <?= shared('components/ui/recipes/tab/portrait'); ?>
 
                             <!-- Recipe Landscape View -->
-                            <?= shared('features/recipes/components/tab/landscape'); ?>
+                            <?= shared('components/ui/recipes/tab/landscape'); ?>
                         </div>
                     </div>
-                    <?= shared('components/ui/pagination-grid'); ?>
+                    <?= shared('components/primitives/pagination-grid'); ?>
                 </div>
             </div>
             <div class="col-md-4 col-lg-3">
                 <div class="recipe_1_right">
                     <!-- Recent Recipes -->
-                    <?= shared('components/ui/recent'); ?>
+                    <?= shared('components/primitives/recent'); ?>
 
                     <!-- Categories -->
-                    <?= shared('components/ui/categories'); ?>
+                    <?= shared('components/primitives/categories'); ?>
 
                     <!-- Measurements -->
-                    <?= shared('components/ui/measurements'); ?>
+                    <?= shared('components/primitives/measurements'); ?>
 
                     <!-- Tags -->
-                    <?= shared('components/ui/tags'); ?>
+                    <?= shared('components/primitives/tags'); ?>
 
                     <!-- Newsletter -->
-                    <?= shared('components/ui/news-letter'); ?>
+                    <?= shared('components/primitives/news-letter'); ?>
                 </div>
             </div>
         </div>

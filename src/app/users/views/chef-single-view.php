@@ -4,9 +4,9 @@
 
 <head>
     <?= shared('elements/meta'); ?> <!-- rcs Meta -->
-    <title>Recipe (View) - Fil Eats</title>
+    <title>Discover Chefs (View) - Fil Eats</title>
     <?= shared('elements/styles'); ?> <!-- rcs Styles -->
-    <?= featured('landing/recipe-view/styles'); ?>
+    <?= featured('users/chef-view/styles'); ?>
 </head>
 
 <body>
@@ -17,18 +17,20 @@
 
     <div class="site-cont">
         <!-- Site Header -->
-        <?= featured('landing/shared/layouts/header'); ?>
+        <?= featured('users/shared/layouts/header'); ?>
 
         <main class="site-main">
-            <?= shared('components/ui/recipe-view/recipe'); ?>
+            <!-- Chef Profile Header -->
+            <?= shared('components/ui/chef-view/profile'); ?>
+
+            <!-- Chef Content Tabs -->
+            <?= shared('components/ui/chef-view/overview'); ?>
         </main>
 
-        <!-- Site Footer -->
-        <?= featured('landing/shared/layouts/footer'); ?>
     </div>
 
     <?= shared('elements/scripts'); ?> <!-- rcs Scripts -->
-    <?= featured('landing/recipe-view/scripts'); ?>
+    <?= featured('users/chef-view/scripts'); ?>
 
 </body>
 

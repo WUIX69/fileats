@@ -4,7 +4,7 @@
 
 <head>
     <?= shared('elements/meta'); ?> <!-- rcs Meta -->
-    <title>Dashboard - Fil Eats</title>
+    <title>Discover Recipes - Fil Eats</title>
     <?= shared('elements/styles'); ?> <!-- rcs Styles -->
     <?= featured('landing/recipes/styles'); ?>
 </head>
@@ -27,7 +27,7 @@
             <?= featured('landing/recipes/components/header') ?>
 
             <!-- Recipes Section -->
-            <?= shared('features/recipes/components/recipes') ?>
+            <?= shared('components/ui/recipes/recipes') ?>
         </main>
 
         <!-- Footer -->

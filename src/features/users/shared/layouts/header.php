@@ -50,7 +50,7 @@ $activeLink = str_replace('.php', '', $pageName);
                             </a>
                         </li>
                         <li class="nav-item dropdown drop_border">
-                            <a class="nav-link dropdown-toggle <?= $activeLink === 'discover' ? 'active' : '' ?>"
+                            <a class="nav-link dropdown-toggle <?= ($activeLink === 'discover' || $activeLink === 'views') ? 'active' : '' ?>"
                                 href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
                                 Find Recipes<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"

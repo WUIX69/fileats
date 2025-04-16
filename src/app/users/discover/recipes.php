@@ -11,6 +11,10 @@
 
 <body>
 
+    <div class="shared-standalone-cont">
+        <?= shared('layouts/loader/window'); ?> <!-- Window loader -->
+    </div>
+
     <div class="site-cont">
         <!-- Site Header -->
         <?= featured('users/shared/layouts/header'); ?>
@@ -20,7 +24,7 @@
             <?= featured('users/recipes/components/header') ?>
 
             <!-- Recipes Section -->
-            <?= shared('features/recipes/components/recipes') ?>
+            <?= shared('components/ui/recipes/recipes') ?>
         </main>
     </div>
 

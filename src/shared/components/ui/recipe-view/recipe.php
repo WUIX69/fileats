@@ -7,16 +7,16 @@
                 <div class="recipe_dt">
                     <h4 class="mb-4 head_after">Dealing With a Diet Plan</h4>
                     <!-- Montage -->
-                    <?= shared('features/recipe-view/components/col/montage'); ?>
+                    <?= shared('components/ui/recipe-view/col/montage'); ?>
 
                     <!-- Details -->
-                    <?= shared('features/recipe-view/components/col/details'); ?>
+                    <?= shared('components/ui/recipe-view/col/details'); ?>
 
                     <!-- Chef Box -->
-                    <?= shared('features/recipe-view/components/col/chef-box'); ?>
+                    <?= shared('components/ui/recipe-view/col/chef-box'); ?>
 
                     <!-- Related Recipes -->
-                    <?= shared('features/recipe-view/components/col/related'); ?>
+                    <?= shared('components/ui/recipe-view/col/related'); ?>
                 </div>
             </div>
 
@@ -24,19 +24,19 @@
             <div class="col-md-4 col-lg-3">
                 <div class="recipe_1_right">
                     <!-- Recent Recipes -->
-                    <?= shared('components/ui/recent'); ?>
+                    <?= shared('components/primitives/recent'); ?>
 
                     <!-- Categories -->
-                    <?= shared('components/ui/categories'); ?>
+                    <?= shared('components/primitives/categories'); ?>
 
                     <!-- Measurements -->
-                    <?= shared('components/ui/measurements'); ?>
+                    <?= shared('components/primitives/measurements'); ?>
 
                     <!-- Tags -->
-                    <?= shared('components/ui/tags'); ?>
+                    <?= shared('components/primitives/tags'); ?>
 
                     <!-- Newsletter -->
-                    <?= shared('components/ui/newsletter'); ?>
+                    <?= shared('components/primitives/news-letter'); ?>
                 </div>
             </div>
         </div>

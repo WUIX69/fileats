@@ -26,16 +26,16 @@
         </div>
         <div class="tab-content" id="chefTabContent">
             <!-- Recipes Tab -->
-            <?= shared('features/chef-view/components/tab/recipes'); ?>
+            <?= shared('components/ui/chef-view/tab/recipes'); ?>
 
             <!-- About Tab -->
-            <?= shared('features/chef-view/components/tab/about'); ?>
+            <?= shared('components/ui/chef-view/tab/about'); ?>
 
             <!-- Gallery Tab -->
-            <?= shared('features/chef-view/components/tab/gallery'); ?>
+            <?= shared('components/ui/chef-view/tab/gallery'); ?>
 
             <!-- Reviews Tab -->
-            <?= shared('features/chef-view/components/tab/reviews'); ?>
+            <?= shared('components/ui/chef-view/tab/reviews'); ?>
         </div>
     </div>
 </section>
