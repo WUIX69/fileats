@@ -5,7 +5,7 @@ $appName = explode('/', trim($appUrlPath, '/'))[2] ?? '';
 
 $styles = [
     'vendor/bootstrap/dist/css/bootstrap.css', // Use default bootstrap css to Nuke: modal
-    // 'vendor/fomantic-ui/dist/semantic.min.css', TODO: Fix this
+    'vendor/fomantic-ui/dist/semantic.min.css', // TODO: Fix this
     'assets/css/global.css',
     'assets/css/loader/window.css',
     'assets/css/' . $appName . '/style.css',

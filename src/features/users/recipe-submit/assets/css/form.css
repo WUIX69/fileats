@@ -1,0 +1,56 @@
+main section#recipe {
+    padding: 3rem 0;
+}
+
+main section#recipe .recipe-form h6 {
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+main section#recipe .recipe-form p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+main section#recipe .recipe-form .ingredient-item,
+main section#recipe .recipe-form .instruction-item {
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+main section#recipe .recipe-form .remove-item {
+    color: #dc3545;
+    cursor: pointer;
+}
+
+main section#recipe .recipe-form .image-preview {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    display: none;
+}
+
+main section#recipe .recipe-form textarea {
+    height: 120px !important;
+}
+
+main section#recipe .recipe-form .form-header {
+    margin-bottom: 2rem;
+}
+
+main section#recipe .recipe-form .form-header .line {
+    width: 65px;
+    height: 1.5px !important;
+    background-color: var(--green);
+}
+
+main
+    section#recipe
+    .recipe-form
+    .ui.basic.button:not(.actions .ui.basic.button):hover {
+    background-color: var(--green) !important;
+    color: #fff;
+}

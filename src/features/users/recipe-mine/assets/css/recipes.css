@@ -1,0 +1,50 @@
+main section#recipes .recipe-card {
+    /* border: none; */
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s ease-in-out;
+}
+
+main section#recipes .recipe-card:hover {
+    transform: translateY(-5px);
+}
+
+main section#recipes .recipe-card .card-img-top {
+    height: 416px;
+    object-fit: stretch;
+    object-position: center;
+}
+
+main section#recipes .badge {
+    font-weight: 500;
+    padding: 0.5em 1em;
+}
+
+main section#recipes .recipe-meta {
+    color: #6c757d;
+}
+
+main section#recipes .recipe-meta i {
+    font-size: 0.875rem;
+}
+
+main section#recipes .card-actions {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+main section#recipes .card-actions .btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main section#recipes .recipe-stats {
+    border-top: 1px solid #eee;
+    padding-top: 0.75rem;
+}

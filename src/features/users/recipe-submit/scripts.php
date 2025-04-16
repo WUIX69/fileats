@@ -1,0 +1,1 @@
+<script src="<?= featured('users/recipe-submit/assets/js/main.js', true); ?>"></script>

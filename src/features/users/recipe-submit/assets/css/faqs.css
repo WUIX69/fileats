@@ -1,0 +1,16 @@
+main section#recipe .recipe-faqs .faq-header {
+    margin-bottom: 2rem;
+}
+
+main section#recipe .recipe-faqs .faq-item {
+    margin-bottom: 2rem;
+}
+
+main section#recipe .recipe-faqs .faq-item .text-primary {
+    font-weight: 600;
+    color: var(--green) !important;
+}
+
+main section#recipe .recipe-faqs .faq-item p {
+    font-size: 0.9rem;
+}
