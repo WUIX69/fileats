@@ -4,19 +4,19 @@
         <div class="col-md-4 pe-0">
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
-                    <a href="single-view.html"><img
-                            src="../../../../../public/assets/img/contents/menus/breakfast/burger-set.jpg"
-                            class="img-fluid" alt="abc"></a>
+                    <a href="<?= app('views/recipe-single-view', true) ?>"><img
+                            src="<?= statf('assets/img/contents/menus/breakfast/burger-set.jpg'); ?>" class="img-fluid"
+                            alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
-                            href="single-view.html">Vegan</a></h6>
+                            href="javascript:void(0);">Vegan</a></h6>
                 </div>
             </div>
         </div>
         <div class="col-md-8 ps-0">
             <div class="recipe_1_left2_inner_right shadow py-5 px-4">
-                <b class="d-block"><a href="<?= app('landing/views/recipe-single-view'); ?>">PASTO PIZZA
+                <b class="d-block"><a href="<?= app('views/recipe-single-view', true); ?>">PASTO PIZZA
                         WITH
                         EXTRA
                         TOPPINGS</a></b>
@@ -49,7 +49,7 @@
                     <button class="btn btn-outline-danger">
                         <i class="bi bi-heart-fill"></i>
                     </button>
-                    <a class="btn btn-success" href="<?= app('landing/views/recipe-single-view'); ?>">
+                    <a class="btn btn-success" href="<?= app('views/recipe-single-view', true); ?>">
                         <i class="bi bi-eye"></i> View Recipe
                     </a>
                 </div>
@@ -60,19 +60,19 @@
         <div class="col-md-4 pe-0">
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
-                    <a href="single-view.html"><img
-                            src="../../../../../public/assets/img/contents/menus/dinner/salmon.jpg" class="img-fluid"
+                    <a href="<?= app('views/recipe-single-view', true); ?>"><img
+                            src="<?= statf('assets/img/contents/menus/dinner/salmon.jpg'); ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
-                            href="single-view.html">Hot</a></h6>
+                            href="javascript:void(0);">Hot</a></h6>
                 </div>
             </div>
         </div>
         <div class="col-md-8 ps-0">
             <div class="recipe_1_left2_inner_right shadow py-5 px-4">
-                <b class="d-block"><a href="single-view.html">HEALTHY STRAWBERRY
+                <b class="d-block"><a href="<?= app('views/recipe-single-view', true); ?>">HEALTHY STRAWBERRY
                         AND
                         BANANA SHAKES</a></b>
                 <hr class="line">
@@ -104,7 +104,7 @@
                     <button class="btn btn-outline-danger">
                         <i class="bi bi-heart-fill"></i>
                     </button>
-                    <a class="btn btn-success" href="<?= app('landing/views/recipe-single-view'); ?>">
+                    <a class="btn btn-success" href="<?= app('views/recipe-single-view', true); ?>">
                         <i class="bi bi-eye"></i> View Recipe
                     </a>
                 </div>
@@ -115,19 +115,19 @@
         <div class="col-md-4 pe-0">
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
-                    <a href="single-view.html"><img
-                            src="../../../../../public/assets/img/contents/menus/dinner/seafood.jpg" class="img-fluid"
+                    <a href="<?= app('views/recipe-single-view', true); ?>"><img
+                            src="<?= statf('assets/img/contents/menus/dinner/seafood.jpg'); ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
-                            href="single-view.html">New</a></h6>
+                            href="javascript:void(0);">New</a></h6>
                 </div>
             </div>
         </div>
         <div class="col-md-8 ps-0">
             <div class="recipe_1_left2_inner_right shadow py-5 px-4">
-                <b class="d-block"><a href="single-view.html">EXTRA CHEESY
+                <b class="d-block"><a href="<?= app('views/recipe-single-view', true); ?>">EXTRA CHEESY
                         FRENCH
                         HOT
                         DOG</a></b>
@@ -160,7 +160,7 @@
                     <button class="btn btn-outline-danger">
                         <i class="bi bi-heart-fill"></i>
                     </button>
-                    <a class="btn btn-success" href="<?= app('landing/views/recipe-single-view'); ?>">
+                    <a class="btn btn-success" href="<?= app('views/recipe-single-view', true); ?>">
                         <i class="bi bi-eye"></i> View Recipe
                     </a>
                 </div>
@@ -171,19 +171,19 @@
         <div class="col-md-4 pe-0">
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
-                    <a href="single-view.html"><img
-                            src="../../../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"
+                    <a href="<?= app('views/recipe-single-view', true); ?>"><img
+                            src="<?= statf('assets/img/contents/menus/breakfast/morning-fresh.jpg'); ?>"
                             class="img-fluid" alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
-                            href="single-view.html">Popular</a></h6>
+                            href="javascript:void(0);">Popular</a></h6>
                 </div>
             </div>
         </div>
         <div class="col-md-8 ps-0">
             <div class="recipe_1_left2_inner_right shadow py-5 px-4">
-                <b class="d-block"><a href="single-view.html">DEALING WITH A
+                <b class="d-block"><a href="<?= app('views/recipe-single-view', true); ?>">DEALING WITH A
                         DIET
                         PLAN</a></b>
                 <hr class="line">
@@ -215,7 +215,7 @@
                     <button class="btn btn-outline-danger">
                         <i class="bi bi-heart-fill"></i>
                     </button>
-                    <a class="btn btn-success" href="<?= app('landing/views/recipe-single-view'); ?>">
+                    <a class="btn btn-success" href="<?= app('views/recipe-single-view', true); ?>">
                         <i class="bi bi-eye"></i> View Recipe
                     </a>
                 </div>
@@ -226,19 +226,19 @@
         <div class="col-md-4 pe-0">
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
-                    <a href="single-view.html"><img
-                            src="../../../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"
-                            class="img-fluid" alt="abc"></a>
+                    <a href="<?= app('views/recipe-single-view', true); ?>"><img
+                            src="<?= statf('assets/img/contents/menus/launch/tooplate-soup.jpg'); ?>" class="img-fluid"
+                            alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
-                            href="single-view.html">Latest</a></h6>
+                            href="javascript:void(0);">Latest</a></h6>
                 </div>
             </div>
         </div>
         <div class="col-md-8 ps-0">
             <div class="recipe_1_left2_inner_right shadow py-5 px-4">
-                <b class="d-block"><a href="single-view.html">CURLY CHEESE &
+                <b class="d-block"><a href="<?= app('views/recipe-single-view', true); ?>">CURLY CHEESE &
                         VEGETABLE</a></b>
                 <hr class="line">
                 <p>Atque nulla vel ipsam doloremque illo rem eveniet nemo, quod
@@ -269,7 +269,7 @@
                     <button class="btn btn-outline-danger">
                         <i class="bi bi-heart-fill"></i>
                     </button>
-                    <a class="btn btn-success" href="<?= app('landing/views/recipe-single-view'); ?>">
+                    <a class="btn btn-success" href="<?= app('views/recipe-single-view', true); ?>">
                         <i class="bi bi-eye"></i> View Recipe
                     </a>
                 </div>

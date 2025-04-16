@@ -3,7 +3,7 @@
         <div class="row align-items-center">
             <div class="col-lg-3 text-center">
                 <div class="profile-image-wrapper mb-3 mb-lg-0">
-                    <img src="../../../../../public/assets/img/members/badang.jpg" class="profile-image rounded-circle"
+                    <img src="<?= statf('assets/img/members/badang.jpg'); ?>" class="profile-image rounded-circle"
                         alt="Chef Profile Image">
                     <div class="online-status"></div>
                 </div>

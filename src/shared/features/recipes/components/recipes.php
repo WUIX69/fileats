@@ -55,7 +55,7 @@
                     <?= shared('components/ui/tags'); ?>
 
                     <!-- Newsletter -->
-                    <?= shared('components/ui/newsletter'); ?>
+                    <?= shared('components/ui/news-letter'); ?>
                 </div>
             </div>
         </div>

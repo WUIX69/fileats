@@ -34,7 +34,7 @@
                                 <button class="btn btn-success w-100">
                                     <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
                                 </button>
-                                <a href="<?= app('landing/views/chef-single-view'); ?>"
+                                <a href="<?= app('views/chef-single-view', true); ?>"
                                     class="btn btn-outline-success w-100">
                                     <i class="bi bi-eye me-2"></i>View Profile</a>
                             </div>
@@ -76,7 +76,7 @@
                                 <button class="btn btn-success w-100">
                                     <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
                                 </button>
-                                <a href="<?= app('landing/views/chef-single-view'); ?>"
+                                <a href="<?= app('views/chef-single-view', true); ?>"
                                     class="btn btn-outline-success w-100">
                                     <i class="bi bi-eye me-2"></i>View Profile</a>
                             </div>
@@ -118,7 +118,7 @@
                                 <button class="btn btn-success w-100">
                                     <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
                                 </button>
-                                <a href="<?= app('landing/views/chef-single-view'); ?>"
+                                <a href="<?= app('views/chef-single-view', true); ?>"
                                     class="btn btn-outline-success w-100">
                                     <i class="bi bi-eye me-2"></i>View Profile</a>
                             </div>
@@ -160,7 +160,7 @@
                                 <button class="btn btn-success w-100">
                                     <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
                                 </button>
-                                <a href="<?= app('landing/views/chef-single-view'); ?>"
+                                <a href="<?= app('views/chef-single-view', true); ?>"
                                     class="btn btn-outline-success w-100">
                                     <i class="bi bi-eye me-2"></i>View Profile</a>
                             </div>
@@ -202,7 +202,7 @@
                                 <button class="btn btn-success w-100">
                                     <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
                                 </button>
-                                <a href="<?= app('landing/views/chef-single-view'); ?>"
+                                <a href="<?= app('views/chef-single-view', true); ?>"
                                     class="btn btn-outline-success w-100">
                                     <i class="bi bi-eye me-2"></i>View Profile</a>
                             </div>
@@ -244,7 +244,7 @@
                                 <button class="btn btn-success w-100">
                                     <i class="bi bi-person-plus-fill me-2"></i>Follow Chef
                                 </button>
-                                <a href="<?= app('landing/views/chef-single-view'); ?>"
+                                <a href="<?= app('views/chef-single-view', true); ?>"
                                     class="btn btn-outline-success w-100">
                                     <i class="bi bi-eye me-2"></i>View Profile</a>
                             </div>
@@ -255,25 +255,7 @@
         </div>
 
         <!-- Pagination -->
-        <div class="paging">
-            <ul class="mb-0 paginate text-center mt-4">
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html"><i
-                            class="bi bi-chevron-left"></i> </a></li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block active" href="single-view.html">1</a></li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">2</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">3</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">4</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">5</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">6</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html"><i
-                            class="bi bi-chevron-right"></i></a></li>
-            </ul>
-        </div>
+        <?= shared('components/ui/pagination-grid'); ?>
 
         <!-- Empty State -->
         <div class="text-center py-5 d-none">

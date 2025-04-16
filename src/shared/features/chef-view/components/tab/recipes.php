@@ -31,7 +31,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="../../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                         class="card-img-top" alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
@@ -49,7 +49,8 @@
                             <span class="me-3"><i class="bi bi-clock me-1"></i> 25m</span>
                             <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-outline-primary">View Recipe</a>
+                        <a href="<?= app('views/recipe-single-view', true); ?>"
+                            class="btn btn-sm btn-outline-primary">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -57,7 +58,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="../../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                         class="card-img-top" alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
@@ -75,7 +76,8 @@
                             <span class="me-3"><i class="bi bi-clock me-1"></i> 25m</span>
                             <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-outline-primary">View Recipe</a>
+                        <a href="<?= app('views/recipe-single-view', true); ?>"
+                            class="btn btn-sm btn-outline-primary">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -83,7 +85,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="../../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                         class="card-img-top" alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
@@ -101,7 +103,8 @@
                             <span class="me-3"><i class="bi bi-clock me-1"></i> 25m</span>
                             <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-outline-primary">View Recipe</a>
+                        <a href="<?= app('views/recipe-single-view', true); ?>"
+                            class="btn btn-sm btn-outline-primary">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -109,7 +112,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="../../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                         class="card-img-top" alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
@@ -127,7 +130,8 @@
                             <span class="me-3"><i class="bi bi-clock me-1"></i> 25m</span>
                             <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-outline-primary">View Recipe</a>
+                        <a href="<?= app('views/recipe-single-view', true); ?>"
+                            class="btn btn-sm btn-outline-primary">View Recipe</a>
                     </div>
                 </div>
             </div>
@@ -135,7 +139,7 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="../../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                         class="card-img-top" alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
@@ -153,7 +157,8 @@
                             <span class="me-3"><i class="bi bi-clock me-1"></i> 25m</span>
                             <span><i class="bi bi-star-fill text-warning me-1"></i> 4.8</span>
                         </div>
-                        <a href="#" class="btn btn-sm btn-outline-primary">View Recipe</a>
+                        <a href="<?= app('views/recipe-single-view', true); ?>"
+                            class="btn btn-sm btn-outline-primary">View Recipe</a>
                     </div>
                 </div>
             </div>

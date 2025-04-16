@@ -6,6 +6,7 @@
     <?= shared('elements/meta'); ?> <!-- rcs Meta -->
     <title>Discover Chefs - Fil Eats</title>
     <?= shared('elements/styles'); ?> <!-- rcs Styles -->
+    <?= shared('features/chefs/styles'); ?>
     <?= featured('landing/chefs/styles'); ?>
 </head>
 
@@ -27,7 +28,7 @@
             <?= featured('landing/chefs/components/header'); ?>
 
             <!-- Chefs Grid -->
-            <?= featured('landing/chefs/components/chefs'); ?>
+            <?= shared('features/chefs/components/chefs'); ?>
         </main>
 
         <!-- Footer -->
@@ -35,6 +36,7 @@
     </div>
 
     <?= shared('elements/scripts'); ?> <!-- rcs Scripts -->
+    <?= shared('features/chefs/scripts'); ?>
     <?= featured('landing/chefs/scripts'); ?>
 
 </body>

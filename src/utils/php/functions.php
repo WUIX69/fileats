@@ -91,7 +91,7 @@ function utils($file, $is_url = false)
     includeFileHelper('utils', $file);
 }
 
-function app($link = '')
+function app($link = '', $whereApp = false)
 {
     // Handle empty link case
     if (empty($link)) {
@@ -121,6 +121,14 @@ function app($link = '')
     // Ensure we have the .php extension
     if (substr($url, -4) !== '.php') {
         $url .= '.php';
+    }
+
+    // Add the app prefix if whereApp is true, for shared components
+    if ($whereApp) {
+        $appUrl = $_SERVER['REQUEST_URI'];
+        $appUrlParts = explode('/', trim($appUrl, '/')) ?? '';
+        $app = $appUrlParts[2] ?? '';
+        $url = $app . '/' . $url;
     }
 
     return urlFileHelper('app', $url);

@@ -1,7 +1,7 @@
 <div class="recipe_dt4 row mt-4">
     <div class="col-md-4 pe-0">
         <div class="recipe_dt4_left">
-            <a href="#"><img src="../../../../public/assets/img/members/jack.jpg" class="img-fluid" alt="abc"></a>
+            <a href="#"><img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="img-fluid" alt="abc"></a>
         </div>
     </div>
     <div class="col-md-8 ps-0">
