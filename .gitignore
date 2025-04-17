@@ -6,3 +6,8 @@ logs
 
 /src/uploads/*
 /src/uploads
+
+node_modules
+
+public/vendor
+public/vendor/*
