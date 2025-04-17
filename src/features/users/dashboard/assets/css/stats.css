@@ -38,6 +38,7 @@ main section#stats .card.followers {
 
 main section#stats .card.weekly-act {
     background-color: transparent;
+    border: none;
 }
 
 main section#stats .progress {

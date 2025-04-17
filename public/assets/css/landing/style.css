@@ -70,6 +70,10 @@ footer.site-footer {
     position: relative;
 }
 
+footer.site-footer .logo {
+    line-height: 1.51;
+}
+
 footer.site-footer p,
 footer.site-footer li span b a,
 footer.site-footer span:has(:not(i)),

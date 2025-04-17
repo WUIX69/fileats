@@ -1,4 +1,4 @@
-<div class="recipe_1_right1">
+<div class="recipe_1_right1" style="padding-top: 0.3rem;">
     <h5 class="head_after mb-4">Recent Recipes</h5>
     <ul class="mb-0 recipes-downward-fmt">
         <li class="d-flex border-bottom  pb-3 mb-3">

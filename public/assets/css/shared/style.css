@@ -73,6 +73,10 @@ header.site-header .nav_hide:after {
     display: none !important;
 }
 
+header.site-header .logo {
+    line-height: 1.51;
+}
+
 header.site-header .navbar-expand-lg .navbar-nav .nav-link {
     color: var(--bs-black) !important;
     font-weight: 300;
@@ -364,7 +368,12 @@ header.site-header .user-greeting .name {
 }
 /*####################### SITE HEADER END #######################*/
 
-/*####################### SECTION (Center) #######################*/
+main section:not(#center) span.icon_cup {
+    margin-top: 1.2rem !important;
+    margin-bottom: 1rem;
+}
+
+/*####################### SECTION (Center) a.k.a HERO #######################*/
 section#center {
     background-image: url(../../img/contents/heroes/blog.jpg);
     height: 73vh;
@@ -702,6 +711,7 @@ section#join .join_1_inner {
         .dropdown
         > .dropdown-menu {
         left: 70%;
+        margin-top: 25px;
     }
     /*####################### SITE HEADER END #######################*/
 }

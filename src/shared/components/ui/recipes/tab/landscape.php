@@ -1,4 +1,4 @@
-<div class="tab-pane active" id="profile2">
+<div class="tab-pane fade show active" id="profile2">
 
     <div class="recipe_1_left2_inner row">
         <div class="col-md-4 pe-0">

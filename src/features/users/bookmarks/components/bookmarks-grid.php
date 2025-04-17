@@ -5,7 +5,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card recipe-card h-100">
                     <div class="position-relative">
-                        <img src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                        <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                             class="card-img-top" alt="Recipe Image">
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
                             <i class="bi bi-bookmark-fill text-primary"></i>
@@ -14,9 +14,14 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title mb-2">Baked Creamy Eggs</h5>
-                        <p class="card-text text-muted small mb-3">A delicious breakfast recipe with creamy
-                            eggs and fresh herbs.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text text-muted small mb-3">
+                            A delicious breakfast recipe with creamy eggs and
+                            fresh herbs.
+                            This recipe is a perfect way to start your day, and it's also a great option for brunch or a
+                            light dinner.
+                            The creamy eggs are cooked to perfection, and ...
+                        </p>
+                        <div class="recipe-stats">
                             <div class="recipe-meta small">
                                 <span class="me-3"><i class="bi bi-clock me-1"></i> 25 mins</span>
                                 <span><i class="bi bi-star-fill me-1 text-warning"></i> 4.5</span>
@@ -31,7 +36,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card recipe-card h-100">
                     <div class="position-relative">
-                        <img src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                        <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                             class="card-img-top" alt="Recipe Image">
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
                             <i class="bi bi-bookmark-fill text-primary"></i>
@@ -40,9 +45,14 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title mb-2">Baked Creamy Eggs</h5>
-                        <p class="card-text text-muted small mb-3">A delicious breakfast recipe with creamy
-                            eggs and fresh herbs.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text text-muted small mb-3">
+                            A delicious breakfast recipe with creamy eggs and
+                            fresh herbs.
+                            This recipe is a perfect way to start your day, and it's also a great option for brunch or a
+                            light dinner.
+                            The creamy eggs are cooked to perfection, and ...
+                        </p>
+                        <div class="recipe-stats">
                             <div class="recipe-meta small">
                                 <span class="me-3"><i class="bi bi-clock me-1"></i> 25 mins</span>
                                 <span><i class="bi bi-star-fill me-1 text-warning"></i> 4.5</span>
@@ -56,7 +66,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card recipe-card h-100">
                     <div class="position-relative">
-                        <img src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                        <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                             class="card-img-top" alt="Recipe Image">
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
                             <i class="bi bi-bookmark-fill text-primary"></i>
@@ -65,9 +75,14 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title mb-2">Baked Creamy Eggs</h5>
-                        <p class="card-text text-muted small mb-3">A delicious breakfast recipe with creamy
-                            eggs and fresh herbs.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text text-muted small mb-3">
+                            A delicious breakfast recipe with creamy eggs and
+                            fresh herbs.
+                            This recipe is a perfect way to start your day, and it's also a great option for brunch or a
+                            light dinner.
+                            The creamy eggs are cooked to perfection, and ...
+                        </p>
+                        <div class="recipe-stats">
                             <div class="recipe-meta small">
                                 <span class="me-3"><i class="bi bi-clock me-1"></i> 25 mins</span>
                                 <span><i class="bi bi-star-fill me-1 text-warning"></i> 4.5</span>
@@ -80,7 +95,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card recipe-card h-100">
                     <div class="position-relative">
-                        <img src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                        <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                             class="card-img-top" alt="Recipe Image">
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
                             <i class="bi bi-bookmark-fill text-primary"></i>
@@ -89,9 +104,14 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title mb-2">Baked Creamy Eggs</h5>
-                        <p class="card-text text-muted small mb-3">A delicious breakfast recipe with creamy
-                            eggs and fresh herbs.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text text-muted small mb-3">
+                            A delicious breakfast recipe with creamy eggs and
+                            fresh herbs.
+                            This recipe is a perfect way to start your day, and it's also a great option for brunch or a
+                            light dinner.
+                            The creamy eggs are cooked to perfection, and ...
+                        </p>
+                        <div class="recipe-stats">
                             <div class="recipe-meta small">
                                 <span class="me-3"><i class="bi bi-clock me-1"></i> 25 mins</span>
                                 <span><i class="bi bi-star-fill me-1 text-warning"></i> 4.5</span>
@@ -104,7 +124,7 @@
             <div class="col-md-6 col-lg-4">
                 <div class="card recipe-card h-100">
                     <div class="position-relative">
-                        <img src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                        <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                             class="card-img-top" alt="Recipe Image">
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-2">
                             <i class="bi bi-bookmark-fill text-primary"></i>
@@ -113,9 +133,13 @@
                     </div>
                     <div class="card-body">
                         <h5 class="card-title mb-2">Baked Creamy Eggs</h5>
-                        <p class="card-text text-muted small mb-3">A delicious breakfast recipe with creamy
-                            eggs and fresh herbs.</p>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <p class="card-text text-muted small mb-3">
+                            A delicious breakfast recipe with creamy eggs and fresh herbs.
+                            This recipe is a perfect way to start your day, and it's also a great option for brunch or a
+                            light dinner.
+                            The creamy eggs are cooked to perfection, and ...
+                        </p>
+                        <div class="recipe-stats">
                             <div class="recipe-meta small">
                                 <span class="me-3"><i class="bi bi-clock me-1"></i> 25 mins</span>
                                 <span><i class="bi bi-star-fill me-1 text-warning"></i> 4.5</span>
@@ -131,25 +155,7 @@
         </div>
 
         <!-- Bookmarks Pagination -->
-        <div class="paging">
-            <ul class="mb-0 paginate text-center mt-4">
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html"><i
-                            class="bi bi-chevron-left"></i> </a></li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block active" href="single-view.html">1</a></li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">2</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">3</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">4</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">5</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html">6</a>
-                </li>
-                <li class="d-inline-block mt-1 mb-1"><a class="border d-block" href="single-view.html"><i
-                            class="bi bi-chevron-right"></i></a></li>
-            </ul>
-        </div>
+        <?= shared('components/primitives/pagination-grid'); ?>
 
         <!-- Empty State (shown when no bookmarks) -->
         <div class="text-center py-5 d-none">

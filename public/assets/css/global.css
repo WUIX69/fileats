@@ -105,6 +105,14 @@ h5 {
     font-weight: bold;
 }
 
+h3 {
+    font-size: 1.75rem;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
 a {
     color: var(--bs-black);
     text-decoration: none;
@@ -120,6 +128,14 @@ a:focus {
 a.button,
 button.button {
     border-radius: 0.25rem !important;
+}
+
+.pb-5 {
+    padding-bottom: 4rem !important;
+}
+
+.pt-5 {
+    padding-top: 4rem !important;
 }
 
 .link:hover {
@@ -174,6 +190,7 @@ button.button {
     height: 3px !important;
     width: 60px;
     background: var(--green);
+    border: none;
 }
 hr {
     opacity: 1;

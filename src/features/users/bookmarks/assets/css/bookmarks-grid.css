@@ -1,5 +1,5 @@
 main section.bookmarks-grid .recipe-card {
-    border: none;
+    /* border: none; */
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-in-out;
     position: relative;
@@ -19,6 +19,15 @@ main section.bookmarks-grid .recipe-card .card-img-top {
 main section.bookmarks-grid .bookmarks-header h1 {
     font-size: 1.75rem;
     font-weight: 600;
+}
+
+main section.bookmarks-grid .recipe-card .recipe-stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid #eee;
+    padding-top: 0.75rem;
 }
 
 main section.bookmarks-grid .btn-outline-secondary {

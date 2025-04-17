@@ -59,6 +59,10 @@ section#recipe .recipe_dt12 ul li:hover {
     transition: 0.3s;
 }
 
+section#recipe .recipe_dt13 h5 {
+    font-size: 1.2rem;
+}
+
 section#recipe .recipe_dt13_inner1_left .nav-tabs .nav-link {
     padding: 4px 15px;
     background: var(--bg_light);
@@ -94,7 +98,7 @@ section#recipe .recipe_1_left2_inner_right .actions {
     gap: 0.5rem;
 
     position: relative;
-    bottom: -1.3rem;
+    bottom: -1.5rem;
     right: 0;
 }
 

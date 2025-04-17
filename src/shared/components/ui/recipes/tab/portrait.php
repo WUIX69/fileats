@@ -1,4 +1,4 @@
-<div class="tab-pane" id="profile1">
+<div class="tab-pane fade" id="profile1">
     <div class="recipe_1_left2o row row-cols-1 row-cols-md-3">
         <div class="col">
             <div class="recipe_1_left2o1">
