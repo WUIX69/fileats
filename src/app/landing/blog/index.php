@@ -6,7 +6,7 @@
 	<?= shared('elements/meta'); ?>
 	<title>Cooking</title>
 	<?= shared('elements/styles'); ?>
-	<?= asset('css/shared/recipe.css'); ?>
+	<link rel="stylesheet" href="<?= asset('css/shared/recipe.css'); ?>">
 	<style>
 		section#center {
 			background-image: url(<?= asset('img/contents/heroes/blog.jpg'); ?>);
