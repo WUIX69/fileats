@@ -5,7 +5,7 @@
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
                     <a href="<?= app('views/recipe-single-view', true) ?>"><img
-                            src="<?= statf('assets/img/contents/menus/breakfast/burger-set.jpg'); ?>" class="img-fluid"
+                            src="<?= asset('img/contents/menus/breakfast/burger-set.jpg'); ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
@@ -61,8 +61,7 @@
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
                     <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                            src="<?= statf('assets/img/contents/menus/dinner/salmon.jpg'); ?>" class="img-fluid"
-                            alt="abc"></a>
+                            src="<?= asset('img/contents/menus/dinner/salmon.jpg'); ?>" class="img-fluid" alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
@@ -116,7 +115,7 @@
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
                     <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                            src="<?= statf('assets/img/contents/menus/dinner/seafood.jpg'); ?>" class="img-fluid"
+                            src="<?= asset('img/contents/menus/dinner/seafood.jpg'); ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
@@ -172,8 +171,8 @@
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
                     <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                            src="<?= statf('assets/img/contents/menus/breakfast/morning-fresh.jpg'); ?>"
-                            class="img-fluid" alt="abc"></a>
+                            src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg'); ?>" class="img-fluid"
+                            alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
                     <h6 class="mb-0 font_14"><a class="d-inline-block bg_green p-2 text-white px-4"
@@ -227,7 +226,7 @@
             <div class="recipe_1_left2_inner_left position-relative">
                 <div class="recipe_1_left2_inner_left1">
                     <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                            src="<?= statf('assets/img/contents/menus/launch/tooplate-soup.jpg'); ?>" class="img-fluid"
+                            src="<?= asset('img/contents/menus/launch/tooplate-soup.jpg'); ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
                 <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">

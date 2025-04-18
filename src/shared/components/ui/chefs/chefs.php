@@ -7,7 +7,7 @@
                     <div class="card h-100">
                         <div class="card-banner">
                             <div class="chef-avatar">
-                                <img src="<?= statf('assets/img/members/badang.jpg'); ?>" class="chef-avatar-img"
+                                <img src="<?= asset('img/members/badang.jpg'); ?>" class="chef-avatar-img"
                                     alt="Chef Avatar">
                             </div>
                         </div>
@@ -49,7 +49,7 @@
                     <div class="card h-100">
                         <div class="card-banner">
                             <div class="chef-avatar">
-                                <img src="<?= statf('assets/img/members/nicolas.jpg'); ?>" class="chef-avatar-img"
+                                <img src="<?= asset('img/members/nicolas.jpg'); ?>" class="chef-avatar-img"
                                     alt="Chef Avatar">
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                     <div class="card h-100">
                         <div class="card-banner">
                             <div class="chef-avatar">
-                                <img src="<?= statf('assets/img/members/sophia.jpg'); ?>" class="chef-avatar-img"
+                                <img src="<?= asset('img/members/sophia.jpg'); ?>" class="chef-avatar-img"
                                     alt="Chef Avatar">
                             </div>
                         </div>
@@ -133,7 +133,7 @@
                     <div class="card h-100">
                         <div class="card-banner">
                             <div class="chef-avatar">
-                                <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="chef-avatar-img"
+                                <img src="<?= asset('img/members/jack.jpg'); ?>" class="chef-avatar-img"
                                     alt="Chef Avatar">
                             </div>
                         </div>
@@ -175,7 +175,7 @@
                     <div class="card h-100">
                         <div class="card-banner">
                             <div class="chef-avatar">
-                                <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="chef-avatar-img"
+                                <img src="<?= asset('img/members/jack.jpg'); ?>" class="chef-avatar-img"
                                     alt="Chef Avatar">
                             </div>
                         </div>
@@ -217,7 +217,7 @@
                     <div class="card h-100">
                         <div class="card-banner">
                             <div class="chef-avatar">
-                                <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="chef-avatar-img"
+                                <img src="<?= asset('img/members/jack.jpg'); ?>" class="chef-avatar-img"
                                     alt="Chef Avatar">
                             </div>
                         </div>

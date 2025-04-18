@@ -5,8 +5,8 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/launch/bread-steak.jpg'); ?>"
-                                class="img-fluid" alt="abc"></a>
+                                src="<?= asset('img/contents/menus/launch/bread-steak.jpg'); ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
                         <button class="btn btn-sm rounded-circle btn-outline-primary">
@@ -51,8 +51,8 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
-                                class="img-fluid" alt="abc"></a>
+                                src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
                         <button class="btn btn-sm rounded-circle btn-outline-primary">
@@ -95,7 +95,7 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/launch/pulutan.jpg'); ?>" class="img-fluid"
+                                src="<?= asset('img/contents/menus/launch/pulutan.jpg'); ?>" class="img-fluid"
                                 alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
@@ -141,7 +141,7 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/dinner/salmon.jpg'); ?>" class="img-fluid"
+                                src="<?= asset('img/contents/menus/dinner/salmon.jpg'); ?>" class="img-fluid"
                                 alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
@@ -187,8 +187,8 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/dinner/salmong-nakatayo.jpg'); ?>"
-                                class="img-fluid" alt="abc"></a>
+                                src="<?= asset('img/contents/menus/dinner/salmong-nakatayo.jpg'); ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
                         <button class="btn btn-sm rounded-circle btn-outline-primary">
@@ -231,7 +231,7 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/dinner/inasal.jpg'); ?>" class="img-fluid"
+                                src="<?= asset('img/contents/menus/dinner/inasal.jpg'); ?>" class="img-fluid"
                                 alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
@@ -277,8 +277,8 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/breakfast/morning-fresh.jpg'); ?>"
-                                class="img-fluid" alt="abc"></a>
+                                src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg'); ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
                         <button class="btn btn-sm rounded-circle btn-outline-primary">
@@ -323,8 +323,8 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/breakfast/burger-set.jpg'); ?>"
-                                class="img-fluid" alt="abc"></a>
+                                src="<?= asset('img/contents/menus/breakfast/burger-set.jpg'); ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
                         <button class="btn btn-sm rounded-circle btn-outline-primary">
@@ -367,8 +367,8 @@
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
                         <a href="<?= app('views/recipe-single-view', true); ?>"><img
-                                src="<?= statf('assets/img/contents/menus/launch/tooplate-soup.jpg'); ?>"
-                                class="img-fluid" alt="abc"></a>
+                                src="<?= asset('img/contents/menus/launch/tooplate-soup.jpg'); ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="actions position-absolute top-0 text-end p-3 w-100">
                         <button class="btn btn-sm rounded-circle btn-outline-primary">

@@ -4,8 +4,8 @@
             <div class="col-md-8">
                 <div class="trend_1_left position-relative">
                     <div class="trend_1_left1">
-                        <a href="#"><img src="../../../public/assets/img/contents/others/pasto-pizza.jpg"
-                                class="img-fluid" alt="abc"></a>
+                        <a href="#"><img src="<?= asset('img/contents/others/pasto-pizza.jpg') ?>" class="img-fluid"
+                                alt="abc"></a>
                     </div>
                     <div class="trend_1_left2 position-absolute top-0 py-3 px-4">
                         <div class="trend_1_left2_inner text-center bg-white p-2 box">
@@ -53,7 +53,7 @@
                             <ul class="mb-0 recipes-downward-fmt">
                                 <li class="d-flex border-bottom  pb-3 mb-3">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
                                                 Imperdiet</a></b>
@@ -62,7 +62,7 @@
                                 </li>
                                 <li class="d-flex border-bottom  pb-3 mb-3">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
                                                 nunc</a></b>
@@ -71,7 +71,7 @@
                                 </li>
                                 <li class="d-flex">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/dinner/salmon.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
                                                 Libero</a></b>
@@ -86,7 +86,7 @@
                             <ul class="mb-0 recipes-downward-fmt">
                                 <li class="d-flex border-bottom  pb-3 mb-3">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/launch/pulutan.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/launch/pulutan.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
                                                 nunc</a></b>
@@ -95,7 +95,7 @@
                                 </li>
                                 <li class="d-flex border-bottom  pb-3 mb-3">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/launch/pulutan.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/launch/pulutan.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
                                                 Imperdiet</a></b>
@@ -105,7 +105,7 @@
 
                                 <li class="d-flex">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/dinner/salmong-nakatayo.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/dinner/salmong-nakatayo.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
                                                 Libero</a></b>
@@ -122,7 +122,7 @@
                             <ul class="mb-0 recipes-downward-fmt">
                                 <li class="d-flex border-bottom  pb-3 mb-3">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/breakfast/burger-set.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/breakfast/burger-set.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
                                                 Libero</a></b>
@@ -131,7 +131,7 @@
                                 </li>
                                 <li class="d-flex border-bottom  pb-3 mb-3">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/breakfast/kalderatang-itlog.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/breakfast/kalderatang-itlog.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
                                                 Imperdiet</a></b>
@@ -140,7 +140,7 @@
                                 </li>
                                 <li class="d-flex">
                                     <span><a href="#"><img width="100" alt="abc"
-                                                src="../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"></a></span>
+                                                src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg') ?>"></a></span>
                                     <span class="flex-column ms-3">
                                         <b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
                                                 nunc</a></b>

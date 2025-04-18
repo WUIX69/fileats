@@ -1,1 +1,0 @@
-<script src="<?= featured('users/recipe-mine/assets/js/main.js', true); ?>"></script>

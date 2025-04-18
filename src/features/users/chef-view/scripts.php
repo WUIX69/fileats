@@ -1,1 +1,0 @@
-<script src="<?= featured('users/chef-view/assets/js/main.js', true); ?>"></script>

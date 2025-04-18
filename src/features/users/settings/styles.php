@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="<?= featured('users/settings/assets/css/settings.css', true); ?>">

@@ -10,8 +10,8 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="../../../public/assets/img/contents/menus/breakfast/kalderatang-itlog.jpg"
-                    class="d-block img-fluid" alt="...">
+                <img src="<?= asset('img/contents/menus/breakfast/kalderatang-itlog.jpg') ?>" class="d-block img-fluid"
+                    alt="...">
                 <div class="carousel-caption d-md-block bg-white carousel-caption1 border_light box">
                     <div class="carousel-caption_inner border_light p-3 shadow box">
                         <b class="d-block fs-3 text-uppercase text-black">Dealing with a diet plan</b>
@@ -33,8 +33,8 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../../../public/assets/img/contents/menus/dinner/salmong-nakatayo.jpg"
-                    class="d-block img-fluid" alt="...">
+                <img src="<?= asset('img/contents/menus/dinner/salmong-nakatayo.jpg') ?>" class="d-block img-fluid"
+                    alt="...">
                 <div class="carousel-caption carousel-caption1 d-md-block bg-white border_light box">
                     <div class="carousel-caption_inner border_light p-3 shadow box">
                         <b class="d-block fs-3 text-uppercase text-black">Lorem Amet a porta sit</b>
@@ -56,8 +56,7 @@
                 </div>
             </div>
             <div class="carousel-item">
-                <img src="../../../public/assets/img/contents/menus/launch/pulutan.jpg" class="d-block img-fluid"
-                    alt="...">
+                <img src="<?= asset('img/contents/menus/launch/pulutan.jpg') ?>" class="d-block img-fluid" alt="...">
                 <div class="carousel-caption carousel-caption2 d-md-block bg-white border_light box">
                     <div class="carousel-caption_inner border_light p-3 shadow box">
                         <b class="d-block fs-3 text-uppercase text-black">Dolor sed augue quis</b>

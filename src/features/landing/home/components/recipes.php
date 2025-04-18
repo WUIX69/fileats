@@ -9,8 +9,8 @@
         <div class="recipe_2 row row-cols-1 row-cols-md-4 row-cols-sm-2">
             <div class="col p-0">
                 <div class="recipe_2_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/dinner/seafood.jpg"
-                            class="img-fluid" alt="abc"></a>
+                    <a href="#"><img src="<?= asset('img/contents/menus/dinner/seafood.jpg') ?>" class="img-fluid"
+                            alt="abc"></a>
                 </div>
             </div>
             <div class="col p-0">
@@ -25,7 +25,7 @@
             </div>
             <div class="col p-0">
                 <div class="recipe_2_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/dinner/inasal.jpg" class="img-fluid"
+                    <a href="#"><img src="<?= asset('img/contents/menus/dinner/inasal.jpg') ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
             </div>
@@ -53,8 +53,8 @@
             </div>
             <div class="col p-0">
                 <div class="recipe_2_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"
-                            class="img-fluid" alt="abc"></a>
+                    <a href="#"><img src="<?= asset('img/contents/menus/launch/tooplate-soup.jpg') ?>" class="img-fluid"
+                            alt="abc"></a>
                 </div>
             </div>
             <div class="col p-0">
@@ -69,7 +69,7 @@
             </div>
             <div class="col p-0">
                 <div class="recipe_2_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"
+                    <a href="#"><img src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg') ?>"
                             class="img-fluid" alt="abc"></a>
                 </div>
             </div>

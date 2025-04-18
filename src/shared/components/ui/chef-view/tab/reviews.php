@@ -5,7 +5,7 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="d-flex mb-3">
-                        <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
+                        <img src="<?= asset('img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
                             height="48" alt="Reviewer">
                         <div>
                             <h6 class="mb-1">John Doe</h6>
@@ -29,7 +29,7 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="d-flex mb-3">
-                        <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
+                        <img src="<?= asset('img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
                             height="48" alt="Reviewer">
                         <div>
                             <h6 class="mb-1">John Doe</h6>
@@ -53,7 +53,7 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="d-flex mb-3">
-                        <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
+                        <img src="<?= asset('img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
                             height="48" alt="Reviewer">
                         <div>
                             <h6 class="mb-1">John Doe</h6>
@@ -77,7 +77,7 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="d-flex mb-3">
-                        <img src="<?= statf('assets/img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
+                        <img src="<?= asset('img/members/jack.jpg'); ?>" class="rounded-circle me-3" width="48"
                             height="48" alt="Reviewer">
                         <div>
                             <h6 class="mb-1">John Doe</h6>

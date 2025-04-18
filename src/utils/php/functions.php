@@ -65,7 +65,7 @@ function urlFileHelper($dir, $file, $is_public = false)
     return baseURL($url);
 }
 
-function statf($file)
+function asset($file)
 {
     return urlFileHelper('public', $file, true);
 }
@@ -84,7 +84,7 @@ function featured($path, $is_url = false)
     includeFileHelper('features', $path);
 }
 
-function utils($file, $is_url = false)
+function util($file, $is_url = false)
 {
     if ($is_url)
         return urlFileHelper('utils', $file);

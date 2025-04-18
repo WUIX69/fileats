@@ -24,7 +24,7 @@
                         <h6 class="mb-0">Client</h6>
                     </div>
                     <div class="testim_1i1 position-absolute w-100">
-                        <img src="../../../public/assets/img/members/badang.jpg" class="rounded-circle" alt="abc">
+                        <img src="<?= asset('img/members/badang.jpg') ?>" class="rounded-circle" alt="abc">
                     </div>
                 </div>
             </div>
@@ -45,7 +45,7 @@
                         <h6 class="mb-0">User</h6>
                     </div>
                     <div class="testim_1i1 position-absolute w-100">
-                        <img src="../../../public/assets/img/members/jack.jpg" class="rounded-circle" alt="abc">
+                        <img src="<?= asset('img/members/jack.jpg') ?>" class="rounded-circle" alt="abc">
                     </div>
                 </div>
             </div>
@@ -66,7 +66,7 @@
                         <h6 class="mb-0">Client</h6>
                     </div>
                     <div class="testim_1i1 position-absolute w-100">
-                        <img src="../../../public/assets/img/members/sophia.jpg" class="rounded-circle" alt="abc">
+                        <img src="<?= asset('img/members/sophia.jpg') ?>" class="rounded-circle" alt="abc">
                     </div>
                 </div>
             </div>
@@ -87,7 +87,7 @@
                         <h6 class="mb-0">Customer</h6>
                     </div>
                     <div class="testim_1i1 position-absolute w-100">
-                        <img src="../../../public/assets/img/members/nicolas.jpg" class="rounded-circle" alt="abc">
+                        <img src="<?= asset('img/members/nicolas.jpg') ?>" class="rounded-circle" alt="abc">
                     </div>
                 </div>
             </div>

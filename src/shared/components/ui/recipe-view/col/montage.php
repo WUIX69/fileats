@@ -1,8 +1,8 @@
 <div class="recipe-montage">
     <div class="recipe_dt1 position-relative">
         <div class="recipe_dt1_inner">
-            <a href="#"><img src="<?= statf('assets/img/contents/menus/breakfast/kalderatang-itlog.jpg'); ?>"
-                    class="img-fluid" alt="abc"></a>
+            <a href="#"><img src="<?= asset('img/contents/menus/breakfast/kalderatang-itlog.jpg'); ?>" class="img-fluid"
+                    alt="abc"></a>
         </div>
         <div class="recipe_dt1_inner1 position-absolute top-0 text-end p-3 w-100">
             <h6 class="mb-0"><a class="d-inline-block bg_green p-2 text-white px-4 tag-box2" href="#">Watch

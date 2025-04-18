@@ -12,8 +12,8 @@
 
     <div class="shared-standalone-cont">
         <?= shared('layouts/loader/window'); ?>
-        <?= shared('components/archieve-flyout'); ?>
-        <?= shared('components/reminder-modal'); ?>
+        <?= shared('components/modal/archieve-flyout'); ?>
+        <?= shared('components/modal/reminder-modal'); ?>
     </div>
 
     <div class="container-body pusher">

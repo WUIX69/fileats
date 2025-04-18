@@ -5,7 +5,7 @@
             <div class="recipe_1_left2o1">
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
-                        <a href="#"><img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
+                        <a href="#"><img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
                                 class="img-fluid" alt="abc"></a>
                     </div>
                     <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
@@ -41,7 +41,7 @@
             <div class="recipe_1_left2o1">
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
-                        <a href="#"><img src="<?= statf('assets/img/contents/menus/breakfast/burger-set.jpg'); ?>"
+                        <a href="#"><img src="<?= asset('img/contents/menus/breakfast/burger-set.jpg'); ?>"
                                 class="img-fluid" alt="abc"></a>
                     </div>
                     <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">
@@ -75,7 +75,7 @@
             <div class="recipe_1_left2o1">
                 <div class="recipe_1_left2_inner_left position-relative">
                     <div class="recipe_1_left2_inner_left1">
-                        <a href="#"><img src="<?= statf('assets/img/contents/menus/breakfast/morning-fresh.jpg'); ?>"
+                        <a href="#"><img src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg'); ?>"
                                 class="img-fluid" alt="abc"></a>
                     </div>
                     <div class="recipe_1_left2_inner_left2 position-absolute top-0 text-end p-3 w-100">

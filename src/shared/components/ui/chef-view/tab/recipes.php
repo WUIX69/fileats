@@ -31,8 +31,8 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
-                        class="card-img-top" alt="Recipe Image">
+                    <img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>" class="card-img-top"
+                        alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-3">
@@ -58,8 +58,8 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
-                        class="card-img-top" alt="Recipe Image">
+                    <img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>" class="card-img-top"
+                        alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-3">
@@ -85,8 +85,8 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
-                        class="card-img-top" alt="Recipe Image">
+                    <img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>" class="card-img-top"
+                        alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-3">
@@ -112,8 +112,8 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
-                        class="card-img-top" alt="Recipe Image">
+                    <img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>" class="card-img-top"
+                        alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-3">
@@ -139,8 +139,8 @@
         <div class="col-md-6 col-lg-4">
             <div class="card recipe-card h-100">
                 <div class="position-relative">
-                    <img src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
-                        class="card-img-top" alt="Recipe Image">
+                    <img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>" class="card-img-top"
+                        alt="Recipe Image">
                     <div class="card-badges">
                         <span class="badge bg-primary position-absolute top-0 start-0 m-3">Featured</span>
                         <button class="btn btn-light btn-sm position-absolute top-0 end-0 m-3">

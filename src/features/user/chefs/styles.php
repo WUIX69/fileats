@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?= shared('css/chefs.css', true) ?>">

@@ -9,7 +9,7 @@
         <div class="news_1 row row-cols-1 row-cols-md-4 row-cols-sm-2">
             <div class="col">
                 <div class="card news_1_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+                    <a href="#"><img src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg') ?>"
                             class="img-fluid" alt="abc"></a>
                     <div class="card-body">
                         <b class="font_14 d-block"><a href="#">SLIM LINE BETWEEN HEALTH AND
@@ -26,8 +26,8 @@
             </div>
             <div class="col">
                 <div class="card news_1_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/breakfast/burger-set.jpg"
-                            class="img-fluid" alt="abc"></a>
+                    <a href="#"><img src="<?= asset('img/contents/menus/breakfast/burger-set.jpg') ?>" class="img-fluid"
+                            alt="abc"></a>
                     <div class="card-body">
                         <b class="font_14 d-block"><a href="#">PRESENTATION IS AS IMPORTANT AS
                                 TASTE</a></b>
@@ -43,7 +43,7 @@
             </div>
             <div class="col">
                 <div class="card news_1_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/dinner/inasal.jpg" class="img-fluid"
+                    <a href="#"><img src="<?= asset('img/contents/menus/dinner/inasal.jpg') ?>" class="img-fluid"
                             alt="abc"></a>
                     <div class="card-body">
                         <b class="font_14 d-block"><a href="#">SANDWICHES & THEIR BEST ORIGINS</a></b>
@@ -59,8 +59,8 @@
             </div>
             <div class="col">
                 <div class="card news_1_left">
-                    <a href="#"><img src="../../../public/assets/img/contents/menus/launch/super-steak.jpg"
-                            class="img-fluid" alt="abc"></a>
+                    <a href="#"><img src="<?= asset('img/contents/menus/launch/super-steak.jpg') ?>" class="img-fluid"
+                            alt="abc"></a>
                     <div class="card-body">
                         <b class="font_14 d-block"><a href="#">HEALTHY FOOD IS ACCESSIBLE AND EASY TO
                                 MAKE</a></b>

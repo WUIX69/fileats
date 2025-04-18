@@ -6,19 +6,15 @@ $appName = explode('/', trim($appUrlPath, '/'))[2] ?? '';
 $styles = [
     'vendor/bootstrap/dist/css/bootstrap.css', // Use default bootstrap css to Nuke: modal
     'vendor/fomantic-ui/dist/semantic.min.css', // TODO: Fix this
-    'assets/css/global.css',
-    'assets/css/loader/window.css',
-    'assets/css/' . $appName . '/style.css',
+    'css/global.css',
+    'css/loader/window.css',
+    'css/' . $appName . '/style.css',
 ];
 
-if ($appName === 'users' || $appName === 'landing') {
-    $styles[] = 'assets/css/shared/style.css';
-}
-
-if ($appName === 'admin') {
-    $styles[] = 'vendor/fomantic-ui/dist/semantic.min.css';
+if ($appName === 'user' || $appName === 'landing') {
+    $styles[] = 'css/shared/style.css';
 }
 
 foreach ($styles as $style) {
-    echo '<link rel="stylesheet" href="' . statf($style) . '">';
+    echo '<link rel="stylesheet" href="' . asset($style) . '">';
 }

@@ -1,6 +1,6 @@
 <?php
 // 1. Load jQuery first (classic script)
-echo '<script src="' . statf('lib/jquery/jquery.min.js') . '"></script>';
+echo '<script src="' . asset('lib/jquery/jquery.min.js') . '"></script>';
 
 // 2. Load cherry-picked Bootstrap modules (as ES modules)
 $bootstrapModules = [
@@ -11,21 +11,30 @@ $bootstrapModules = [
     'vendor/bootstrap/js/src/tab.js',
 ];
 foreach ($bootstrapModules as $module) {
-    echo '<script type="module" src="' . statf($module) . '"></script>';
+    echo '<script type="module" src="' . asset($module) . '"></script>';
 }
 
 // 3. Load optional scripts (classic scripts)
 $optionalScripts = [
     'vendor/fomantic-ui/dist/semantic.min.js',
     'lib/lodash/lodash.min.js',
-    'assets/js/loader/window.js',
-    'assets/js/darkmode.js',
-    'assets/js/theme.min.js',
-    'assets/js/scripts.js',
+    'js/loader/window.js',
+    'js/darkmode.js',
+    'js/theme.min.js',
+    'js/scripts.js',
 ];
 foreach ($optionalScripts as $script) {
-    echo '<script src="' . statf($script) . '"></script>';
+    echo '<script src="' . asset($script) . '"></script>';
 }
+
+$utils = [
+    'js/validateHandler.js',
+    'js/middleware.js',
+];
+foreach ($utils as $script) {
+    echo '<script src="' . util($script, true) . '"></script>';
+}
+
 ?>
 
 <script>

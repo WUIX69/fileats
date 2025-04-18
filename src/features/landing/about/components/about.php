@@ -3,7 +3,7 @@
         <div class="about_pg1 row">
             <div class="col-md-6">
                 <div class="about_pgl">
-                    <a href="#"><img src="../../../public/assets/img/contents/others/gal-4.jpg" class="img-fluid"
+                    <a href="#"><img src="<?= asset('img/contents/others/gal-4.jpg') ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
             </div>
@@ -135,7 +135,7 @@
         <div class="row achieve_1 bg-white p-5 shadow mt-5">
             <div class="col-md-5">
                 <div class="achieve_1l">
-                    <a href="#"><img src="../../../public/assets/img/contents/others/gal-3.jpg" class="img-fluid"
+                    <a href="#"><img src="<?= asset('img/contents/others/gal-3.jpg') ?>" class="img-fluid"
                             alt="abc"></a>
                 </div>
             </div>

@@ -28,7 +28,7 @@ foreach ($heroesMap as $link => $title) {
     }
 }
 
-$heroImage = statf('assets/img/contents/heroes/' . $pageLink . '.jpg');
+$heroImage = asset('img/contents/heroes/' . $pageLink . '.jpg');
 $pageTitle = $pageTitle ?? $heroesMap[''];
 
 ?>

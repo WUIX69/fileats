@@ -1,1 +1,0 @@
-<link rel="stylesheet" href="<?= statf('assets/css/shared/recipe.css'); ?>">

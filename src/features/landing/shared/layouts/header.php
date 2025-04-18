@@ -23,7 +23,7 @@ $activeLink = str_replace('.php', '', $pageName);
                 </b>
             </a>
             <button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
-                <img src="<?= statf('assets/img/icons-svg/list.svg'); ?>" width="40" height="40"
+                <img src="<?= asset('img/icons-svg/list.svg'); ?>" width="40" height="40"
                     alt="Open TemplateOnweb website menu" />
             </button>
             <div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
@@ -38,7 +38,7 @@ $activeLink = str_replace('.php', '', $pageName);
                             </span>
                         </b>
                     </a>
-                    <img src="<?= statf('assets/img/icons-svg/x.svg'); ?>" width="40" height="40" class="ms-auto"
+                    <img src="<?= asset('img/icons-svg/x.svg'); ?>" width="40" height="40" class="ms-auto"
                         data-bs-dismiss="offcanvas" aria-label="Close" alt="Close TemplateOnweb website menu" />
                 </div>
                 <div class="offcanvas-body pt-0 align-items-center">
@@ -54,7 +54,7 @@ $activeLink = str_replace('.php', '', $pageName);
                             <a class="nav-link dropdown-toggle <?= ($activeLink === 'discover' || $activeLink === 'views') ? 'active' : '' ?>"
                                 href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Find Recipes<img src="<?= statf('assets/img/icons-svg/chevron-down.svg'); ?>" width="15"
+                                Find Recipes<img src="<?= asset('img/icons-svg/chevron-down.svg'); ?>" width="15"
                                     height="15" alt="Submenu open/close icon">
                             </a>
                             <ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">

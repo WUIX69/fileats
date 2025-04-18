@@ -1,1 +1,0 @@
-<script src="<?= featured('users/recipe-view/assets/js/main.js', true); ?>"></script>

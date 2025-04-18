@@ -5,8 +5,8 @@
                 <div class="choose_1l">
                     <div class="grid clearfix">
                         <figure class="effect-jazz mb-0">
-                            <a href="#"><img src="../../../public/assets/img/contents/others/busog-meals.jpg"
-                                    class="img-fluid" alt="abc"></a>
+                            <a href="#"><img src="<?= asset('img/contents/others/busog-meals.jpg') ?>" class="img-fluid"
+                                    alt="abc"></a>
                         </figure>
                     </div>
                 </div>

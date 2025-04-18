@@ -34,7 +34,7 @@
                         <ul class="mb-0 recipes-downward-fmt">
                             <li class="d-flex border-bottom  pb-3 mb-3">
                                 <span><a href="#"><img width="100" alt="abc"
-                                            src="<?= statf('assets/img/contents/menus/breakfast/baked-creamy.jpg'); ?>"></a></span>
+                                            src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>"></a></span>
                                 <span class="flex-column ms-3">
                                     <b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis
                                             Sem
@@ -45,7 +45,7 @@
                             </li>
                             <li class="d-flex border-bottom  pb-3 mb-3">
                                 <span><a href="#"><img width="100" alt="abc"
-                                            src="<?= statf('assets/img/contents/menus/launch/tooplate-soup.jpg'); ?>"></a></span>
+                                            src="<?= asset('img/contents/menus/launch/tooplate-soup.jpg'); ?>"></a></span>
                                 <span class="flex-column ms-3">
                                     <b class="d-block font_14"><a class="text-white-50" href="#">Ligula in
                                             libero
@@ -55,7 +55,7 @@
                             </li>
                             <li class="d-flex">
                                 <span><a href="#"><img width="100" alt="abc"
-                                            src="<?= statf('assets/img/contents/menus/dinner/salmon.jpg'); ?>"></a></span>
+                                            src="<?= asset('img/contents/menus/dinner/salmon.jpg'); ?>"></a></span>
                                 <span class="flex-column ms-3">
                                     <b class="d-block font_14"><a class="text-white-50" href="#">Consectetur
                                             Elit

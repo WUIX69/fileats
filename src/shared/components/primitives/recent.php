@@ -3,7 +3,7 @@
     <ul class="mb-0 recipes-downward-fmt">
         <li class="d-flex border-bottom  pb-3 mb-3">
             <span><a href="#"><img width="100" alt="abc"
-                        src="../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
+                        src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg') ?>"></a></span>
             <span class="flex-column ms-3">
                 <b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
                         Imperdiet</a></b>
@@ -12,7 +12,7 @@
         </li>
         <li class="d-flex border-bottom  pb-3 mb-3">
             <span><a href="#"><img width="100" alt="abc"
-                        src="../../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"></a></span>
+                        src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg') ?>"></a></span>
             <span class="flex-column ms-3">
                 <b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
                         nunc</a></b>
@@ -21,7 +21,7 @@
         </li>
         <li class="d-flex border-bottom  pb-3 mb-3">
             <span><a href="#"><img width="100" alt="abc"
-                        src="../../../../public/assets/img/contents/menus/breakfast/burger-set.jpg"></a></span>
+                        src="<?= asset('img/contents/menus/breakfast/burger-set.jpg') ?>"></a></span>
             <span class="flex-column ms-3">
                 <b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
                         Libero</a></b>
@@ -31,7 +31,7 @@
 
         <li class="d-flex">
             <span><a href="#"><img width="100" alt="abc"
-                        src="../../../../public/assets/img/contents/menus/launch/super-steak.jpg"></a></span>
+                        src="<?= asset('img/contents/menus/launch/super-steak.jpg') ?>"></a></span>
             <span class="flex-column ms-3">
                 <b class="d-block font_14"><a href="#">Atque nulla illo rem eveniet
                         nemo,</a></b>

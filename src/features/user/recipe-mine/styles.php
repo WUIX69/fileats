@@ -1,0 +1,1 @@
+<link rel="stylesheet" href="<?= featured('user/recipe-mine/css/recipes.css', true); ?>">

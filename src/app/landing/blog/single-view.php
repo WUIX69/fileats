@@ -1,133 +1,19 @@
+<?php include_once __DIR__ . '/../../../utils/php/functions.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<?= shared('elements/meta'); ?>
 	<title>Cooking</title>
-	<link href="../../../../public/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="../../../../public/assets/css/global.css" rel="stylesheet">
-	<link href="../../../../public/assets/css/landing/recipe.css" rel="stylesheet">
+	<?= shared('elements/styles'); ?>
+	<?= asset('css/shared/recipe.css'); ?>
 </head>
 
 <body>
 
 	<div class="site-cont">
-		<header class="site-header">
-			<nav class="navbar navbar-expand-lg navbar-light w-100 pb-2 border-bottom">
-				<div class="container-xl">
-					<a class="d-flex" href="../index.html">
-						<b class="fs-2 d-block logo text-center"> <span class="family_1">Fil Eats</span> <span
-								class="d-block text-uppercase font_13">Cooking Recipes</span>
-							<span class="d-block font_12 col_green mt-1">
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-								<i class="bi bi-star-fill"></i>
-							</span>
-						</b>
-					</a>
-					<button class="navbar-toggler offcanvas-nav-btn  ms-auto me-3" type="button">
-						<img src="../../../../public/assets/img/icons-svg/list.svg" width="40" height="40"
-							alt="Open TemplateOnweb website menu" />
-					</button>
-					<div class="offcanvas offcanvas-start offcanvas-nav" style="width: 20rem">
-						<div class="offcanvas-header shadow">
-							<a class="d-flex" href="../index.html">
-								<b class="fs-2 d-block logo text-center"> <span class="family_1">Tasty Food</span> <span
-										class="d-block text-uppercase font_13">Cooking Recipes</span>
-									<span class="d-block font_12 col_green mt-1">
-										<i class="bi bi-star-fill"></i>
-										<i class="bi bi-star-fill"></i>
-										<i class="bi bi-star-fill"></i>
-									</span>
-								</b>
-							</a>
-							<img src="../../../../public/assets/img/icons-svg/x.svg" width="40" height="40"
-								class="ms-auto" data-bs-dismiss="offcanvas" aria-label="Close"
-								alt="Close TemplateOnweb website menu" />
-
-						</div>
-						<div class="offcanvas-body pt-0 align-items-center">
-							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
-								<li class="nav-item">
-									<a class="nav-link  fs-4 mt-1" href="../index.html" title="Visit home page">
-										<i class="bi bi-house"></i>
-									</a>
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link" href="../about.html" title="Visit home page">
-										About Us
-									</a>
-								</li>
-								<li class="nav-item dropdown drop_border">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-										data-bs-toggle="dropdown" aria-expanded="false">
-										Recipes<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
-											width="15" height="15" alt="Submenu open/close icon">
-									</a>
-									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="../recipe/index.html"> Recipes</a></li>
-										<li><a class="dropdown-item border-0" href="../recipe/single-view.html"> Recipe
-												Detail</a>
-										</li>
-									</ul>
-								</li>
-
-
-								<li class="nav-item dropdown drop_border">
-									<a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown"
-										role="button" data-bs-toggle="dropdown" aria-expanded="false">
-										Blog<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
-											width="15" height="15" alt="Submenu open/close icon">
-									</a>
-									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="index.html"> Blog</a></li>
-										<li><a class="dropdown-item border-0" href="single-view.html"> Blog
-												Detail</a></li>
-									</ul>
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link" href="../team.html" title="Visit home page">
-										Team
-									</a>
-								</li>
-
-								<li class="nav-item dropdown drop_border">
-									<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-										data-bs-toggle="dropdown" aria-expanded="false">
-										Pages<img src="../../../../public/assets/img/icons-svg/chevron-down.svg"
-											width="15" height="15" alt="Submenu open/close icon">
-									</a>
-									<ul class="dropdown-menu drop_1 shadow" aria-labelledby="navbarDropdown">
-										<li><a class="dropdown-item" href="../../auth/login.html"> Login</a></li>
-										<li><a class="dropdown-item border-0"
-												href="../../auth/register.html">Register</a>
-										</li>
-									</ul>
-								</li>
-
-								<li class="nav-item">
-									<a class="nav-link" href="../contact.html" title="Visit home page">
-										Contact Us
-									</a>
-								</li>
-							</ul>
-							<ul class="navbar-nav align-items-lg-center ms-auto mt-2">
-								<li class="nav-item">
-									<a class="nav-link button submit-recipe-btn" href="../../auth/index.html"
-										title="Submit Recipe">
-										Submit Recipe
-									</a>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</nav>
-		</header>
+		<!-- Site Header -->
+		<?= featured('landing/shared/layouts/header'); ?>
 
 		<main class="site-main">
 			<section id="center" class="pt-4 pb-4 center_o shadow">
@@ -151,7 +37,7 @@
 						<div class="col-md-8 col-lg-9">
 							<div class="blog_1_left">
 								<div class="blog_1_left1">
-									<a href="#"><img src="../../../../public/assets/img/contents/others/gal-1.jpg"
+									<a href="#"><img src="<?= asset('img/contents/others/gal-1.jpg'); ?>"
 											class="img-fluid" alt="abc"></a>
 									<div class="blog_1_left1_inner p-3 shadow box">
 										<div class="blog_1_left1_inner1 p-4 border_light">
@@ -261,7 +147,7 @@
 												<div class="col">
 													<div class="news_1_left">
 														<a href="#"><img
-																src="../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"
+																src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>"
 																class="img-fluid" alt="abc"></a>
 														<b class="mt-3 font_14 d-block"><a href="#">PRESENTATION IS AS
 																IMPORTANT
@@ -282,7 +168,7 @@
 												<div class="col">
 													<div class="news_1_left">
 														<a href="#"><img
-																src="../../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"
+																src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg'); ?>"
 																class="img-fluid" alt="abc"></a>
 														<b class="mt-3 font_14 d-block"><a href="#">SANDWICHES &amp;
 																THEIR BEST
@@ -303,7 +189,7 @@
 												<div class="col">
 													<div class="news_1_left">
 														<a href="#"><img
-																src="../../../../public/assets/img/contents/menus/dinner/salmon.jpg"
+																src="<?= asset('img/contents/menus/dinner/salmon.jpg'); ?>"
 																class="img-fluid" alt="abc"></a>
 														<b class="mt-3 font_14 d-block"><a href="#">HEALTHY FOOD IS EASY
 																TO
@@ -459,7 +345,7 @@
 							<div class="blog_1_right">
 								<div class="blog_1_right1">
 									<h5 class="head_after mb-4">Weekly Special</h5>
-									<a href="#"><img src="../../../../public/assets/img/contents/others/gal-2.jpg"
+									<a href="#"><img src="<?= asset('img/contents/others/gal-2.jpg'); ?>"
 											class="img-fluid" alt="abc"></a>
 									<b class="d-block"><a class="d-block bg-black text-white p-2 font_13 link"
 											href="#">PASTO
@@ -514,7 +400,7 @@
 									<ul class="mb-0 recipes-downward-fmt">
 										<li class="d-flex border-bottom  pb-3 mb-3">
 											<span><a href="single-view.html"><img width="100" alt="abc"
-														src="../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
+														src="<?= asset('img/contents/menus/breakfast/baked-creamy.jpg'); ?>"></a></span>
 											<span class="flex-column ms-3">
 												<b class="d-block font_14"><a href="#">Nulla Quis Sem Nibh
 														Imperdiet</a></b>
@@ -523,7 +409,7 @@
 										</li>
 										<li class="d-flex border-bottom  pb-3 mb-3">
 											<span><a href="single-view.html"><img width="100" alt="abc"
-														src="../../../../public/assets/img/contents/menus/breakfast/morning-fresh.jpg"></a></span>
+														src="<?= asset('img/contents/menus/breakfast/morning-fresh.jpg'); ?>"></a></span>
 											<span class="flex-column ms-3">
 												<b class="d-block font_14"><a href="#">Ligula in libero Sed lacinia
 														nunc</a></b>
@@ -532,7 +418,7 @@
 										</li>
 										<li class="d-flex border-bottom  pb-3 mb-3">
 											<span><a href="single-view.html"><img width="100" alt="abc"
-														src="../../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
+														src="<?= asset('img/contents/menus/dinner/salmon.jpg'); ?>"></a></span>
 											<span class="flex-column ms-3">
 												<b class="d-block font_14"><a href="#">Consectetur Elit Integer Nec
 														Libero</a></b>
@@ -542,7 +428,7 @@
 
 										<li class="d-flex">
 											<span><a href="single-view.html"><img width="100" alt="abc"
-														src="../../../../public/assets/img/contents/menus/dinner/seafood.jpg"></a></span>
+														src="<?= asset('img/contents/menus/dinner/seafood.jpg'); ?>"></a></span>
 											<span class="flex-column ms-3">
 												<b class="d-block font_14"><a href="#">Atque nulla illo rem eveniet
 														nemo,</a></b>
@@ -587,146 +473,12 @@
 			</section>
 		</main>
 
-		<footer class="site-footer">
-			<div class="footer_m pt-5 pb-5">
-				<div class="container-xl">
-					<div class="row footer_1">
-						<div class="col-md-3">
-							<div class="footer_1_left">
-								<b class="fs-2 d-block logo text-center text-white"> <span class="family_1">FIL
-										EATS</span> <span class="d-block text-uppercase font_13">Cooking
-										Recipes</span>
-									<span class="d-block font_12 col_green mt-1">
-										<i class="bi bi-star-fill"></i>
-										<i class="bi bi-star-fill"></i>
-										<i class="bi bi-star-fill"></i>
-									</span>
-								</b>
-							</div>
-						</div>
-						<div class="col-md-9">
-							<div class="footer_1_right">
-								<p class="mb-0 mt-3 text-white-50">Lorem ipsum dolor sit amet, consetetur sadipscing
-									elitr,
-									sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-									with
-									an
-									extra ordinary design and quality development features in low</p>
-							</div>
-						</div>
-					</div>
-					<div class="row row-cols-1 row-cols-md-3 footer_2 mt-4 pt-4">
-						<div class="col">
-							<div class="footer_2_left">
-								<b class="text-white d-block fs-5">Recent Recipes</b>
-								<hr class="line">
-								<ul class="mb-0 recipes-downward-fmt">
-									<li class="d-flex border-bottom  pb-3 mb-3">
-										<span><a href="#"><img width="100" alt="abc"
-													src="../../../../public/assets/img/contents/menus/breakfast/baked-creamy.jpg"></a></span>
-										<span class="flex-column ms-3">
-											<b class="d-block font_14"><a class="text-white-50" href="#">Nulla Quis
-													Sem
-													Nibh
-													Imperdiet</a></b>
-											<span class="mt-1 font_13 d-block text-white-50">Jan 16, 2016</span>
-										</span>
-									</li>
-									<li class="d-flex border-bottom  pb-3 mb-3">
-										<span><a href="#"><img width="100" alt="abc"
-													src="../../../../public/assets/img/contents/menus/launch/tooplate-soup.jpg"></a></span>
-										<span class="flex-column ms-3">
-											<b class="d-block font_14"><a class="text-white-50" href="#">Ligula in
-													libero
-													Sed lacinia nunc</a></b>
-											<span class="mt-1 font_13 d-block text-white-50">Jan 18, 2016</span>
-										</span>
-									</li>
-									<li class="d-flex">
-										<span><a href="#"><img width="100" alt="abc"
-													src="../../../../public/assets/img/contents/menus/dinner/salmon.jpg"></a></span>
-										<span class="flex-column ms-3">
-											<b class="d-block font_14"><a class="text-white-50" href="#">Consectetur
-													Elit
-													Integer Nec Libero</a></b>
-											<span class="mt-1 font_13 d-block text-white-50">Jan 19, 2016</span>
-										</span>
-									</li>
-
-								</ul>
-							</div>
-						</div>
-						<div class="col">
-							<div class="footer_1_left">
-								<b class="text-white d-block fs-5">Contact Us</b>
-								<hr class="line">
-								<span class="fw-bold text-white-50 d-block mb-2">Address:</span>
-								<span class="text-white-50  d-block font_14 ps-2">Something Street lorem porta quis
-									sem
-									eget
-									New York 2003 SU</span>
-								<span class="fw-bold text-white-50 mt-3 d-block mb-2">Open hours:</span>
-								<span class="text-white-50 d-block font_14 ps-2">Mon – Fri: 11AM – 8PM</span>
-								<span class="fw-bold text-white-50 mt-3 d-block mb-2">Cell Phone:</span>
-								<span class="text-white-50 mb-0 d-block font_14 ps-2">+(000) 345 67 89</span>
-							</div>
-						</div>
-						<div class="col">
-							<div class="footer_1_left">
-								<b class="text-white d-block fs-5">Subscribe Us</b>
-								<hr class="line">
-								<input class="form-control bg-dark border-0 text-white" type="text">
-								<span class="d-block mt-3"><a class="button py-2" href="#">Subscribe</a></span>
-								<b class="text-white d-block fs-5 mt-4">Follow Us</b>
-								<hr class="line">
-								<ul class="mb-0 d-flex social_brands">
-									<li><a class="bg_green d-inline-block text-white text-center" href="#"><i
-												class="bi bi-facebook"></i></a></li>
-									<li class="ms-2"><a class="bg-success d-inline-block text-white text-center"
-											href="#"><i class="bi bi-instagram"></i></a></li>
-									<li class="ms-2"><a class="bg-warning d-inline-block text-white text-center"
-											href="#"><i class="bi bi-linkedin"></i></a></li>
-									<li class="ms-2"><a class="bg-info d-inline-block text-white text-center"
-											href="#"><i class="bi bi-pinterest"></i></a></li>
-									<li class="ms-2"><a class="bg-danger d-inline-block text-white text-center"
-											href="#"><i class="bi bi-youtube"></i></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-					<div class="footer_bottom1 row mt-4 pt-4">
-						<div class="col-md-4">
-							<div class="footer_bottom1_right">
-								<ul class="font_13 mb-0">
-									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Home</a></li>
-									<li class="d-inline-block mx-2 text-muted">|</li>
-									<li class="d-inline-block"><a class="text-white-50 link" href="#"> About Us</a>
-									</li>
-									<li class="d-inline-block mx-2 text-muted">|</li>
-									<li class="d-inline-block"><a class="text-white-50 link" href="#"> News</a></li>
-									<li class="d-inline-block mx-2 text-muted">|</li>
-									<li class="d-inline-block"><a class="text-white-50 link" href="#"> Contact
-											Us</a>
-									</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-8">
-							<div class="footer_bottom1_left text-end">
-								<p class="mb-0 text-white-50">© 2013 Your Website Name. All Rights Reserved | Design
-									by
-									<a class="col_green fw-bold" href="http://www.templateonweb.com">TemplateOnWeb</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+		<!-- Footer -->
+		<?= featured('landing/shared/layouts/footer'); ?>
 	</div>
 
-	<script src="../../../../public/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-	<script src="../../../../public/assets/js/theme.min.js"></script>
+	<?= shared('elements/scripts'); ?> <!-- rcs Scripts -->
+	<?= featured('landing/blog/scripts'); ?>
 
 </body>
 
