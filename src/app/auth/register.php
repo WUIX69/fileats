@@ -42,12 +42,10 @@
 												placeholder="Your Password">
 										</div>
 										<div class="field d-flex justify-content-between mt-3">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" value="" name="remember"
-													id="remember">
-												<label class="form-check-label" for="remember">
-													I agree with the <a href="#">Terms Of Service</a>
-												</label>
+											<div class="ui checkbox">
+												<input type="checkbox" name="remember" value="">
+												<label for="remember">I agree with the <a href="#">Terms Of
+														Service</a></label>
 											</div>
 										</div>
 										<div class="actions">

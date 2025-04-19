@@ -94,6 +94,12 @@ $activeLink = str_replace('.php', '', $pageName);
                                 Contact Us
                             </a>
                         </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="<?= app('auth'); ?>" title="Login">
+                                Login
+                            </a>
+                        </li>
                     </ul>
                     <ul class="navbar-nav align-items-lg-center ms-auto mt-2">
                         <li class="nav-item">

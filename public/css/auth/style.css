@@ -32,14 +32,36 @@ section#auth .auth-body {
     -webkit-backdrop-filter: blur(5px);
 }
 
+section#auth .auth-body .auth-body-header h3 {
+    margin-bottom: 0.5rem;
+}
+
 section#auth .auth-body form label {
     line-height: 1.2;
     color: var(--bs-gray-900);
-    /* color: #aaa; */
 }
 
-section#auth .auth-body form label:not(.form-check-label) {
+section#auth .auth-body form label,
+section#auth .auth-body form .forgot {
+    font-size: 0.8rem;
+}
+
+section#auth .auth-body form .field:not(:has(.ui.checkbox)) label {
     margin-top: 1rem;
     margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+section#auth .auth-body form .field:has(.ui.checkbox) label {
+    padding-top: 0.1rem;
+}
+
+section#auth .auth-body form input {
+    font-size: 0.8rem;
+    height: 2.7rem;
+}
+
+section#auth .auth-body .redirect {
     font-size: 0.9rem;
 }

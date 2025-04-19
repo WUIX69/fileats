@@ -38,21 +38,18 @@
 												placeholder="Your Password">
 										</div>
 										<div class="field d-flex justify-content-between mt-3">
-											<div class="form-check">
-												<input class="form-check-input" type="checkbox" name="remember" value=""
-													id="remember">
-												<label class="form-check-label" for="remember">
-													Remember Me
-												</label>
+											<div class="ui left aligned checkbox">
+												<input type="checkbox" name="remember" value="">
+												<label for="remember">Remember Me</label>
 											</div>
-											<a href="#">Forgot Password?</a>
+											<a class="forgot" href="#">Forgot Password?</a>
 										</div>
 										<div class="actions">
 											<button class="ui submit positive button" type="submit">Login
 												<i class="bi bi-box-arrow-in-right ms-1 align-middle"></i></button>
 										</div>
 									</form>
-									<div class="mt-4 mb-0">Don't have an account? <a class="col_green"
+									<div class="mt-4 mb-0 redirect">Don't have an account? <a class="col_green"
 											href="register.php">Register</a></div>
 								</div>
 							</div>
